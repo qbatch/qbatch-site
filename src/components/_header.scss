@@ -1,0 +1,23 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+.header {
+  box-shadow: $header-shadow;
+  position: fixed;
+  z-index: 1;
+  background-color: $white;
+
+  #collapse-navbar-nav {
+    .navbar {
+      $this: &;
+      &__item {
+        text-transform: uppercase;
+        @include fonts($midnight, rem(14), $base-font, $regular);
+        padding: rem(10) rem(18);
+        letter-spacing: rem(1);
+        .endeavour-button {
+          @include endeavour;
+        }
+      }
+    }
+  }
+}

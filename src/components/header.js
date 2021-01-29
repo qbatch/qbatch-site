@@ -1,42 +1,40 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import React from "react"
-
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+import { Container, Navbar, Nav, Image, Button } from "react-bootstrap"
+import Logo from "../images/logo.png"
+import { Link } from "gatsby"
+const Header = () => (
+  <header className="header w-100 ">
+    <Container>
+      <Navbar collapseOnSelect expand="lg">
+        <Navbar.Brand href="#home" className="py-0">
+          <Image src={Logo} alt="no logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="collapse-navbar-nav" />
+        <Navbar.Collapse id="collapse-navbar-nav">
+          <Nav className="ml-auto navbar">
+            <Nav.Link href="/" className="navbar__item">
+              Home
+            </Nav.Link>
+            <Nav.Link href="/services" className="navbar__item">
+              Services
+            </Nav.Link>
+            <Nav.Link href="/work" className="navbar__item">
+              Work
+            </Nav.Link>
+            <Nav.Link href="/about" className="navbar__item">
+              About
+            </Nav.Link>
+            <Nav.Link href="/blog" className="navbar__item">
+              Blog
+            </Nav.Link>
+            <Nav.Link href="/contact" className="navbar__item ">
+              <Button className="endeavour-button">Contact</Button>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </Container>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
 export default Header
