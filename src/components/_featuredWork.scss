@@ -1,0 +1,32 @@
+.slider {
+  background-color: $selago;
+  padding: 78px;
+  .slider-h3 {
+    padding: 30px 0;
+  }
+  .listItem {
+    list-style-image: url("../images/research/tickIcon.svg");
+    padding-left: rem(22);
+    margin-bottom: rem(22);
+    $this: &;
+    &__item {
+      @include fonts($storm-gray, rem(16), $base-font, $light);
+      letter-spacing: rem(1);
+    }
+  }
+  .slide {
+    .carousel-indicators {
+      bottom: -69px;
+      li {
+        background-color: $midnight;
+        &.active {
+          width: 84px;
+        }
+      }
+    }
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none;
+  }
+}

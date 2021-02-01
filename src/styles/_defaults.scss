@@ -9,3 +9,6 @@ p {
   letter-spacing: rem(1);
   margin-bottom: rem(30);
 }
+h3 {
+  @include fonts($midnight, rem(24), $base-font, $extra-bold);
+}

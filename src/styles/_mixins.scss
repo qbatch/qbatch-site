@@ -29,7 +29,7 @@ $base-size: $base-font-size;
 @mixin endeavour {
   background-color: $endeavour;
   color: $white;
-  border-radius: rem(5);
+  @include border-radius(rem(5));
   padding: rem(7) rem(22);
   text-transform: uppercase;
   letter-spacing: rem(1);
@@ -42,7 +42,7 @@ $base-size: $base-font-size;
 //outline button
 @mixin outline {
   background-color: transparent;
-  border-radius: rem(5);
+  @include border-radius(rem(5));
   padding: rem(7) rem(22);
   text-transform: uppercase;
   letter-spacing: rem(1);
@@ -58,4 +58,12 @@ $base-size: $base-font-size;
   -ms-transform: scale($x);
   -webkit-transform: scale($x);
   transform: skew(($x, $y));
+}
+//BORDER RADIUS
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }

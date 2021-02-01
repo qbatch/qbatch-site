@@ -31,6 +31,53 @@ p {
   margin-bottom: 1.875rem;
 }
 
+h3 {
+  color: #012140;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+
+.slider {
+  background-color: #f7fafe;
+  padding: 78px;
+}
+
+.slider .slider-h3 {
+  padding: 30px 0;
+}
+
+.slider .listItem {
+  list-style-image: url("../images/research/tickIcon.svg");
+  padding-left: 1.375rem;
+  margin-bottom: 1.375rem;
+}
+
+.slider .listItem__item {
+  color: #6d7384;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.0625rem;
+}
+
+.slider .slide .carousel-indicators {
+  bottom: -69px;
+}
+
+.slider .slide .carousel-indicators li {
+  background-color: #012140;
+}
+
+.slider .slide .carousel-indicators li.active {
+  width: 84px;
+}
+
+.slider .carousel-control-prev-icon,
+.slider .carousel-control-next-icon {
+  display: none;
+}
+
 .header {
   -webkit-box-shadow: 0px 2px 2px #0054a617;
           box-shadow: 0px 2px 2px #0054a617;
@@ -72,11 +119,12 @@ p {
   padding-top: 90px;
 }
 
-.background {
+.layout {
   background-color: #f7fafe;
+  position: relative;
 }
 
-.background .skewed-bg {
+.layout .skewed-bg {
   background: #ffffff;
   padding: 200px 0;
   -webkit-transform: scale(0deg);
@@ -85,12 +133,52 @@ p {
   padding-bottom: 1.5625rem;
 }
 
-.background .skewed-bg .content {
+.layout .skewed-bg .content {
   -webkit-transform: scale(0deg);
   transform: skew(0deg, 12deg);
 }
 
-.background .skewed-bg .content .btn-batch .endeavour-button {
+.layout .skewed-bg .content .pt-155 {
+  padding-top: 155px;
+}
+
+.layout .skewed-bg .content .pt-155 .image-space {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  max-width: 100%;
+}
+
+.layout .footer {
+  padding-top: 250px;
+  padding-bottom: 50px;
+}
+
+.layout .footer .hwr {
+  color: #0054a6;
+  font-size: 1.25rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.layout .footer .hwr-types {
+  color: #012140;
+  font-size: 1.75rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  padding-bottom: 6.375rem;
+}
+
+.layout .footer .h-title {
+  color: #6d7384;
+  font-size: 1.25rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.btn-batch .endeavour-button {
   background-color: #0054a6;
   color: #ffffff;
   border-radius: 0.3125rem;
@@ -104,12 +192,12 @@ p {
   font-weight: 400;
 }
 
-.background .skewed-bg .content .btn-batch .endeavour-button:focus {
+.btn-batch .endeavour-button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.background .skewed-bg .content .btn-batch .outline-button {
+.btn-batch .outline-button {
   background-color: transparent;
   border-radius: 0.3125rem;
   padding: 0.4375rem 1.375rem;
@@ -122,48 +210,43 @@ p {
   font-weight: 400;
 }
 
-.background .skewed-bg .content .btn-batch .outline-button:focus {
+.btn-batch .outline-button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.background .skewed-bg .content .pt-155 {
-  padding-top: 155px;
+.driven-process {
+  padding: 100px 0;
 }
 
-.background .skewed-bg .content .pt-155 .image-space {
-  position: absolute;
-  right: 0;
-  top: -50px;
+.driven-process .img-bg {
+  width: 104px;
+  height: 104px;
+  background-color: #f7fafe;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
 }
 
-.background .footer {
-  padding-top: 250px;
-  padding-bottom: 50px;
+.driven-process .pt-30 {
+  padding: 30px 0;
 }
 
-.background .footer .hwr {
-  color: #0054a6;
-  font-size: 1.25rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-}
-
-.background .footer .hwr-types {
-  color: #012140;
-  font-size: 1.75rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  padding-bottom: 6.375rem;
-}
-
-.background .footer .h-title {
+.driven-process .pt-30 .research-p {
   color: #6d7384;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Lato", sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-weight: 300;
   text-align: center;
+  letter-spacing: 0.3px;
 }
 
 html {

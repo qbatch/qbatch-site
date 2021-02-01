@@ -2,8 +2,9 @@
 .pt-90 {
   padding-top: 90px;
 }
-.background {
+.layout {
   background-color: $selago;
+  position: relative;
   .skewed-bg {
     background: $white;
     padding: 200px 0;
@@ -12,20 +13,13 @@
     padding-bottom: rem(25);
     .content {
       @include transform(0deg, 12deg);
-      .btn-batch {
-        .endeavour-button {
-          @include endeavour;
-        }
-        .outline-button {
-          @include outline;
-        }
-      }
       .pt-155 {
         padding-top: 155px;
         .image-space {
           position: absolute;
           right: 0;
           top: -50px;
+          max-width: 100%;
         }
       }
     }
@@ -45,6 +39,36 @@
       @include fonts($storm-gray, rem(20), $base-font, $regular);
       letter-spacing: 1px;
       text-align: center;
+    }
+  }
+}
+.btn-batch {
+  .endeavour-button {
+    @include endeavour;
+  }
+  .outline-button {
+    @include outline;
+  }
+}
+
+.driven-process {
+  padding: 100px 0;
+  .img-bg {
+    width: 104px;
+    height: 104px;
+    background-color: $selago;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(16);
+  }
+  .pt-30 {
+    padding: 30px 0;
+    .research-p {
+      @include fonts($storm-gray, rem(16), $base-font, $light);
+      text-align: center;
+      letter-spacing: 0.3px;
     }
   }
 }
