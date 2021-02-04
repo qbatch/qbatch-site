@@ -36,7 +36,7 @@ import communication from "../images/expertise/communication.svg"
 import IndexImage from "../images/index.svg"
 import ContactForm from "../components/contactForm"
 import clutch from "../images/recognized/clutch.png"
-import pasha from "../images/recognized/pasha.png"
+import pasha from "../images/recognized/Pasha.png"
 import upWork from "../images/recognized/Upwork.png"
 
 const IndexPage = () => {
