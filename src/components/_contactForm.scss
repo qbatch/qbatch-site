@@ -1,0 +1,58 @@
+.testimonial-form {
+  .contact-heading {
+    .contact-h5 {
+      @include fonts($cornflower, rem(20), $base-font, $regular);
+      display: inline-block;
+    }
+  }
+  .b-border {
+    width: 75px;
+    margin: 0;
+    border-top: $cornflowerBorder;
+  }
+  .text-spam {
+    @include fonts($mercury, rem(18), $base-font, $regular);
+    opacity: 0.7;
+  }
+  .mb-10 {
+    margin-bottom: rem(35);
+  }
+  .contact-form {
+    .form-control {
+      background-color: transparent;
+      border: $input;
+      @include fonts($white, rem(16), $base-font, $regular);
+      height: rem(47);
+      margin-bottom: rem(24);
+      &:focus {
+        box-shadow: none;
+      }
+      ::placeholder {
+        text-transform: capitalize;
+      }
+    }
+    .contactUs-dropdown {
+      .form-control {
+        @include fonts($white, rem(16), $base-font, $regular);
+      }
+    }
+  }
+  .actions {
+    .action-line {
+      margin: 0;
+      border-top: $cornflowerBorder;
+      width: 124px;
+    }
+  }
+  .mt-30 {
+    margin-top: rem(30);
+  }
+  .detail {
+    margin-top: rem(5);
+    $this: &;
+    &__list {
+      @include fonts($danube, rem(14), $base-font, $light);
+      padding: rem(3) rem(0);
+    }
+  }
+}

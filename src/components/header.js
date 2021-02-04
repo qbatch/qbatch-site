@@ -1,14 +1,13 @@
 // import PropTypes from "prop-types"
 import React from "react"
 import { Container, Navbar, Nav, Image, Button } from "react-bootstrap"
-import Logo from "../images/logo.png"
 import { Link } from "gatsby"
-const Header = () => (
+const Header = ({ logo }) => (
   <header className="header w-100 ">
     <Container>
       <Navbar collapseOnSelect expand="lg">
         <Navbar.Brand href="#home" className="py-0">
-          <Image src={Logo} alt="no logo" />
+          <Image src={logo} alt="no logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="collapse-navbar-nav" />
         <Navbar.Collapse id="collapse-navbar-nav">

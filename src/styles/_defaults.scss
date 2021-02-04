@@ -3,12 +3,16 @@ h1 {
   @include fonts($midnight, rem(42), $base-font, $extra-bold);
   letter-spacing: rem(0.5);
 }
+
+h2 {
+  @include fonts($midnight, rem(28), $base-font, $bold);
+}
+h3 {
+  @include fonts($midnight, rem(24), $base-font, $bold);
+}
 p {
   @include fonts($storm-gray, rem(18), $base-font, $light);
   text-align: left;
   letter-spacing: rem(1);
   margin-bottom: rem(30);
-}
-h3 {
-  @include fonts($midnight, rem(24), $base-font, $extra-bold);
 }

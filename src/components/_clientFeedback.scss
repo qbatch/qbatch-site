@@ -1,0 +1,31 @@
+.view-sliders {
+  width: 100%;
+  padding: 12% 0;
+  .slider-p {
+    @include fonts($abbey, rem(28), $base-font, $light);
+    text-align: center;
+  }
+  .profile-box {
+    margin-top: rem(50);
+    .profile-detail {
+      @include fonts($abbey, rem(14), $base-font, $light);
+    }
+    .profile-title {
+      @include fonts($portGore, rem(20), $base-font, $semi-bold);
+    }
+  }
+  .carousel-indicators {
+    bottom: -69px;
+    z-index: -1;
+    li {
+      background-color: $midnight;
+      &.active {
+        width: 84px;
+      }
+    }
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: none;
+  }
+}

@@ -5,11 +5,14 @@
 }
 body {
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
-
+@import "./header";
+@import "./footer";
 @import "../styles/defaults";
 @import "../components/featuredWork";
-@import "./header";
+@import "../components/contactForm";
+@import "../components/clientFeedback";
 @import "../pages/index";
 html {
   scroll-behavior: smooth;

@@ -25,7 +25,7 @@
     }
   }
 
-  .footer {
+  .inner-skewed {
     padding-top: 250px;
     padding-bottom: 50px;
     .hwr {
@@ -49,6 +49,14 @@
   .outline-button {
     @include outline;
   }
+  .btn-send {
+    background-color: $endeavour;
+    padding: 10px 60px;
+    color: $white;
+    border: none;
+    margin: 10px 12px;
+    text-transform: uppercase;
+  }
 }
 
 .driven-process {
@@ -69,6 +77,165 @@
       @include fonts($storm-gray, rem(16), $base-font, $light);
       text-align: center;
       letter-spacing: 0.3px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1200px;
+  }
+}
+.services {
+  padding: 50px 0;
+  .d-flex {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    .popularService {
+      @include fonts($midnight, rem(18), $base-font, $bold);
+      opacity: 0.5;
+    }
+  }
+
+  .services-list {
+    box-shadow: $services;
+    padding: 10px 24px;
+    @include border-radius(rem(5));
+    cursor: pointer;
+    min-height: 210px;
+    margin-bottom: rem(16);
+    position: relative;
+    .rightArrow {
+      color: $endeavour;
+      font-size: rem(18);
+      position: absolute;
+      bottom: 14px;
+    }
+    .linkIcon {
+      width: 44px;
+      height: 44px;
+      background-color: $linkWater;
+      text-align: center;
+      padding: rem(11) rem(0);
+
+      svg {
+        color: $endeavour;
+      }
+    }
+    .sPara {
+      @include fonts($midnight, rem(12), $base-font, $light);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    .sh6 {
+      @include fonts($midnight, rem(14), $base-font, $regular);
+      margin-top: rem(12);
+    }
+    &:hover {
+      background-color: $endeavour;
+      .rightArrow {
+        color: $white;
+      }
+      .linkIcon {
+        background-color: $curiousBlue;
+        svg {
+          color: $white;
+        }
+      }
+      .sPara,
+      .sh6 {
+        color: $white;
+      }
+    }
+  }
+}
+.teams {
+  width: 100%;
+  background-color: $selago;
+  clip-path: polygon(0 0, 100% 0, 100% 53%, 0 81%);
+  min-height: 1500px;
+  .teams-detail {
+    padding: 120px 0 0;
+  }
+}
+.experites {
+  height: 900px;
+  width: 100%;
+  background-color: $midnight;
+  @include transform(0deg, -8deg);
+  position: absolute;
+  bottom: 0;
+  .inner-content {
+    @include transform(0deg, 8deg);
+    padding: 175px 0 0;
+    .exp-p {
+      opacity: 0.7;
+    }
+    .border-h5 {
+      border-left: $cornflowerBorder;
+    }
+    .mb-50 {
+      margin-bottom: rem(50);
+    }
+    .mb-22 {
+      margin-bottom: rem(22);
+    }
+    .exp-img {
+      padding-bottom: rem(35);
+      padding-left: rem(2);
+    }
+  }
+}
+.bg-cornflower {
+  position: absolute;
+  height: 50px;
+  bottom: -49px;
+  right: 1px;
+  background-color: $cornflower;
+  z-index: -1;
+  width: 20%;
+}
+.testimonial {
+  .bg-cornflower {
+    position: absolute;
+    height: 67px;
+    top: 15%;
+    bottom: 83%;
+    left: 0;
+    background-color: $cornflower;
+    z-index: -1;
+    width: 20%;
+    @include transform(0deg, -8deg);
+  }
+
+  .contact-us {
+    background-color: $midnight;
+    clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.pt-200 {
+  padding-top: 250px;
+  padding-bottom: 50px;
+}
+.recognized {
+  background-color: $selago;
+  padding: 60px 0;
+  .recognized-h2 {
+    @include fonts($midnight, rem(38), $base-font, $regular);
+    padding: 0 rem(20);
+  }
+  .recognized-list {
+    padding-bottom: rem(30);
+    .clutch {
+      width: 150px;
+      text-align: center;
     }
   }
 }

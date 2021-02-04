@@ -1,0 +1,38 @@
+footer {
+  .upper {
+    padding: rem(50) rem(0);
+    .location {
+      padding: 10px 0;
+      .light-text {
+        @include fonts($grey, rem(14), $base-font, $light);
+      }
+      .address {
+        @include fonts($grey, rem(14), $base-font, $regular);
+      }
+      .mail-link {
+        @include fonts($royalBlue, rem(14), $base-font, $regular);
+        text-decoration: underline;
+      }
+    }
+    .footerList {
+      .list-group-item {
+        border: none;
+        border-radius: 0;
+        padding: rem(1) rem(0);
+        cursor: pointer;
+        @include fonts($storm-gray, rem(14), $base-font, $light);
+      }
+    }
+  }
+  .social {
+    border-top: $footer-border;
+    padding: rem(30) rem(0);
+    .socialLink__list {
+      margin: 0 rem(10);
+      cursor: pointer;
+    }
+    .small-text {
+      @include fonts($grey, rem(14), $base-font, $regular);
+    }
+  }
+}
