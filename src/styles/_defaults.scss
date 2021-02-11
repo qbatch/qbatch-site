@@ -31,12 +31,16 @@ h5 {
 h6 {
   @include fonts($midnight, rem(20), $base-font, $bold);
 }
+img {
+  max-width: 100%;
+}
 p {
   @include fonts($storm-gray, rem(18), $base-font, $light);
   text-align: left;
   letter-spacing: rem(1);
   margin-bottom: rem(30);
 }
+
 .py-75 {
   padding: 75px 0;
 }

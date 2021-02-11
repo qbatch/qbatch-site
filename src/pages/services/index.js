@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Container, Image, Button } from "react-bootstrap"
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
 import shapeUpper from "../../images/services/shapeUpper.png"
 import shapeLower from "../../images/services/shapeLower.png"
-import { Container, Image, Button } from "react-bootstrap"
 import EnterpriseBusiness from "../../images/ServicesImages/EnterpriseBusiness.png"
 import CrossPlatform from "../../images/ServicesImages/CrossPlatform.png"
 import WebDevelopment from "../../images/ServicesImages/WebDevelopment.png"
@@ -55,11 +55,13 @@ function Index() {
                     <li className="list__item">Workflow Management</li>
                     <li className="list__item">Reporting and Analysis</li>
                   </ul>
-                  <div className="btn-batch">
-                    <Button variant="primary" className="endeavour-button">
-                      See More details
-                    </Button>
-                  </div>
+                  <Link to="/services/mobileApp">
+                    <div className="btn-batch">
+                      <Button variant="primary" className="endeavour-button">
+                        See More details
+                      </Button>
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-6">
@@ -96,11 +98,13 @@ function Index() {
                     </li>
                     <li className="list__item">User Oriented Design</li>
                   </ul>
-                  <div className="btn-batch">
-                    <Button variant="primary" className="endeavour-button">
-                      See More details
-                    </Button>
-                  </div>
+                  <Link to="/services/mobileApp">
+                    <div className="btn-batch">
+                      <Button variant="primary" className="endeavour-button">
+                        See More details
+                      </Button>
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-6 ">
