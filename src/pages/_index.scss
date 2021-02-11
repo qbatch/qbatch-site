@@ -205,14 +205,14 @@
 .testimonial {
   .bg-cornflower {
     position: absolute;
-    height: 67px;
-    top: 15%;
-    bottom: 83%;
+    height: 50px;
+    top: 17%;
+    bottom: 84%;
     left: 0;
     background-color: $cornflower;
     z-index: -1;
     width: 20%;
-    @include transform(0deg, -8deg);
+    @include transform(0deg, -7deg);
   }
 
   .contact-us {
@@ -221,7 +221,7 @@
   }
 }
 .pt-200 {
-  padding-top: 250px;
+  padding-top: 319px;
   padding-bottom: 50px;
 }
 .recognized {
@@ -232,7 +232,7 @@
     padding: 0 rem(20);
   }
   .recognized-list {
-    padding-bottom: rem(30);
+    padding-bottom: rem(40);
     .clutch {
       width: 150px;
       text-align: center;

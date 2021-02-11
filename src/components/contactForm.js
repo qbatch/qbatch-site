@@ -1,7 +1,8 @@
 import React from "react"
 import { Form, Button, Image } from "react-bootstrap"
 import Avatar from "../images/waqasServer.png"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 const ContactForm = () => {
   return (
     <div className="testimonial-form">
@@ -10,7 +11,7 @@ const ContactForm = () => {
           <h5 className="contact-h5">Contact Us</h5>
           <hr className="b-border"></hr>
         </div>
-        <h2 className="text-light mt-3 mb-10">Ready to get Started?</h2>
+        <h4 className="text-light mt-3 mb-10">Ready to get Started?</h4>
       </div>
       <div className="row">
         <div className="col-md-8">
@@ -19,8 +20,12 @@ const ContactForm = () => {
               <div className="col-md-12">
                 <Form.Group
                   controlId="exampleForm.ControlSelect1"
-                  className="contactUs-dropdown"
+                  className="contactUs-dropdown position-relative"
                 >
+                  <FontAwesomeIcon
+                    icon={faChevronDown}
+                    className="position-absolute text-light"
+                  />
                   <Form.Control as="select">
                     <option>How we can help you?</option>
                   </Form.Control>
@@ -38,7 +43,7 @@ const ContactForm = () => {
               </div>
               <div className="col-md-6">
                 <Form.Group controlId="formBasicPassword">
-                  <Form.Control type="number" placeholder="Phone" />
+                  <Form.Control type="text" placeholder="Phone" />
                 </Form.Group>
               </div>
               <div className="col-md-6">
@@ -48,7 +53,12 @@ const ContactForm = () => {
               </div>
               <div className="col-md-12">
                 <Form.Group controlId="exampleForm.ControlTextarea1">
-                  <Form.Control as="textarea" rows={4} placeholder="Company" />
+                  <Form.Control
+                    as="textarea"
+                    rows={4}
+                    placeholder="Company"
+                    className="py-2"
+                  />
                 </Form.Group>
               </div>
               <div className="col-md-12">
@@ -66,12 +76,12 @@ const ContactForm = () => {
         </div>
         <div className="col-md-4">
           <div className="actions">
-            <h3 className="text-light">Quick actions</h3>
+            <h5 className="text-light">Quick actions</h5>
             <hr className="action-line"></hr>
           </div>
           <div className="d-flex mt-30">
             <div className="mr-3">
-              <Image src={Avatar} alt="Avatar" class="avatar" />
+              <Image src={Avatar} alt="Avatar" className="avatar" />
             </div>
             <div className="d-flex flex-column text-light">
               <h6 className="Name">Waqas Sarwar</h6>

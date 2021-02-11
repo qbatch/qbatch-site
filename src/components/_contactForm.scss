@@ -22,8 +22,8 @@
       background-color: transparent;
       border: $input;
       @include fonts($white, rem(16), $base-font, $regular);
-      height: rem(47);
       margin-bottom: rem(24);
+      padding: rem(23) rem(11);
       &:focus {
         box-shadow: none;
       }
@@ -34,6 +34,15 @@
     .contactUs-dropdown {
       .form-control {
         @include fonts($white, rem(16), $base-font, $regular);
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        padding: rem(7) rem(11);
+        height: rem(48);
+      }
+      .text-light {
+        right: 17px;
+        top: 16px;
       }
     }
   }

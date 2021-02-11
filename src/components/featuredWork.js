@@ -44,7 +44,7 @@ const FeaturedWork = () => {
     <div className="slider">
       <Container>
         <div className="text-center">
-          <h3 className="slider-h3">Our Featured Work</h3>
+          <h5 className="slider-h3">Our Featured Work</h5>
         </div>
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {work.map((values, i) => {
@@ -55,7 +55,7 @@ const FeaturedWork = () => {
                     <div className="pl-28">
                       <Image src={values.logo} />
                       <p>{values.paragraph}</p>
-                      <h3 className="mb-3">Areas of focus</h3>
+                      <h5 className="mb-3">Areas of focus</h5>
                       <ul className="listItem">
                         {values.list.map((lists, i) => {
                           return (

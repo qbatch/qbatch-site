@@ -38,7 +38,7 @@ const clientFeedback = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="text-center">
-              <h3 className="mb-4">What Clients Say About Us</h3>
+              <h5 className="mb-4">What Clients Say About Us</h5>
               <Carousel>
                 {clientReview.map((values, i) => {
                   return (

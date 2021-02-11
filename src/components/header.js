@@ -6,9 +6,11 @@ const Header = ({ logo }) => (
   <header className="header w-100 ">
     <Container>
       <Navbar collapseOnSelect expand="lg">
-        <Navbar.Brand href="#home" className="py-0">
-          <Image src={logo} alt="no logo" />
-        </Navbar.Brand>
+        <Link to="/">
+          <Navbar.Brand href="#home" className="py-0">
+            <Image src={logo} alt="no logo" />
+          </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="collapse-navbar-nav" />
         <Navbar.Collapse id="collapse-navbar-nav">
           <Nav className="ml-auto navbar">

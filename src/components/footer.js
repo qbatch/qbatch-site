@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Image, ListGroup, ListGroupItem } from "react-bootstrap"
+import { Container, Image, ListGroup } from "react-bootstrap"
 import award from "../images/footer/award.png"
 import facebook from "../images/socialIcons/facebook.svg"
 import twitter from "../images/socialIcons/twitter.svg"
@@ -37,7 +37,7 @@ const footer = ({ logo }) => {
               </div>
               <div className="d-flex flex-column location">
                 <small className="light-text">Contact</small>
-                <a href="#" className="mail-link">
+                <a href="https://www.qbatch.com/" className="mail-link">
                   hello@qbatch.com
                 </a>
               </div>
@@ -48,28 +48,28 @@ const footer = ({ logo }) => {
               <div className="d-flex flex-column location">
                 <small className="light-text">Faisalabad</small>
                 <span className="address">
-                  1st floor, Sitara Tower, Bilal Rd, Civil Lines
+                  Mezzanine floor, Sitara Tower, Bilal Rd, Civil Lines
                 </span>
               </div>
             </div>
             <div className="col-md-3">
-              <h3>Menu</h3>
+              <h5>Menu</h5>
               <ListGroup className="footerList">
                 {menu.map((value, i) => {
-                  return <ListGroup.Item>{value}</ListGroup.Item>
+                  return <ListGroup.Item key={i}>{value}</ListGroup.Item>
                 })}
               </ListGroup>
             </div>
             <div className="col-md-3">
-              <h3>Services</h3>
+              <h5>Services</h5>
               <ListGroup className="footerList">
                 {services.map((values, i) => {
-                  return <ListGroup.Item>{values}</ListGroup.Item>
+                  return <ListGroup.Item key={i}>{values}</ListGroup.Item>
                 })}
               </ListGroup>
             </div>
             <div className="col-md-3">
-              <h3>Award</h3>
+              <h5>Award</h5>
               <Image src={award} alt="no-image" />
             </div>
           </div>

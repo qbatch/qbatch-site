@@ -1,9 +1,7 @@
 import React, { useRef } from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
-import Footer from "../components/footer"
 import { Container, Image, Button } from "react-bootstrap"
 import ClientFeedback from "../components/clientFeedback"
 import FeaturedWork from "../components/featuredWork"
@@ -17,6 +15,7 @@ import {
   faBriefcase,
   faChartPie,
 } from "@fortawesome/free-solid-svg-icons"
+import CountUp from "react-countup"
 import { scroller } from "react-scroll"
 import discover from "../images/research/discover.svg"
 import design from "../images/research/website-design.svg"
@@ -56,7 +55,7 @@ const IndexPage = () => {
     },
     {
       icon: faDesktop,
-      title: "web  Development",
+      title: "Web  Development",
       paragraph:
         "we develop tailor-made Respons- -ive Web Apps to assimilate the user-base providing accessibilities.",
       to: "/webDevelopment",
@@ -136,29 +135,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/* <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
-      {/* <section className="background">
-      <div className="outer-left">
-        <div className="container">
-          Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-          laying out print, graphic or web designs. The passage is attributed to
-          an unknown typesetter in the 15th century who is thought to have
-          scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a
-          type specimen book. Lorem ipsum, or lipsum as it is sometimes known,
-          is dummy text used in laying out print, graphic or web designs. The
-          passage is attributed to an unknown typesetter in the 15th century who
-          is thought to have scrambled parts of Cicero's De Finibus Bonorum et
-          Malorum for use in a type specimen book.
-        </div>
-      </div>
-    </section> */}
       <div className="layout">
         <div className="skewed-bg">
           <div className="content">
@@ -198,9 +174,9 @@ const IndexPage = () => {
             <div className="row m-0">
               <div className="col-md-6">
                 <h6 className="hwr">Who We Are </h6>
-                <h3 className="hwr-types">
+                <h4 className="hwr-types">
                   Strategists, Devbots, Visualizers & Executors
-                </h3>
+                </h4>
               </div>
               <div className="col-md-6">
                 <p className="pb-3">
@@ -216,23 +192,30 @@ const IndexPage = () => {
                 <div className="d-flex justify-content-between">
                   <div className="d-flex flex-column">
                     <h1>2015</h1>
-                    <h3 className="h-title">Established</h3>
+                    <h6 className="h-title">Established</h6>
                   </div>
                   <div className="d-flex flex-column">
-                    <h1>300+</h1>
-                    <h2 className="h-title">Clients</h2>
+                    <h1>
+                      <CountUp start={0} end={300} duration={5} />+
+                    </h1>
+                    <h6 className="h-title">Clients</h6>
                   </div>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="d-flex justify-content-around">
                   <div className="d-flex flex-column">
-                    <h1>500</h1>
-                    <h2 className="h-title">Projects</h2>
+                    <h1>
+                      {" "}
+                      <CountUp start={0} end={500} duration={5} />
+                    </h1>
+                    <h6 className="h-title">Projects</h6>
                   </div>
                   <div className="d-flex flex-column">
-                    <h1>100</h1>
-                    <h2 className="h-title">Teams</h2>
+                    <h1>
+                      <CountUp start={0} end={100} duration={5} />
+                    </h1>
+                    <h6 className="h-title">Teams</h6>
                   </div>
                 </div>
               </div>
@@ -258,9 +241,11 @@ const IndexPage = () => {
                     </p>
                   </div>
                   <div className="btn-batch mb-3">
-                    <Button variant="primary" className="endeavour-button">
-                      See all services
-                    </Button>
+                    <Link to="/services">
+                      <Button variant="primary" className="endeavour-button">
+                        See all services
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -268,7 +253,7 @@ const IndexPage = () => {
                 <div className="row m-o">
                   {services.map((values, i) => {
                     return (
-                      <div className="col-md-4">
+                      <div className="col-md-4" key={i}>
                         <div className="services-list" to={values.to}>
                           <div className="linkIcon rounded-circle">
                             <FontAwesomeIcon icon={values.icon} />
@@ -293,13 +278,13 @@ const IndexPage = () => {
       <section>
         <Container>
           <div className="driven-process">
-            <h3 className="text-center">Our Research driven Process</h3>
+            <h5 className="text-center">Our Research driven Process</h5>
             <div className="d-flex">
               <div className="pt-30 d-flex justify-content-center align-items-center flex-column">
                 <div className="img-bg">
                   <Image src={discover} alt="no-image" />
                 </div>
-                <h4 className="mb-3">Discover</h4>
+                <h6 className="mb-3">Discover</h6>
                 <p className="research-p">
                   We facilitate in translation of thoughts and ideal experiences
                 </p>
@@ -311,7 +296,7 @@ const IndexPage = () => {
                 <div className="img-bg">
                   <Image src={design} alt="no-image" />
                 </div>
-                <h4 className="mb-3">Design</h4>
+                <h6 className="mb-3">Design</h6>
                 <p className="research-p">
                   Design and validate the early ideas through Iteractive
                   Prototype Design
@@ -325,7 +310,7 @@ const IndexPage = () => {
                   <Image src={data} alt="no-image" />
                 </div>
 
-                <h4 className="mb-3">Develop</h4>
+                <h6 className="mb-3">Develop</h6>
                 <p className="research-p">
                   Develop using the modern technologies for performance and
                   scalability
@@ -339,7 +324,7 @@ const IndexPage = () => {
                   <Image src={outline} alt="no-image" />
                 </div>
 
-                <h4 className="mb-3">Deploy</h4>
+                <h6 className="mb-3">Deploy</h6>
                 <p className="research-p">
                   Deploy products for efficacy with better security for on
                   security & operations
@@ -401,9 +386,9 @@ const IndexPage = () => {
                         alt="no-image"
                         className="exp-img"
                       />
-                      <h5 className="text-light border-h5 pl-2">
+                      <h6 className="text-light border-h5 pl-2">
                         {values.title}
-                      </h5>
+                      </h6>
                       <p className="text-light exp-p">{values.paragraph}</p>
                     </div>
                   )
@@ -431,9 +416,9 @@ const IndexPage = () => {
         <Container>
           <div className="row m-0">
             <div className="col-md-6">
-              <h2 className="recognized-h2">
+              <h6 className="recognized-h2">
                 We Are Proud To Be Recognized At
-              </h2>
+              </h6>
             </div>
             <div className="col-md-6">
               <div className="d-flex flex-column">

@@ -28,5 +28,10 @@
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     display: none;
+    z-index: -1;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    display: none;
   }
 }

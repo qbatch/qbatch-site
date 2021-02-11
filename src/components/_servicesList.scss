@@ -1,0 +1,32 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+.icon-bg {
+  width: 88px;
+  height: 88px;
+  border-radius: 50px;
+  background-color: $selago;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+.lower-text {
+  @include fonts($midnight, rem(16), $base-font, $bold);
+  margin-bottom: rem(20);
+}
+.listPara {
+  @include fonts($storm-gray, rem(14), $base-font, $light);
+  margin-top: rem(10);
+  &.mx-300 {
+    max-width: 350px;
+    margin: 10px auto;
+  }
+}
+.bg-icon {
+  @extend .icon-bg;
+  background-color: $cornflower;
+}
+.mx-600 {
+  max-width: 600px;
+  margin: 30px auto;
+}

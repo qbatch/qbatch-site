@@ -9,7 +9,11 @@ body {
 }
 @import "./header";
 @import "./footer";
+@import "../pages/services";
 @import "../styles/defaults";
+@import "../components/tooList";
+@import "../components/servicesList";
+@import "../pages/services/devops";
 @import "../components/featuredWork";
 @import "../components/contactForm";
 @import "../components/clientFeedback";
