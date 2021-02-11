@@ -1,7 +1,7 @@
 import React from "react"
 import { Container, Col, Row, Image, Button } from "react-bootstrap"
 import Android from "../images/services/Android.svg"
-import Ios from "../images/services/Ios.svg"
+import Ios from "../images/services/iOS.svg"
 const otherServices = () => {
   return (
     <div className="bg-selego py-75 text-center">
