@@ -225,14 +225,6 @@ p {
   padding: 75px 0;
 }
 
-.bg-selego {
-  background-color: #f7fafe;
-}
-
-.bg-selego img {
-  margin: 10px 45px;
-}
-
 .icon-bg, .bg-icon {
   width: 88px;
   height: 88px;
@@ -278,6 +270,14 @@ p {
 .mx-600 {
   max-width: 600px;
   margin: 30px auto;
+}
+
+.bg-selego {
+  background-color: #f7fafe;
+}
+
+.bg-selego .tools-images {
+  margin: 10px 45px;
 }
 
 .bg-selago {

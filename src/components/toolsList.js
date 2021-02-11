@@ -9,7 +9,7 @@ const ToolsList = props => {
           {props.tools.map(tool => {
             return (
               <>
-                <Image src={tool} alt="no-image" />
+                <Image className="tools-images" src={tool} alt="no-image" />
               </>
             )
           })}
