@@ -44,27 +44,27 @@ const IndexPage = () => {
       icon: faChartPie,
       title: "Enterprise Solutions",
       paragraph: "Dive deeper into the systems to boost your business.",
-      to: "/enterprise",
+      to: "/services/enterprise",
     },
     {
       icon: faMobileAlt,
       title: "Mobile Development",
       paragraph:
         "We embrace a made-to-order strategy to design and develop the Mobile Applications.",
-      to: "/mobileDevelopment",
+      to: "/services/mobileApp",
     },
     {
       icon: faDesktop,
       title: "Web  Development",
       paragraph:
         "we develop tailor-made Respons- -ive Web Apps to assimilate the user-base providing accessibilities.",
-      to: "/webDevelopment",
+      to: "/services/webDevelopment",
     },
     {
       icon: faCloud,
       title: "Cloud Engineering",
       paragraph: "Better customer experience with Cloud Engineering Services.",
-      to: "CloudEngineering",
+      to: "/services/devops",
     },
     {
       icon: faPencilRuler,
@@ -254,17 +254,19 @@ const IndexPage = () => {
                   {services.map((values, i) => {
                     return (
                       <div className="col-md-4" key={i}>
-                        <div className="services-list" to={values.to}>
-                          <div className="linkIcon rounded-circle">
-                            <FontAwesomeIcon icon={values.icon} />
+                        <Link to={values.to}>
+                          <div className="services-list">
+                            <div className="linkIcon rounded-circle">
+                              <FontAwesomeIcon icon={values.icon} />
+                            </div>
+                            <h6 className="sh6">{values.title}</h6>
+                            <p className="sPara">{values.paragraph}</p>
+                            <FontAwesomeIcon
+                              icon={faLongArrowAltRight}
+                              className="rightArrow"
+                            />
                           </div>
-                          <h6 className="sh6">{values.title}</h6>
-                          <p className="sPara">{values.paragraph}</p>
-                          <FontAwesomeIcon
-                            icon={faLongArrowAltRight}
-                            className="rightArrow"
-                          />
-                        </div>
+                        </Link>
                       </div>
                     )
                   })}

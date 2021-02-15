@@ -55,7 +55,7 @@ function Index() {
                     <li className="list__item">Workflow Management</li>
                     <li className="list__item">Reporting and Analysis</li>
                   </ul>
-                  <Link to="/services/mobileApp">
+                  <Link to="/services/enterprise">
                     <div className="btn-batch">
                       <Button variant="primary" className="endeavour-button">
                         See More details
@@ -121,11 +121,13 @@ function Index() {
                     <li className="list__item">Scalable Solution</li>
                     <li className="list__item">Web Apps Modernization</li>
                   </ul>
-                  <div className="btn-batch">
-                    <Button variant="primary" className="endeavour-button">
-                      See More details
-                    </Button>
-                  </div>
+                  <Link to="/services/webDevelopment">
+                    <div className="btn-batch">
+                      <Button variant="primary" className="endeavour-button">
+                        See More details
+                      </Button>
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-6">
@@ -186,11 +188,13 @@ function Index() {
                     <li className="list__item">Prototyping</li>
                     <li className="list__item">User Testing</li>
                   </ul>
-                  <div className="btn-batch">
-                    <Button variant="primary" className="endeavour-button">
-                      See More details
-                    </Button>
-                  </div>
+                  <Link to="/services/uiDesign">
+                    <div className="btn-batch">
+                      <Button variant="primary" className="endeavour-button">
+                        See More details
+                      </Button>
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="col-md-6">
@@ -228,11 +232,13 @@ function Index() {
                       Modern Technology & Industry Best Practices
                     </li>
                   </ul>
-                  <div className="btn-batch">
-                    <Button variant="primary" className="endeavour-button">
-                      See More details
-                    </Button>
-                  </div>
+                  <Link to="/services/business">
+                    <div className="btn-batch">
+                      <Button variant="primary" className="endeavour-button">
+                        See More details
+                      </Button>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>

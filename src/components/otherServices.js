@@ -20,7 +20,7 @@ const otherServices = () => {
                 <Image src={Android} alt="no-image" />
               </div>
               <h5>Android Development</h5>
-              <p className="listPara text-center mx-300">
+              <p className="listPara text-center mx-300 mb-4">
                 Create mobile native applications for Android with
                 top-of-the-league practices.
               </p>
@@ -41,7 +41,7 @@ const otherServices = () => {
                 <Image src={Ios} alt="no-image" />
               </div>
               <h5>iOS Development</h5>
-              <p className="listPara text-center mx-300">
+              <p className="listPara text-center mx-300 mb-4">
                 Build mobile native applications using state-of-the-art
                 technology standards for iOS.
               </p>
@@ -49,7 +49,7 @@ const otherServices = () => {
                 <Button
                   variant="primary"
                   type="submit"
-                  className="endeavour-button"
+                  className="outline-button "
                 >
                   Learn more
                 </Button>

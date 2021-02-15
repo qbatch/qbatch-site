@@ -1,51 +1,52 @@
 import React from "react"
-import { Link } from "gatsby"
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
 import { Container, Image, Row, Col, Button } from "react-bootstrap"
-import ToolsList from "../../components/toolsList"
-import FeaturedWork from "../../components/featuredWork"
-import ContactForm from "../../components/contactForm"
-import ClientFeedback from "../../components/clientFeedback"
+import ServicesList from "../../components/servicesList"
 import OtherServices from "../../components/otherServices"
+import ContactForm from "../../components/contactForm"
+import FeaturedWork from "../../components/featuredWork"
+import ClientFeedback from "../../components/clientFeedback"
+import ToolsList from "../../components/toolsList"
 import shapeUpper from "../../images/services/shapeUpper.png"
 import shapeLower from "../../images/services/shapeLower.png"
-import mobile from "../../images/services/mobile.png"
-import ServicesList from "../../components/servicesList"
-import Android from "../../images/services/Android.svg"
-import Ios from "../../images/services/iOS.svg"
-import Cross from "../../images/services/cross.svg"
-import Native from "../../images/services/native.svg"
-import Flutter from "../../images/services/flutter.svg"
-import Kotlin from "../../images/services/kotlin.svg"
-import Swift from "../../images/services/swift.svg"
-import FireBase from "../../images/services/firebase.svg"
+import webDevelop from "../../images/services/webDevelop.png"
+import Transform from "../../images/services/transform.svg"
+import Innovate from "../../images/services/innovate.svg"
+import Favourite from "../../images/services/favourite.svg"
+import Rails from "../../images/services/rails.svg"
+import Node from "../../images/services/node.svg"
+import Vue from "../../images/services/vue.svg"
+import MongoDb from "../../images/services/mongodb.svg"
+import MySql from "../../images/services/mysql.svg"
+import PostSql from "../../images/services/postsql.svg"
+import Neo4j from "../../images/services/neo4j.svg"
 import DevopsImg from "../../images/services/devops.png"
-const mobileApp = () => {
+const WebDevelopment = () => {
   const list = [
     {
-      icon: Android,
-      title: "Android",
+      icon: Transform,
+      title: "Transform Idea to product",
       para:
-        "Developing fast, high ROI and robust apps written in Java or Kotlin. For large number of users",
+        "We ideate discoveries and craft it well for your customers to create a delighted experience",
     },
     {
-      icon: Ios,
-      title: "Ios",
+      icon: Innovate,
+      title: "Innovate",
       para:
-        "Developing secure, high performance and enhanced customer experience apps using Swift or Objective-C",
+        "We empower the ideations with the modern technology to fuel-up the usability and fulfill user need",
     },
     {
-      icon: Cross,
-      title: "Cross-platform",
+      icon: Favourite,
+      title: "Product your users will love",
       para:
-        "Create apps that great reach, low development costs and uniform feel, using React Native",
+        "Creating enriched user experience apps that not only look good but also work good.",
     },
   ]
-  const tools = [Native, Flutter, Kotlin, Swift, FireBase]
+  const tools = [Rails, Node, Vue, MongoDb, MySql, PostSql, Neo4j]
   return (
     <Layout>
-      <SEO title="mobileApp" />
+      <SEO title="webDevelopment" />
       <div className="bg-selago">
         <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
         <Image src={shapeLower} className="shapeLower" alt="no-image" />
@@ -54,8 +55,10 @@ const mobileApp = () => {
             <div className="col-md-7">
               <div className="pt-174">
                 <h2 className="mb-4">
-                  <span className="endeavour mr-2">Mobile App Development</span>
-                  Create top-notch applications
+                  Crafting digital future through
+                  <span className="endeavour ml-2">
+                    web development solutions
+                  </span>
                 </h2>
                 <p>
                   Our veteran technologists enable the unified transition to the
@@ -66,7 +69,7 @@ const mobileApp = () => {
             </div>
             <div className="col-md-5">
               <div className="pt-150 text-right">
-                <Image src={mobile} alt="no-image" className="mw-100" />
+                <Image src={webDevelop} alt="no-image" />
               </div>
             </div>
           </div>
@@ -77,28 +80,28 @@ const mobileApp = () => {
           <Row className="m-0 justify-content-md-center">
             <Col md={6}>
               <h3>
-                Grow your business with the{" "}
-                <span className="endeavour ml-0"> right mobile solutions</span>
+                Grow your business with the
+                <span className="endeavour">
+                  custom web development services
+                </span>
               </h3>
             </Col>
             <Col md={6}>
               <p>
-                We embrace a made-to-order strategy to design and develop the
-                Mobile and Web Applications using Native and Cross platform
-                Frameworks for Android and iOS with a premium attention about
-                the scalability and optimization of the solutions. Our support
-                teams continuously observe the need of the hour and does a
-                strong policing on the functionality and update/upgrade features
-                to ensure seamless customer experience.
+                We improve accessibility of business functions for users and
+                broaden horizons for the respective existing and potential
+                customers, we develop tailor-made Responsive Web Apps to
+                assimilate the user-base providing wide-range accessibilities to
+                create robust systems for a sticky user engagement.
               </p>
             </Col>
 
             <div className="text-center p-100">
-              <h4 className="mb-3">
-                Crafting an attentive user-experience that results retention and
-                minimizes churn
+              <h4>Achieve your goals by applying the right web</h4>
+              <h4>
+                <span className="endeavour">development services</span>
               </h4>
-              <p>
+              <p className="text-center">
                 A perfect mechanism of a well-crafted system architecture and
                 code quality is what you can expect from top mobile products.
                 Use the best practices and most adequate technologies to speed
@@ -113,22 +116,18 @@ const mobileApp = () => {
             <Row className="m-0">
               <Col md={6}>
                 <h3>
-                  Build intuitive, easy-to-use applications{" "}
+                  Take advantage of proven processes and{" "}
                   <span className="endeavour">
                     {" "}
-                    that attract and retain user attention
+                    make your project a success{" "}
                   </span>
                 </h3>
               </Col>
               <Col md={6}>
                 <p>
-                  Mobile development is an ongoing process of a constant,
-                  iterative effort to make your product better and better.
-                  Devices and technologies through which users interact with
-                  your product will change so as your users, their needs and
-                  behaviour. Make sure you have the right tools, and
-                  battle-tested methodologies to face these challenges. And
-                  never stop the process.
+                  A good technology partner is able to take care of even the
+                  most complex of processes and will guide you flawlessly
+                  towards your goal.
                 </p>
               </Col>
             </Row>
@@ -137,7 +136,13 @@ const mobileApp = () => {
           <ul className="list-unstyled  process__container">
             <li className="process__step">
               <div className="process__circles"></div>
-              <h5>Scope</h5>
+              <h5>Consult Idea</h5>
+            </li>
+            <hr></hr>
+            <li className="process__step">
+              {" "}
+              <div className="process__circles"></div>
+              <h5>Choose Technology</h5>
             </li>
             <hr></hr>
             <li className="process__step">
@@ -150,12 +155,6 @@ const mobileApp = () => {
               {" "}
               <div className="process__circles"></div>
               <h5>Development</h5>
-            </li>
-            <hr></hr>
-            <li className="process__step">
-              {" "}
-              <div className="process__circles"></div>
-              <h5>Quality Assurance</h5>
             </li>
             <hr></hr>
             <li className="process__step">
@@ -211,14 +210,14 @@ const mobileApp = () => {
         <FeaturedWork />
         <ClientFeedback />
         <OtherServices />
-        <div className="py-75 bg-midnight">
-          <Container>
-            <ContactForm />
-          </Container>
-        </div>
+      </div>
+      <div className="py-75 bg-midnight">
+        <Container>
+          <ContactForm />
+        </Container>
       </div>
     </Layout>
   )
 }
 
-export default mobileApp
+export default WebDevelopment

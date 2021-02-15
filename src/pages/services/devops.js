@@ -8,6 +8,7 @@ import shapeUpper from "../../images/services/shapeUpper.png"
 import shapeLower from "../../images/services/shapeLower.png"
 import cloud from "../../images/services/cloud.png"
 import ServicesList from "../../components/servicesList"
+import ContactForm from "../../components/contactForm"
 import Fast from "../../images/services/fast.svg"
 import Security from "../../images/services/security.svg"
 import Thumb from "../../images/services/thumb.svg"
@@ -78,7 +79,7 @@ const Devops = props => {
           <div className="row m-0">
             <div className="col-md-6">
               <div className="pt-174">
-                <h2>
+                <h2 className="mb-4">
                   <span className="endeavour">Cloud Engineering </span>
                   Services
                 </h2>
@@ -147,6 +148,32 @@ const Devops = props => {
               </Col>
             </Row>
           </div>
+          <div className="py-75">
+            <ul className="list-unstyled  process__container">
+              <li className="process__step">
+                <div className="process__circles"></div>
+                <h5>Simplified Operation</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Instant Scalability</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Reduced Costs</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Improved Security</h5>
+              </li>
+            </ul>
+          </div>
         </Container>
         <ToolsList
           tools={tools}
@@ -192,6 +219,11 @@ const Devops = props => {
         <FeaturedWork />
         <ClientFeedback />
         <OtherServices />
+        <div className="py-75 bg-midnight">
+          <Container>
+            <ContactForm />
+          </Container>
+        </div>
       </div>
     </Layout>
   )

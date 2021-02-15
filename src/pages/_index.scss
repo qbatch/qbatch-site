@@ -166,7 +166,6 @@
   }
 }
 .experites {
-  height: 900px;
   width: 100%;
   background-color: $midnight;
   @include transform(0deg, -8deg);
@@ -174,7 +173,7 @@
   bottom: 0;
   .inner-content {
     @include transform(0deg, 8deg);
-    padding: 175px 0 0;
+    padding: 175px 0 100px;
     .exp-p {
       opacity: 0.7;
     }

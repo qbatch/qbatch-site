@@ -84,7 +84,7 @@ const ContactForm = () => {
               <Image src={Avatar} alt="Avatar" className="avatar" />
             </div>
             <div className="d-flex flex-column text-light">
-              <h6 className="Name">Waqas Sarwar</h6>
+              <strong className="text-light">Waqas Sarwar</strong>
               <small className="small-text">Customer Care</small>
             </div>
           </div>
