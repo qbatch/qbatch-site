@@ -24,9 +24,6 @@
       @include fonts($white, rem(16), $base-font, $regular);
       margin-bottom: rem(24);
       padding: rem(23) rem(11);
-      &:focus {
-        box-shadow: none;
-      }
       ::placeholder {
         text-transform: capitalize;
       }

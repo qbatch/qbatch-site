@@ -95,10 +95,10 @@ const mobileApp = () => {
 
             <div className="text-center p-100">
               <h4 className="mb-3 ">
-                Crafting an attentive user-experience that results retention and
-                minimizes churn
+                Crafting an attentive user-experience that<br></br> results
+                retention and minimizes churn
               </h4>
-              <p>
+              <p className="px-30 text-center">
                 A perfect mechanism of a well-crafted system architecture and
                 code quality is what you can expect from top mobile products.
                 Use the best practices and most adequate technologies to speed

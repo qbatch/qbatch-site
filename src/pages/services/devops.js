@@ -98,8 +98,8 @@ const Devops = props => {
           </div>
         </Container>
       </div>
-      <div className="py-75">
-        <Container>
+      <Container>
+        <div className="py-75">
           <div className="row m-0">
             <div className="col-md-6">
               <h3 className="heading">
@@ -121,6 +121,7 @@ const Devops = props => {
                 <h4>
                   Save <span className="endeavour">20%</span> on operational
                   costs and<span className="endeavour">100% </span> on capital
+                  <br></br>
                   expenditure for increased
                   <span className="endeavour"> business efficiency</span>
                 </h4>
@@ -131,99 +132,99 @@ const Devops = props => {
               </div>
             </div>
           </div>
-          <ServicesList list={list} />
-          <div className="py-75">
-            <Row className="m-0">
-              <Col md={6}>
-                <h3>
-                  The right architecture for your application can be a game
-                  changer
-                </h3>
-              </Col>
-              <Col md={6}>
-                <p>
-                  Discover the power of cloud application development and how it
-                  can help you achieve more for less:
-                </p>
-              </Col>
-            </Row>
-          </div>
-          <div className="py-75">
-            <ul className="list-unstyled  process__container">
-              <li className="process__step">
-                <div className="process__circles"></div>
-                <h5>Simplified Operation</h5>
-              </li>
-              <hr></hr>
-              <li className="process__step">
-                {" "}
-                <div className="process__circles"></div>
-                <h5>Instant Scalability</h5>
-              </li>
-              <hr></hr>
-              <li className="process__step">
-                {" "}
-                <div className="process__circles"></div>
-                <h5>Reduced Costs</h5>
-              </li>
-              <hr></hr>
-              <li className="process__step">
-                {" "}
-                <div className="process__circles"></div>
-                <h5>Improved Security</h5>
-              </li>
-            </ul>
-          </div>
-        </Container>
-        <ToolsList
-          tools={tools}
-          heading="Tools and Technologies for Cloud Engineering"
-        />
-        <Container>
-          <div className="py-75">
-            <Row>
-              <Col md={6}>
-                <div className="d-flex flex-column justify-content-between h-100">
-                  <h3>
-                    FinTech start-up<span className="endeavour"> Moonfare</span>{" "}
-                    serves
-                    <span className="endeavour"> 1,000</span> customers in their
-                    first year with
-                    <span className="endeavour"> zero costs</span> using AWS
-                  </h3>
-                  <h6>The power of AWS Lambda</h6>
-                  <p className="mb-0 ">
-                    Lambda functions were used in the project allowing to pay
-                    micropayments only for requests that have been handled –
-                    serverless lets you process the code without needing to
-                    scale up servers.
-                  </p>
-                  <p className="mb-0">
-                    The cost? The first million requests in a month are totally
-                    free of charge and once the limit has been exceeded Moonfare
-                    is only charged $0.20 for every million requests.
-                  </p>
-                  <div className="btn-batch">
-                    <Button variant="primary" className="endeavour-button">
-                      read case study
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md={6}>
-                <Image src={DevopsImg} alt="no-image" />
-              </Col>
-            </Row>
-          </div>
-        </Container>
-        <FeaturedWork />
-        <ClientFeedback />
-        <OtherServices />
-        <div className="py-75 bg-midnight">
-          <Container>
-            <ContactForm />
-          </Container>
         </div>
+        <ServicesList list={list} />
+        <div className="py-75">
+          <Row className="m-0">
+            <Col md={6}>
+              <h3>
+                The right architecture for your application can be a game
+                changer
+              </h3>
+            </Col>
+            <Col md={6}>
+              <p>
+                Discover the power of cloud application development and how it
+                can help you achieve more for less:
+              </p>
+            </Col>
+          </Row>
+        </div>
+        <div className="py-75">
+          <ul className="list-unstyled  process__container">
+            <li className="process__step">
+              <div className="process__circles"></div>
+              <h5>Simplified Operation</h5>
+            </li>
+            <hr></hr>
+            <li className="process__step">
+              {" "}
+              <div className="process__circles"></div>
+              <h5>Instant Scalability</h5>
+            </li>
+            <hr></hr>
+            <li className="process__step">
+              {" "}
+              <div className="process__circles"></div>
+              <h5>Reduced Costs</h5>
+            </li>
+            <hr></hr>
+            <li className="process__step">
+              {" "}
+              <div className="process__circles"></div>
+              <h5>Improved Security</h5>
+            </li>
+          </ul>
+        </div>
+      </Container>
+      <ToolsList
+        tools={tools}
+        heading="Tools and Technologies for Cloud Engineering"
+      />
+      <Container>
+        <div className="py-75">
+          <Row>
+            <Col md={6}>
+              <div className="d-flex flex-column justify-content-between h-100">
+                <h3>
+                  FinTech start-up<span className="endeavour"> Moonfare</span>{" "}
+                  serves
+                  <span className="endeavour"> 1,000</span> customers in their
+                  first year with
+                  <span className="endeavour"> zero costs</span> using AWS
+                </h3>
+                <h6>The power of AWS Lambda</h6>
+                <p className="mb-0 ">
+                  Lambda functions were used in the project allowing to pay
+                  micropayments only for requests that have been handled –
+                  serverless lets you process the code without needing to scale
+                  up servers.
+                </p>
+                <p className="mb-0">
+                  The cost? The first million requests in a month are totally
+                  free of charge and once the limit has been exceeded Moonfare
+                  is only charged $0.20 for every million requests.
+                </p>
+                <div className="btn-batch">
+                  <Button variant="primary" className="endeavour-button">
+                    read case study
+                  </Button>
+                </div>
+              </div>
+            </Col>
+            <Col md={6}>
+              <Image src={DevopsImg} alt="no-image" />
+            </Col>
+          </Row>
+        </div>
+      </Container>
+      <FeaturedWork />
+      <ClientFeedback />
+      <OtherServices />
+      <div className="py-75 bg-midnight">
+        <Container>
+          <ContactForm />
+        </Container>
       </div>
     </Layout>
   )

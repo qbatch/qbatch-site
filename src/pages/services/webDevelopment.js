@@ -101,7 +101,7 @@ const WebDevelopment = () => {
               <h4>
                 <span className="endeavour">development services</span>
               </h4>
-              <p className="text-center">
+              <p className="text-center px-30">
                 A perfect mechanism of a well-crafted system architecture and
                 code quality is what you can expect from top mobile products.
                 Use the best practices and most adequate technologies to speed
