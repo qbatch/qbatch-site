@@ -34,7 +34,7 @@ import group2 from "../images/about/team/group2.png"
 import group3 from "../images/about/team/group3.png"
 import Lahore from "../images/about/team/lahore.png"
 import Fsd from "../images/about/team/Faisalabad.png"
-import mapBg from "../images/about/mapBg.png"
+import mapBg from "../images/about/mapbg.png"
 import Dotted from "../images/about/dotted.png"
 const About = () => {
   const expertise = [
