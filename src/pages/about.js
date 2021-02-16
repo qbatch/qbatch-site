@@ -29,9 +29,9 @@ import cto from "../images/about/team/cto.png"
 import hamza from "../images/about/team/hamza.png"
 import waqas from "../images/about/team/waqas.png"
 import Tour from "../images/about/team/tour.png"
-import group1 from "../images/about/team/group1.png"
-import group2 from "../images/about/team/group2.png"
-import group3 from "../images/about/team/group3.png"
+import firstGroup from "../images/about/team/firstGroup.png"
+import scndGroup from "../images/about/team/scndGroup.png"
+import thirdGroup from "../images/about/team/thirdGroup.png"
 import Lahore from "../images/about/team/lahore.png"
 import Fsd from "../images/about/team/Faisalabad.png"
 import mapBg from "../images/about/mapbg.png"
@@ -431,9 +431,9 @@ const About = () => {
           <Image src={Tour} alt="no-image" />
         </div>
         <div className="d-flex flex-column">
-          <Image src={group1} className="w-420" alt="no-image" />
-          <Image src={group2} className="w-420" alt="no-image" />
-          <Image src={group3} className="w-420" alt="no-image" />
+          <Image src={firstGroup} className="w-420" alt="no-image" />
+          <Image src={scndGroup} className="w-420" alt="no-image" />
+          <Image src={thirdGroup} className="w-420" alt="no-image" />
         </div>
       </div>
       <div className="py-50 text-center">
