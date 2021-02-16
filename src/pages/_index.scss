@@ -226,15 +226,15 @@
 .recognized {
   background-color: $selago;
   padding: 60px 0;
-  .recognized-h2 {
-    @include fonts($midnight, rem(38), $base-font, $regular);
-    padding: 0 rem(20);
-  }
-  .recognized-list {
-    padding-bottom: rem(40);
-    .clutch {
-      width: 150px;
-      text-align: center;
-    }
+}
+.recognized-h2 {
+  @include fonts($midnight, rem(38), $base-font, $regular);
+  padding: 0 rem(20);
+}
+.recognized-list {
+  padding-bottom: rem(40);
+  .clutch {
+    width: 150px;
+    text-align: center;
   }
 }

@@ -8,7 +8,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -120,40 +119,6 @@ footer .social .small-text {
   font-weight: 400;
 }
 
-.pt-100 {
-  padding: 100px 0;
-}
-
-.pt-100 .pt-50 {
-  padding-top: 70px;
-}
-
-.pt-100 .pt-50.pl-70 {
-  padding-left: 50px;
-}
-
-.pt-100 .pt-50 .list {
-  list-style-image: url("../images/research/tickIcon.svg");
-  padding-left: 1.375rem;
-  margin-bottom: 1.375rem;
-}
-
-.pt-100 .pt-50 .list__item {
-  color: #6d7384;
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.0625rem;
-}
-
-.bg-midnight {
-  background-color: #012140;
-}
-
-.bg-midnight.p-30 {
-  padding: 50px 0;
-}
-
 h1 {
   color: #012140;
   font-size: 2.625rem;
@@ -229,11 +194,213 @@ p {
   padding: 75px 0;
 }
 
+.our-story {
+  position: relative;
+  padding: 2.5rem 0rem;
+}
+
+.our-story .shapeUpper {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  bottom: 70%;
+}
+
+.our-story .shapeLower {
+  position: absolute;
+  bottom: 26%;
+  top: 74%;
+}
+
+.px-50 {
+  padding: 50px;
+}
+
+.px-50 .aboutImg {
+  padding: 15px 0;
+}
+
+.border-left-bottom {
+  border-left: 0.5px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.border-left-bottom .text-center {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.border-right-bottom {
+  border-bottom: 1px solid #cccccc;
+}
+
+.border-right-bottom .text-center {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.b-left {
+  border-left: 1px solid #ccc;
+}
+
+.bg-roseWhite {
+  background-color: #fffdfd;
+  border: 0.5px solid #709dee;
+  border-radius: 0.25rem;
+  margin-bottom: 0.625rem;
+  padding: 1.25rem;
+  min-height: 13.4375rem;
+}
+
+.bg-roseWhite .exp-img {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.bg-roseWhite .title-b {
+  border-left: 1px solid #8ebdea;
+}
+
+.bg-roseWhite .exp-p {
+  margin-bottom: 0.625rem;
+}
+
+.mb-50 {
+  margin-bottom: 3.125rem;
+}
+
+.bg-polar {
+  background-color: #f9fcfe;
+}
+
+.bg-polar .mapBg {
+  position: absolute;
+  right: 0;
+  top: 16%;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 3px 10px #8ebdea61;
+          box-shadow: 0px 3px 10px #8ebdea61;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.9375rem 0rem;
+  min-height: 9.375rem;
+  margin-bottom: 1.25rem;
+}
+
+.box-shadow .bg-selego {
+  background-color: #f7fafe;
+  text-align: center;
+  width: 40%;
+}
+
+.box-shadow .profile {
+  text-align: left;
+  width: 60%;
+  padding: 0 1.25rem;
+}
+
+.box-shadow .profile .list {
+  color: #6d7384;
+  font-size: 0.75rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.box-shadow .profile .seeProfile {
+  color: #0054a6;
+  font-size: 0.75rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.text-left {
+  padding: 1.5625rem 0rem;
+}
+
+.text-left .name {
+  color: #012140;
+  font-size: 1.375rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.text-left .position {
+  color: #6d7384;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.employees .teamsP {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 1.875rem;
+}
+
+.feedback .midnight-h4 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  padding: 4.375rem 0rem;
+}
+
+.feedback .left-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feedback .left-image .dottedImg {
+  position: absolute;
+  right: 0;
+  top: 5%;
+}
+
+.feedback .w-420 {
+  width: 420px;
+  margin: 1.25rem 0rem;
+}
+
+.py-50 {
+  padding: 50px 0;
+}
+
+.offices .address {
+  background-color: #f9fcfe;
+  text-align: left;
+  padding: 2.1875rem 3.75rem;
+  margin-top: 1.875rem;
+}
+
 .icon-bg, .bg-icon {
   width: 88px;
   height: 88px;
   border-radius: 50px;
-  background-color: #f7fafe;
+  background-color: #ecf5fc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,10 +434,6 @@ p {
   margin: 10px auto;
 }
 
-.bg-icon {
-  background-color: #8ebdea;
-}
-
 .mx-600 {
   max-width: 600px;
   margin: 30px auto;
@@ -281,7 +444,7 @@ p {
 }
 
 .bg-selego .tools-images {
-  margin: 10px 45px;
+  margin: 15px 45px;
 }
 
 .bg-selago {
@@ -402,6 +565,40 @@ p {
 
 .py-30 {
   padding: 40px 0;
+}
+
+.pt-100 {
+  padding: 100px 0;
+}
+
+.pt-100 .pt-50 {
+  padding-top: 70px;
+}
+
+.pt-100 .pt-50.pl-70 {
+  padding-left: 50px;
+}
+
+.pt-100 .pt-50 .list {
+  list-style-image: url("../images/research/tickIcon.svg");
+  padding-left: 1.375rem;
+  margin-bottom: 1.375rem;
+}
+
+.pt-100 .pt-50 .list__item {
+  color: #6d7384;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.0625rem;
+}
+
+.bg-midnight {
+  background-color: #012140;
+}
+
+.bg-midnight.p-30 {
+  padding: 50px 0;
 }
 
 @media (max-width: 1200px) {
@@ -940,7 +1137,7 @@ p {
   padding: 60px 0;
 }
 
-.recognized .recognized-h2 {
+.recognized-h2 {
   color: #012140;
   font-size: 2.375rem;
   font-family: "Lato", sans-serif;
@@ -948,11 +1145,11 @@ p {
   padding: 0 1.25rem;
 }
 
-.recognized .recognized-list {
+.recognized-list {
   padding-bottom: 2.5rem;
 }
 
-.recognized .recognized-list .clutch {
+.recognized-list .clutch {
   width: 150px;
   text-align: center;
 }

@@ -20,7 +20,7 @@ import Flutter from "../../images/services/flutter.svg"
 import Kotlin from "../../images/services/kotlin.svg"
 import Swift from "../../images/services/swift.svg"
 import FireBase from "../../images/services/firebase.svg"
-import DevopsImg from "../../images/services/devops.png"
+import BwdMobile from "../../images/services/BwdMobile.png"
 const mobileApp = () => {
   const list = [
     {
@@ -94,7 +94,7 @@ const mobileApp = () => {
             </Col>
 
             <div className="text-center p-100">
-              <h4 className="mb-3">
+              <h4 className="mb-3 ">
                 Crafting an attentive user-experience that results retention and
                 minimizes churn
               </h4>
@@ -203,7 +203,7 @@ const mobileApp = () => {
                 </div>
               </Col>
               <Col md={6}>
-                <Image src={DevopsImg} alt="no-image" />
+                <Image src={BwdMobile} alt="no-image" />
               </Col>
             </Row>
           </div>
