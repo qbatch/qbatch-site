@@ -9,6 +9,9 @@ import FeaturedWork from "../../components/featuredWork"
 import ClientFeedback from "../../components/clientFeedback"
 import shapeUpper from "../../images/services/shapeUpper.png"
 import Product from "../../images/services/business.svg"
+import upgrade from "../../images/services/upgrade.svg"
+import processor from "../../images/services/processor.svg"
+import cloud from "../../images/services/cloud.svg"
 import shapeLower from "../../images/services/shapeLower.png"
 import productImg from "../../images/services/productDesign.png"
 import Bwd from "../../images/services/bwd.png"
@@ -21,22 +24,22 @@ const Enterprise = () => {
         "Business advisory for various solutions like, new business models, risk, governance, data and security.)",
     },
     {
-      icon: Product,
-      title: "Business Advisory",
+      icon: upgrade,
+      title: "Upgrade & Migration",
       para:
-        "Business advisory for various solutions like, new business models, risk, governance, data and security.)",
+        "Due Diligence Assessment Framework for accessing scalability, stability and recommending solutions",
     },
     {
-      icon: Product,
-      title: "Business Advisory",
+      icon: processor,
+      title: "Operational Transformation",
       para:
-        "Business advisory for various solutions like, new business models, risk, governance, data and security.)",
+        "Transformation to agile and digital connected enterprises using AI, Automation platform and GenNext solutions",
     },
     {
-      icon: Product,
-      title: "Business Advisory",
+      icon: cloud,
+      title: "Enterprise Cloud Services",
       para:
-        "Business advisory for various solutions like, new business models, risk, governance, data and security.)",
+        "Cloud Solutions to transform existing applications, rationalize business processes and support infrastructure management become agile",
     },
   ]
   return (

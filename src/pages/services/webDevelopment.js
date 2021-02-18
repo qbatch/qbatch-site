@@ -164,53 +164,53 @@ const WebDevelopment = () => {
             </li>
           </ul>
         </Container>
-        <ToolsList
-          tools={tools}
-          heading="Tech Stacks For Effective & Up-To-Date Mobile Apps"
-        />
-        <Container>
-          <div className="py-75">
-            <Row>
-              <Col md={6}>
-                <div className="d-flex flex-column justify-content-between h-100">
-                  <h3>
-                    E-commerce platform with an
-                    <span className="endeavour"> augmented reality module</span>
-                  </h3>
-                  <h6>
-                    Italian home decor e-commerce app featured by Forbes and The
-                    New York Times
-                  </h6>
-                  <p className="mb-0 ">
-                    Artemest is a native mobile app featuring curated home
-                    décor, jewellery, and lifestyle art created by over 500 top
-                    Italian artists. Users can explore handcrafted art and shop
-                    directly from the app. The app also offers an augmented
-                    reality module to preview luxury furniture right in the
-                    home.
-                  </p>
-                  <p className="mb-0">
-                    Netguru provided a full-stack solution: a comprehensive
-                    review of the existing platform, UX design and native mobile
-                    development.
-                  </p>
-                  <div className="btn-batch">
-                    <Button variant="primary" className="endeavour-button">
-                      read case study
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md={6}>
-                <Image src={DevopsImg} alt="no-image" />
-              </Col>
-            </Row>
-          </div>
-        </Container>
-        <FeaturedWork />
-        <ClientFeedback />
-        <OtherServices />
       </div>
+      <ToolsList
+        tools={tools}
+        heading="Tech Stacks For Effective & Up-To-Date Mobile Apps"
+      />
+      <Container>
+        <div className="py-75">
+          <Row>
+            <Col md={6}>
+              <div className="d-flex flex-column justify-content-between h-100">
+                <h3>
+                  E-commerce platform with an
+                  <span className="endeavour"> augmented reality module</span>
+                </h3>
+                <h6>
+                  Italian home decor e-commerce app featured by Forbes and The
+                  New York Times
+                </h6>
+                <p className="mb-0 ">
+                  Artemest is a native mobile app featuring curated home décor,
+                  jewellery, and lifestyle art created by over 500 top Italian
+                  artists. Users can explore handcrafted art and shop directly
+                  from the app. The app also offers an augmented reality module
+                  to preview luxury furniture right in the home.
+                </p>
+                <p className="mb-0">
+                  Netguru provided a full-stack solution: a comprehensive review
+                  of the existing platform, UX design and native mobile
+                  development.
+                </p>
+                <div className="btn-batch">
+                  <Button variant="primary" className="endeavour-button">
+                    read case study
+                  </Button>
+                </div>
+              </div>
+            </Col>
+            <Col md={6}>
+              <Image src={DevopsImg} alt="no-image" />
+            </Col>
+          </Row>
+        </div>
+      </Container>
+      <FeaturedWork />
+      <ClientFeedback />
+      <OtherServices />
+
       <div className="py-75 bg-midnight">
         <Container>
           <ContactForm />

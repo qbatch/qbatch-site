@@ -1,8 +1,8 @@
 import React from "react"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import ContactForm from "../components/contactForm"
+import MarketPresence from "../components/marketPresence"
 import { Container, Image, Row, Col } from "react-bootstrap"
 import shapeLower from "../images/services/shapeLower.png"
 import shapeUpper from "../images/services/shapeUpper.png"
@@ -20,10 +20,6 @@ import strong from "../images/expertise/strong.svg"
 import execution from "../images/expertise/execution.svg"
 import communication from "../images/expertise/communication.svg"
 import Recognized from "../components/recognized"
-import upwork from "../images/about/upwork.png"
-import Behance from "../images/about/behance.png"
-import dribble from "../images/about/dribble.png"
-import github from "../images/about/github.png"
 import ceo from "../images/about/team/ceo.png"
 import cto from "../images/about/team/cto.png"
 import hamza from "../images/about/team/hamza.png"
@@ -34,7 +30,7 @@ import scndGroup from "../images/about/team/scndGroup.png"
 import thirdGroup from "../images/about/team/thirdGroup.png"
 import Lahore from "../images/about/team/lahore.png"
 import Fsd from "../images/about/team/Faisalabad.png"
-import mapBg from "../images/about/mapbg.png"
+
 import Dotted from "../images/about/dotted.png"
 const About = () => {
   const expertise = [
@@ -79,64 +75,7 @@ const About = () => {
       paragraph: "We help our clients unleash innovation through.",
     },
   ]
-  const market = [
-    {
-      title: "upWork",
-      image: upwork,
-      list: ["20,000+ hours", "150+ projects", "100+ Clients"],
-      link: "",
-    },
-    {
-      title: "Behance",
-      image: Behance,
-      list: [
-        "50,0000+ Project views",
-        "35,0000+ Appreciations",
-        "200+ Projects Listed",
-      ],
-      link: "",
-    },
-    {
-      title: "Dribble",
-      image: dribble,
-      list: [
-        "50,0000+ Project Views",
-        "35,0000+ Appreciations",
-        "200+ Projects Listed",
-      ],
-      link: "",
-    },
-    {
-      title: "Github",
-      image: github,
-      list: [
-        "50,0000+ Project Views",
-        "35,0000+ Appreciations",
-        "200+ Projects Listed",
-      ],
-      link: "",
-    },
-    {
-      title: "Behance",
-      image: Behance,
-      list: [
-        "50,0000+ Project views",
-        "35,0000+ Appreciations",
-        "200+ Projects Listed",
-      ],
-      link: "",
-    },
-    {
-      title: "Dribble",
-      image: dribble,
-      list: [
-        "50,0000+ Project Views",
-        "35,0000+ Appreciations",
-        "200+ Projects Listed",
-      ],
-      link: "",
-    },
-  ]
+
   const teams = [
     {
       image: ceo,
@@ -361,41 +300,7 @@ const About = () => {
           <Recognized />
         </Container>
       </div>
-      <div className="py-75 bg-polar position-relative">
-        <Image src={mapBg} alt="no-image" className="mapBg" />
-        <Container>
-          <h3>Our Market Presence</h3>
-          <p className="w-75">
-            To keep you well informed and updated regarding the progress of your
-            project, we employ agile based project management, with 100% online
-            cloud based tools to ensure round the clock visibility.
-          </p>
-          <Row className="m-0">
-            {market.map((values, i) => {
-              return (
-                <Col md={4}>
-                  <div className="box-shadow">
-                    <div className="bg-selego ">
-                      <span className="d-block mb-4">{values.title}</span>
-                      <Image src={values.image} alt="no-image" />
-                    </div>
-                    <div className="profile">
-                      <ul className="list-unstyled list">
-                        {values.list.map(list => {
-                          return <li>{list}</li>
-                        })}
-                      </ul>
-                      <Link to={values.profile}>
-                        <span className="seeProfile">See profile</span>
-                      </Link>
-                    </div>
-                  </div>
-                </Col>
-              )
-            })}
-          </Row>
-        </Container>
-      </div>
+      <MarketPresence />
       <div className="text-center py-75 employees ">
         <Container>
           <h1>Our Amazing Team</h1>
@@ -439,11 +344,11 @@ const About = () => {
       <div className="py-50 text-center">
         <h1>Our Offices</h1>
       </div>
-      <div className="offices py-50">
+      <div className="offices py-50 p">
         <Container>
           <Row className="m-0">
             <Col md={6}>
-              <div className="bg-selego text-center py-50">
+              <div className="bg-selego text-center py-50 pb-0">
                 <Image src={Lahore} alt="no-image" />
                 <div className="address">
                   <h3>Lahore</h3>
@@ -452,7 +357,7 @@ const About = () => {
               </div>
             </Col>
             <Col md={6}>
-              <div className="bg-selego text-center py-50">
+              <div className="bg-selego text-center py-50 pb-0">
                 <Image src={Fsd} alt="no-image" />
                 <div className="address">
                   <h3>Faisalabad</h3>

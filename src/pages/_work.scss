@@ -1,0 +1,15 @@
+.work {
+  &.pl-100 {
+    padding-left: rem(100);
+  }
+  .listItem {
+    list-style: none;
+    list-style-image: url("../images/research/tickIcon.svg");
+    padding-left: rem(22);
+    margin-bottom: rem(22);
+    $this: &;
+    &__item {
+      @include fonts($storm-gray, rem(16), $base-font, $light);
+    }
+  }
+}

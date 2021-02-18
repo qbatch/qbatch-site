@@ -1,0 +1,51 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+.dedicated {
+  $this: &;
+  &__list {
+    @include fonts($storm-gray, rem(18), $base-font, $light);
+    margin-bottom: rem(20);
+    height: rem(50);
+    &::before {
+      content: "\2022";
+      color: $danube;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+.teamsList {
+  list-style: none;
+  list-style-position: inside;
+  $this: &;
+  &__list {
+    @include fonts($white, rem(18), $base-font, $light);
+    margin-bottom: rem(15);
+    letter-spacing: rem(1);
+    &::before {
+      content: "\2022";
+      color: $danube;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+.pt-40 {
+  padding-top: rem(40);
+}
+.execution {
+  background-color: $roseWhite;
+  border: $cornflowerBorder;
+  @include border-radius(rem(4));
+  padding: rem(10) rem(20);
+  min-height: rem(244);
+  margin-bottom: rem(25);
+  .inner-h6 {
+    border-left: $cornflowerBorder;
+    padding-left: rem(10);
+  }
+}

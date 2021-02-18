@@ -349,11 +349,13 @@ const IndexPage = () => {
                     skillsets to service our valuable clients with flexibility
                     and dedication for projects.
                   </p>
-                  <div className="btn-batch">
-                    <Button variant="primary" className="endeavour-button">
-                      See outsourcing Plan
-                    </Button>
-                  </div>
+                  <Link to="/teams">
+                    <div className="btn-batch">
+                      <Button variant="primary" className="endeavour-button">
+                        See outsourcing Plan
+                      </Button>
+                    </div>
+                  </Link>
                 </div>
                 <div className="col-md-6">
                   <div className="text-right">

@@ -8,6 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -198,88 +200,6 @@ p {
   padding: 0 100px;
 }
 
-.our-story {
-  position: relative;
-  padding: 2.5rem 0rem;
-}
-
-.our-story .shapeUpper {
-  position: absolute;
-  right: 0;
-  top: 30%;
-  bottom: 70%;
-}
-
-.our-story .shapeLower {
-  position: absolute;
-  bottom: 26%;
-  top: 74%;
-}
-
-.px-50 {
-  padding: 50px;
-}
-
-.px-50 .aboutImg {
-  padding: 15px 0;
-}
-
-.border-left-bottom {
-  border-left: 0.5px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-}
-
-.border-left-bottom .text-center {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 4;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-}
-
-.border-right-bottom {
-  border-bottom: 1px solid #cccccc;
-}
-
-.border-right-bottom .text-center {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 4;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-}
-
-.b-left {
-  border-left: 1px solid #ccc;
-}
-
-.bg-roseWhite {
-  background-color: #fffdfd;
-  border: 0.5px solid #709dee;
-  border-radius: 0.25rem;
-  margin-bottom: 0.625rem;
-  padding: 1.25rem;
-  min-height: 13.4375rem;
-}
-
-.bg-roseWhite .exp-img {
-  max-width: 2.5rem;
-  max-height: 2.5rem;
-  margin-bottom: 0.625rem;
-}
-
-.bg-roseWhite .title-b {
-  border-left: 1px solid #8ebdea;
-}
-
-.bg-roseWhite .exp-p {
-  margin-bottom: 0.625rem;
-}
-
-.mb-50 {
-  margin-bottom: 3.125rem;
-}
-
 .bg-polar {
   background-color: #f9fcfe;
 }
@@ -299,7 +219,7 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.9375rem 0rem;
+  background-color: #ffffff;
   min-height: 9.375rem;
   margin-bottom: 1.25rem;
 }
@@ -308,12 +228,13 @@ p {
   background-color: #f7fafe;
   text-align: center;
   width: 40%;
+  padding: 0.9375rem 0rem;
 }
 
 .box-shadow .profile {
   text-align: left;
   width: 60%;
-  padding: 0 1.25rem;
+  padding: 0.9375rem 1.25rem;
 }
 
 .box-shadow .profile .list {
@@ -330,74 +251,6 @@ p {
   font-weight: 700;
   text-decoration: underline;
   cursor: pointer;
-}
-
-.text-left {
-  padding: 1.5625rem 0rem;
-}
-
-.text-left .name {
-  color: #012140;
-  font-size: 1.375rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-}
-
-.text-left .position {
-  color: #6d7384;
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.employees .teamsP {
-  width: 75%;
-  margin: 0 auto;
-  padding-bottom: 1.875rem;
-}
-
-.feedback .midnight-h4 {
-  color: #ffffff;
-  font-size: 1.75rem;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  padding: 4.375rem 0rem;
-}
-
-.feedback .left-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.feedback .left-image .dottedImg {
-  position: absolute;
-  right: 0;
-  top: 5%;
-}
-
-.feedback .w-420 {
-  width: 420px;
-  margin: 1.25rem 0rem;
-}
-
-.py-50 {
-  padding: 50px 0;
-}
-
-.offices .address {
-  background-color: #f9fcfe;
-  text-align: left;
-  padding: 2.1875rem 3.75rem;
-  margin-top: 1.875rem;
 }
 
 .icon-bg, .bg-icon {
@@ -431,6 +284,11 @@ p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   margin-top: 0.625rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .listPara.mx-300 {
@@ -800,6 +658,234 @@ p {
 .view-sliders .carousel-control-next,
 .view-sliders .carousel-control-prev {
   display: none;
+}
+
+.work.pl-100 {
+  padding-left: 6.25rem;
+}
+
+.work .listItem {
+  list-style: none;
+  list-style-image: url("../images/research/tickIcon.svg");
+  padding-left: 1.375rem;
+  margin-bottom: 1.375rem;
+}
+
+.work .listItem__item {
+  color: #6d7384;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.our-story {
+  position: relative;
+  padding: 2.5rem 0rem;
+}
+
+.our-story .shapeUpper {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  bottom: 70%;
+}
+
+.our-story .shapeLower {
+  position: absolute;
+  bottom: 26%;
+  top: 74%;
+}
+
+.px-50 {
+  padding: 50px;
+}
+
+.px-50 .aboutImg {
+  padding: 15px 0;
+}
+
+.border-left-bottom {
+  border-left: 0.5px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.border-left-bottom .text-center {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.border-right-bottom {
+  border-bottom: 1px solid #cccccc;
+}
+
+.border-right-bottom .text-center {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.b-left {
+  border-left: 1px solid #ccc;
+}
+
+.bg-roseWhite {
+  background-color: #fffdfd;
+  border: 0.5px solid #709dee;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5625rem;
+  padding: 1.25rem;
+  min-height: 13.4375rem;
+}
+
+.bg-roseWhite .exp-img {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.bg-roseWhite .title-b {
+  border-left: 1px solid #8ebdea;
+}
+
+.bg-roseWhite .exp-p {
+  margin-bottom: 0.625rem;
+}
+
+.mb-50 {
+  margin-bottom: 3.125rem;
+}
+
+.employees .teamsP {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 1.875rem;
+}
+
+.employees .text-left {
+  padding: 1.5625rem 0rem;
+}
+
+.employees .text-left .name {
+  color: #012140;
+  font-size: 1.375rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.employees .text-left .position {
+  color: #6d7384;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.feedback .midnight-h4 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  padding: 4.375rem 0rem;
+}
+
+.feedback .left-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 1.3125rem;
+}
+
+.feedback .left-image .dottedImg {
+  position: absolute;
+  right: 0;
+  top: 5%;
+}
+
+.feedback .w-420 {
+  width: 420px;
+  margin: 1.25rem 0rem;
+}
+
+.py-50 {
+  padding: 50px 0;
+}
+
+.offices .address {
+  background-color: #f9fcfe;
+  text-align: left;
+  padding: 2.1875rem 3.75rem;
+  margin-top: 1.875rem;
+}
+
+.dedicated__list {
+  color: #6d7384;
+  font-size: 1.125rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+  height: 3.125rem;
+}
+
+.dedicated__list::before {
+  content: "\2022";
+  color: #498ccd;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.teamsList {
+  list-style: none;
+  list-style-position: inside;
+}
+
+.teamsList__list {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin-bottom: 0.9375rem;
+  letter-spacing: 0.0625rem;
+}
+
+.teamsList__list::before {
+  content: "\2022";
+  color: #498ccd;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.pt-40 {
+  padding-top: 2.5rem;
+}
+
+.execution {
+  background-color: #fffdfd;
+  border: 1px solid #8ebdea;
+  border-radius: 0.25rem;
+  padding: 0.625rem 1.25rem;
+  min-height: 15.25rem;
+  margin-bottom: 1.5625rem;
+}
+
+.execution .inner-h6 {
+  border-left: 1px solid #8ebdea;
+  padding-left: 0.625rem;
 }
 
 .pt-90 {

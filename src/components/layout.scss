@@ -10,12 +10,15 @@ body {
 @import "./header";
 @import "./footer";
 @import "../styles/defaults";
-@import "../pages/about";
+@import "../components/marketPresence";
 @import "../components/servicesList";
 @import "../pages/services/services";
 @import "../components/featuredWork";
 @import "../components/contactForm";
 @import "../components/clientFeedback";
+@import "../pages/work";
+@import "../pages/about";
+@import "../pages/teams";
 @import "../pages/index";
 html {
   scroll-behavior: smooth;

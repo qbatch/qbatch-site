@@ -17,6 +17,11 @@
 .listPara {
   @include fonts($storm-gray, rem(14), $base-font, $light);
   margin-top: rem(10);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   &.mx-300 {
     max-width: 350px;
     margin: 10px auto;

@@ -42,13 +42,13 @@
   }
 }
 .b-left {
-  border-left: 1px solid #ccc;
+  border-left: $lightgreyBorder;
 }
 .bg-roseWhite {
   background-color: $roseWhite;
   border: $blue;
   border-radius: rem(4);
-  margin-bottom: rem(10);
+  margin-bottom: rem(25);
   padding: rem(20);
   min-height: rem(215);
   .exp-img {
@@ -57,7 +57,7 @@
     margin-bottom: rem(10);
   }
   .title-b {
-    border-left: 1px solid #8ebdea;
+    border-left: $cornflowerBorder;
   }
   .exp-p {
     margin-bottom: rem(10);
@@ -66,55 +66,22 @@
 .mb-50 {
   margin-bottom: rem(50);
 }
-.bg-polar {
-  background-color: $polar;
-  .mapBg {
-    position: absolute;
-    right: 0;
-    top: 16%;
-  }
-}
-.box-shadow {
-  box-shadow: 0px 3px 10px #8ebdea61;
-  display: flex;
-  justify-content: space-between;
-  padding: rem(15) rem(0);
-  min-height: rem(150);
-  margin-bottom: rem(20);
-  .bg-selego {
-    background-color: $selago;
-    text-align: center;
-    width: 40%;
-  }
-  .profile {
-    text-align: left;
-    width: 60%;
-    padding: 0 rem(20);
-    .list {
-      @include fonts($storm-gray, rem(12), $base-font, $light);
-    }
-    .seeProfile {
-      @include fonts($endeavour, rem(12), $base-font, $bold);
-      text-decoration: underline;
-      cursor: pointer;
-    }
-  }
-}
-.text-left {
-  padding: rem(25) rem(0);
-  .name {
-    @include fonts($midnight, rem(22), $base-font, $bold);
-  }
-  .position {
-    @include fonts($storm-gray, rem(16), $base-font, $light);
-    text-transform: uppercase;
-  }
-}
+
 .employees {
   .teamsP {
     width: 75%;
     margin: 0 auto;
     padding-bottom: rem(30);
+  }
+  .text-left {
+    padding: rem(25) rem(0);
+    .name {
+      @include fonts($midnight, rem(22), $base-font, $bold);
+    }
+    .position {
+      @include fonts($storm-gray, rem(16), $base-font, $light);
+      text-transform: uppercase;
+    }
   }
 }
 .feedback {
@@ -126,6 +93,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding-bottom: rem(21);
     .dottedImg {
       position: absolute;
       right: 0;

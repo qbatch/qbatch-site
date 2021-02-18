@@ -2,7 +2,8 @@
 import React from "react"
 import { Container, Navbar, Nav, Image, Button } from "react-bootstrap"
 import { Link } from "gatsby"
-const Header = ({ logo }) => {
+
+const Header = props => {
   const NavLink = [
     {
       route: "/",
@@ -21,17 +22,26 @@ const Header = ({ logo }) => {
       title: "About",
     },
     {
-      route: "/log",
+      route: "/blog",
       title: "Blog",
     },
+    {
+      route: "/contact",
+      title: "contact",
+    },
+    {
+      route: "/estimate",
+      title: "estimate",
+    },
   ]
+  const url = typeof window !== "undefined" ? window.location.href : ""
   return (
     <header className="header w-100">
       <Container>
         <Navbar collapseOnSelect expand="lg">
           <Link to="/">
-            <Navbar.Brand href="#home" className="py-0">
-              <Image src={logo} alt="no logo" />
+            <Navbar.Brand className="py-0">
+              <Image src={props.logo} alt="no logo" />
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="collapse-navbar-nav" />
@@ -39,14 +49,29 @@ const Header = ({ logo }) => {
             <Nav className="ml-auto navbar">
               {NavLink.map((link, i) => {
                 return (
-                  <Nav.Link href={link.route} className="navbar__item" key={i}>
-                    {link.title}
+                  <Nav.Link
+                    href={
+                      url.split("/")[3] === "/services"
+                        ? "/estimate"
+                        : link.route
+                    }
+                    className="navbar__item"
+                    key={i}
+                  >
+                    {link.title === "contact" ? (
+                      <Button className="endeavour-button">
+                        {url.split("/")[3] === "services"
+                          ? "Estimate"
+                          : "contact"}
+                      </Button>
+                    ) : link.title !== "estimate" ? (
+                      link.title
+                    ) : (
+                      ""
+                    )}
                   </Nav.Link>
                 )
               })}
-              <Nav.Link href="/contact" className="navbar__item ">
-                <Button className="endeavour-button">Contact</Button>
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

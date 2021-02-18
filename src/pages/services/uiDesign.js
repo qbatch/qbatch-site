@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import SEO from "../../components/seo"
 import { Container, Image, Row, Col, Button } from "react-bootstrap"
 import Layout from "../../components/layout"
@@ -191,7 +190,7 @@ const UiDesign = () => {
                       <span className="text-left lower-text">
                         {design.title}
                       </span>
-                      <p className="text-left listPara">{design.para}</p>
+                      <p className="text-left listPara ">{design.para}</p>
                     </Col>
                   )
                 })}
