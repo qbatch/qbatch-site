@@ -15,11 +15,11 @@
     }
   }
   .carousel-indicators {
-    bottom: -69px;
+    bottom: rem(-69);
     li {
       background-color: $midnight;
       &.active {
-        width: 84px;
+        width: rem(84);
       }
     }
   }

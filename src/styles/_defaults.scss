@@ -42,8 +42,11 @@ p {
 }
 
 .py-75 {
-  padding: 75px 0;
+  padding: rem(75) 0;
 }
 .px-30 {
-  padding: 0 100px;
+  padding: 0 rem(100);
+}
+.py-50 {
+  padding: rem(50) 0;
 }

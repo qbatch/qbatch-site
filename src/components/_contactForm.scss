@@ -6,7 +6,7 @@
     }
   }
   .b-border {
-    width: 75px;
+    width: rem(75);
     margin: 0;
     border-top: $cornflowerBorder;
   }
@@ -38,8 +38,8 @@
         height: rem(48);
       }
       .text-light {
-        right: 17px;
-        top: 16px;
+        right: rem(17);
+        top: rem(16);
       }
     }
   }
@@ -47,7 +47,7 @@
     .action-line {
       margin: 0;
       border-top: $cornflowerBorder;
-      width: 124px;
+      width: rem(124);
     }
   }
   .mt-30 {

@@ -133,7 +133,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="layout">
+      <div className="layout bg-selago">
         <div className="skewed-bg">
           <div className="content">
             <Container className="pt-155">
@@ -223,7 +223,7 @@ const IndexPage = () => {
       </div>
       <section>
         <Container>
-          <div className="services">
+          <div className="services py-50">
             <div className="row m-0">
               <div className="col-md-4">
                 <div className="d-flex">
@@ -277,7 +277,7 @@ const IndexPage = () => {
       <FeaturedWork />
       <section>
         <Container>
-          <div className="driven-process">
+          <div className="driven-process py-75">
             <h5 className="text-center">Our Research driven Process</h5>
             <div className="d-flex">
               <div className="pt-30 d-flex justify-content-center align-items-center flex-column">
@@ -414,7 +414,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className="recognized">
+      <div className="py-75 bg-selago">
         <Container>
           <Recognized />
         </Container>

@@ -41,7 +41,7 @@ const FeaturedWork = () => {
     },
   ]
   return (
-    <div className="slider">
+    <div className="slider py-75 bg-selego">
       <Container>
         <div className="text-center">
           <h5 className="slider-h3">Our Featured Work</h5>

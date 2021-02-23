@@ -2,7 +2,9 @@
 import React from "react"
 import { Container, Navbar, Nav, Image, Button } from "react-bootstrap"
 import { Link } from "gatsby"
-
+import { useHistory } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 const Header = props => {
   const NavLink = [
     {
@@ -22,7 +24,7 @@ const Header = props => {
       title: "About",
     },
     {
-      route: "/blog",
+      route: "https://blog.qbatch.com",
       title: "Blog",
     },
     {
@@ -34,6 +36,7 @@ const Header = props => {
       title: "estimate",
     },
   ]
+  const history = useHistory()
   const url = typeof window !== "undefined" ? window.location.href : ""
   return (
     <header className="header w-100">
@@ -47,31 +50,41 @@ const Header = props => {
           <Navbar.Toggle aria-controls="collapse-navbar-nav" />
           <Navbar.Collapse id="collapse-navbar-nav">
             <Nav className="ml-auto navbar">
-              {NavLink.map((link, i) => {
-                return (
-                  <Nav.Link
-                    href={
-                      url.split("/")[3] === "/services"
-                        ? "/estimate"
-                        : link.route
-                    }
-                    className="navbar__item"
-                    key={i}
-                  >
-                    {link.title === "contact" ? (
-                      <Button className="endeavour-button">
-                        {url.split("/")[3] === "services"
-                          ? "Estimate"
-                          : "contact"}
-                      </Button>
-                    ) : link.title !== "estimate" ? (
-                      link.title
-                    ) : (
-                      ""
-                    )}
-                  </Nav.Link>
-                )
-              })}
+              {url.split("/")[3] === "estimate" ? (
+                <Nav.Link href="/" className="goBack">
+                  {" "}
+                  <FontAwesomeIcon icon={faArrowLeft} className="backIcon" />
+                  Back to home
+                </Nav.Link>
+              ) : (
+                NavLink.map((link, i) => {
+                  return (
+                    <Nav.Link
+                      href={
+                        link.route === "/contact"
+                          ? url.split("/")[3] === "services"
+                            ? "/estimate"
+                            : "/contact"
+                          : link.route
+                      }
+                      className="navbar__item"
+                      key={i}
+                    >
+                      {link.title === "contact" ? (
+                        <Button className="endeavour-button">
+                          {url.split("/")[3] === "services"
+                            ? "Estimate"
+                            : "contact"}
+                        </Button>
+                      ) : link.title !== "estimate" ? (
+                        link.title
+                      ) : (
+                        ""
+                      )}
+                    </Nav.Link>
+                  )
+                })
+              )}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

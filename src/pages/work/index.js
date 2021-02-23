@@ -1,16 +1,25 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import ClientFeedback from "../components/clientFeedback"
-import ContactForm from "../components/contactForm"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import { Link } from "gatsby"
+import ClientFeedback from "../../components/clientFeedback"
+import ContactForm from "../../components/contactForm"
 import { Container, Image, Row, Col, Button } from "react-bootstrap"
-import shapeLower from "../images/services/shapeLower.png"
-import shapeUpper from "../images/services/shapeUpper.png"
-import medcertsLogo from "../images/index/medecerts.png"
-import medecertsImg from "../images/work/medcrets.png"
-import twenty from "../images/work/twenty.png"
-import twentyLogo from "../images/work/twentyLogo.png"
-const Work = () => {
+import shapeLower from "../../images/services/shapeLower.png"
+import shapeUpper from "../../images/services/shapeUpper.png"
+import medcertsLogo from "../../images/index/medecerts.png"
+import medecertsImg from "../../images/work/medcrets.png"
+import oneApp from "../../images/work/oneApp.svg"
+import ecomCircle from "../../images/work/ecomCircle.svg"
+import ecomImg from "../../images/work/ecomImg.png"
+import bwdLogo from "../../images/work/bwdLogo.png"
+import bwdMobile from "../../images/work/bwdMobile.png"
+import uratskerlogo from "../../images/work/uratskerlogo.png"
+import urtaskerLogo from "../../images/work/urtaskerLogo.png"
+import salesSupport from "../../images/work/salesSupport.svg"
+import salesSupportImg from "../../images/work/salesSupportImg.png"
+import bwdWeb from "../../images/work/bwdWeb.png"
+const Index = () => {
   const medecerts = [
     "User Research",
     "UI Design + Branding",
@@ -25,7 +34,7 @@ const Work = () => {
   ]
   return (
     <Layout>
-      <SEO title="Estimate Work" />
+      <SEO title="Work" />
       <div className="bg-selago">
         <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
         <Image src={shapeLower} className="shapeLower" alt="no-image" />
@@ -55,7 +64,7 @@ const Work = () => {
           <Row>
             <Col md={6} sm={12}>
               <div className="work py-75">
-                <Image src={medcertsLogo} alt="no-image" />
+                <Image src={oneApp} alt="no-image" />
                 <p>
                   We offer expertise for end-to-end product design
                   anddevelopment, with solutions tailor-made to fit your
@@ -71,12 +80,11 @@ const Work = () => {
                   })}
                 </ul>
                 <div className="btn-batch d-flex">
-                  <Button variant="primary" className="endeavour-button">
-                    See Detail
-                  </Button>
-                  <Button variant="primary" className="outline-button ml-4">
-                    Our Work
-                  </Button>
+                  <Link to="/work/oneApp">
+                    <Button variant="primary" className="endeavour-button">
+                      View Case Study
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Col>
@@ -87,12 +95,12 @@ const Work = () => {
             </Col>
             <Col md={6} sm={12}>
               <div className="py-50">
-                <Image src={twenty} alt="no-image" />
+                <Image src={ecomImg} alt="no-image" />
               </div>
             </Col>
             <Col md={6} sm={12}>
               <div className="work py-75 pl-100">
-                <Image src={twentyLogo} alt="no-image" />
+                <Image src={ecomCircle} alt="no-image" />
                 <p>
                   We offer expertise for end-to-end product design
                   anddevelopment, with solutions tailor-made to fit your
@@ -108,20 +116,19 @@ const Work = () => {
                   })}
                 </ul>
                 <div className="btn-batch d-flex">
-                  <Button variant="primary" className="endeavour-button">
-                    See Detail
-                  </Button>
-                  <Button variant="primary" className="outline-button ml-4">
-                    Our Work
-                  </Button>
+                  <Link to="/work/ecomCircle">
+                    <Button variant="primary" className="endeavour-button">
+                      View Case Study
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Col>
             <Col md={6} sm={12}>
               <div className="work py-75">
-                <Image src={medcertsLogo} alt="no-image" />
+                <Image src={bwdLogo} alt="no-image" />
                 <p>
-                  We offer expertise for end-to-end product design
+                  We offer expertisesssss for end-to-end product design
                   anddevelopment, with solutions tailor-made to fit your
                   product’s unique requirements.
                 </p>
@@ -134,29 +141,28 @@ const Work = () => {
                     )
                   })}
                 </ul>
-                <div className="btn-batch d-flex">
-                  <Button variant="primary" className="endeavour-button">
-                    See Detail
-                  </Button>
-                  <Button variant="primary" className="outline-button ml-4">
-                    Our Work
-                  </Button>
+                <div className="btn-batch">
+                  <Link to="/work/bwdMobile">
+                    <Button variant="primary" className="endeavour-button">
+                      View Case Study
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Col>
             <Col md={6} sm={12}>
               <div className="py-50">
-                <Image src={medecertsImg} alt="no-image" />
+                <Image src={bwdMobile} alt="no-image" />
               </div>
             </Col>
             <Col md={6} sm={12}>
               <div className="py-50">
-                <Image src={twenty} alt="no-image" />
+                <Image src={uratskerlogo} alt="no-image" />
               </div>
             </Col>
             <Col md={6} sm={12}>
               <div className="work py-75 pl-100">
-                <Image src={twentyLogo} alt="no-image" />
+                <Image src={urtaskerLogo} alt="no-image" />
                 <p>
                   We offer expertise for end-to-end product design
                   anddevelopment, with solutions tailor-made to fit your
@@ -171,13 +177,75 @@ const Work = () => {
                     )
                   })}
                 </ul>
-                <div className="btn-batch d-flex">
-                  <Button variant="primary" className="endeavour-button">
-                    See Detail
-                  </Button>
-                  <Button variant="primary" className="outline-button ml-4">
-                    Our Work
-                  </Button>
+                <div className="btn-batch">
+                  <Link to="/work/urtasker">
+                    <Button variant="primary" className="endeavour-button">
+                      View Case Study
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </Col>
+
+            <Col md={6} sm={12}>
+              <div className="work py-75">
+                <Image src={bwdLogo} alt="no-image" />
+                <p>
+                  We offer expertisesssss for end-to-end product design
+                  anddevelopment, with solutions tailor-made to fit your
+                  product’s unique requirements.
+                </p>
+                <ul className="listItem ">
+                  {medecerts.map((list, listKey) => {
+                    return (
+                      <li className="listItem__item" key={listKey}>
+                        {list}
+                      </li>
+                    )
+                  })}
+                </ul>
+                <div className="btn-batch">
+                  <Link to="/work/bwd">
+                    <Button variant="primary" className="endeavour-button">
+                      View Case Study
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </Col>
+            <Col md={6} sm={12}>
+              <div className="py-50">
+                <Image src={bwdWeb} alt="no-image" />
+              </div>
+            </Col>
+            <Col md={6} sm={12}>
+              <div className="py-50">
+                <Image src={salesSupportImg} alt="no-image" />
+              </div>
+            </Col>
+            <Col md={6} sm={12}>
+              <div className="work py-75 pl-100">
+                <Image src={salesSupport} alt="no-image" />
+                <p>
+                  We offer expertise for end-to-end product design
+                  anddevelopment, with solutions tailor-made to fit your
+                  product’s unique requirements.
+                </p>
+                <ul className="listItem ">
+                  {Twenty.map((list, listKey) => {
+                    return (
+                      <li className="listItem__item" key={listKey}>
+                        {list}
+                      </li>
+                    )
+                  })}
+                </ul>
+                <div className="btn-batch">
+                  <Link to="/work/salesSupport">
+                    <Button variant="primary" className="endeavour-button">
+                      View Case Study
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Col>
@@ -194,4 +262,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default Index

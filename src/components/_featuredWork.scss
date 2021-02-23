@@ -1,8 +1,6 @@
 .slider {
-  background-color: $selago;
-  padding: 78px;
   .slider-h3 {
-    padding: 30px 0;
+    padding: rem(30) rem(0);
   }
   .listItem {
     list-style-image: url("../images/research/tickIcon.svg");
@@ -16,11 +14,11 @@
   }
   .slide {
     .carousel-indicators {
-      bottom: -69px;
+      bottom: rem(-69);
       li {
         background-color: $midnight;
         &.active {
-          width: 84px;
+          width: rem(84);
         }
       }
     }

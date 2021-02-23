@@ -4,8 +4,8 @@
   background-color: $selago;
   position: relative;
   .pt-174 {
-    padding-top: 110px;
-    padding-bottom: 100px;
+    padding-top: rem(110);
+    padding-bottom: rem(100);
   }
   .color-change {
     @include fonts($pictonBlue, rem(38), $base-font, $extra-bold);
@@ -13,22 +13,22 @@
   .shapeUpper {
     position: absolute;
     right: 0;
-    top: 40px;
+    top: rem(40);
   }
   .shapeLower {
     position: absolute;
-    bottom: 36px;
+    bottom: rem(36);
   }
   .pt-150 {
-    padding-top: 70px;
-    padding-bottom: 100px;
+    padding-top: rem(70);
+    padding-bottom: rem(100);
   }
 }
 .heading {
-  letter-spacing: 1.25px;
+  letter-spacing: rem(1.25);
 }
 .p-100 {
-  padding: 100px 0 50px;
+  padding: rem(100) rem(0) rem(50);
 }
 
 .process__container {
@@ -36,8 +36,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
-  padding: 50px 0;
-  margin-bottom: 100px;
+  padding: rem(50) 0;
+  margin-bottom: rem(100);
   .process__step {
     flex: 1 0 10rem;
     position: relative;
@@ -45,7 +45,7 @@
     padding: 0 1.2rem;
     text-align: center;
     counter-increment: steps;
-    margin: -36px;
+    margin: rem(-36);
     .process__circles {
       &::before {
         content: "";
@@ -67,7 +67,7 @@
       top: 108px;
       width: 100%;
       text-align: center;
-      margin-left: -22px;
+      margin-left: rem(-22);
     }
     &::before {
       content: counter(steps, decimal-leading-zero);
@@ -80,7 +80,7 @@
       font-size: 6.5em;
       font-weight: bold;
       line-height: 1;
-      color: #f7f8f7;
+      color: $grayNurse;
     }
   }
   hr {
@@ -89,22 +89,22 @@
     display: block;
     width: 15%;
     background-color: $endeavour;
-    height: 1px;
-    top: 39px;
+    height: rem(1);
+    top: rem(39);
   }
 }
 .bg-mdnight {
   background-color: $midnight;
 }
 .py-30 {
-  padding: 40px 0;
+  padding: rem(40) rem(0);
 }
 .pt-100 {
-  padding: 100px 0;
+  padding: rem(100) rem(0);
   .pt-50 {
-    padding-top: 70px;
+    padding-top: rem(70);
     &.pl-70 {
-      padding-left: 50px;
+      padding-left: rem(50);
     }
     .list {
       list-style-image: url("../images/research/tickIcon.svg");
@@ -121,7 +121,7 @@
 .bg-midnight {
   background-color: $midnight;
   &.p-30 {
-    padding: 50px 0;
+    padding: rem(50) rem(0);
   }
 }
 @media (max-width: 1200px) {

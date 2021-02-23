@@ -33,7 +33,7 @@ const Recognized = () => {
           </div>
           <div className="d-flex recognized-list">
             <div className="clutch">
-              <Image src={upWork} alt="no-image" className="mw-100" />
+              <Image src={upWork} alt="no-image" />
             </div>
             <div className="d-flex flex-column justify-content-center ml-3">
               <h6>upWork</h6>

@@ -165,7 +165,7 @@ const About = () => {
 
         <Container>
           <Row className="m-0">
-            <Col md={10}>
+            <Col md={10} sm={12}>
               <div className="py-75">
                 <h5>Our Story</h5>
                 <p>

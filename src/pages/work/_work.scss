@@ -1,0 +1,43 @@
+.work {
+  &.pl-100 {
+    padding-left: rem(100);
+    img {
+      padding-bottom: rem(10);
+    }
+  }
+  .listItem {
+    list-style: none;
+    list-style-image: url("../images/research/tickIcon.svg");
+    padding-left: rem(22);
+    margin-bottom: rem(22);
+    $this: &;
+    &__item {
+      @include fonts($storm-gray, rem(16), $base-font, $light);
+    }
+  }
+}
+.workList {
+  list-style: none;
+  padding-left: rem(19);
+  $this: &;
+  &__list {
+    @include fonts($storm-gray, rem(18), $base-font, $light);
+    margin-bottom: rem(15);
+    letter-spacing: rem(1);
+    &::before {
+      content: "\2022";
+      color: $regentStBlue;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+.color-midnight {
+  @include fonts($regalBlue, rem(32), $base-font, $extra-bold);
+}
+.h3-capitalize {
+  @include fonts($downriver, rem(32), $base-font, $bold);
+  text-transform: uppercase;
+}

@@ -7,6 +7,14 @@
   background-color: $white;
   .navbar {
     padding: rem(8) 0;
+    .goBack {
+      padding-right: rem(30);
+      text-transform: uppercase;
+      padding: rem(11.5) rem(0);
+      .backIcon {
+        margin-right: rem(10);
+      }
+    }
   }
 
   #collapse-navbar-nav {

@@ -1,0 +1,33 @@
+.p-75 {
+  padding: 75px 82px;
+  .slick-slide {
+    &.slick-current {
+      img {
+        // height: 600px;
+      }
+    }
+    // &.slick-active {
+    //   img {
+    //     padding-top: 100px;
+    //   }
+    // }
+    img {
+      display: block;
+      padding: 0 42px 0 0px;
+    }
+  }
+  // .slick-current {
+  //   .img-card {
+  //     img {
+  //       height: 600px;
+  //     }
+  //   }
+  // }
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: white;
+  }
+  .slick-dots li button:before {
+    color: white;
+  }
+}

@@ -1,14 +1,14 @@
 @import "../styles/variables";
 @import "../styles/mixins";
 .icon-bg {
-  width: 88px;
-  height: 88px;
-  border-radius: 50px;
-  background-color: #ecf5fc;
+  width: rem(88);
+  height: rem(88);
+  @include border-radius(rem(50));
+  background-color: $lightSelago;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px auto;
+  margin: rem(30) auto;
 }
 .lower-text {
   @include fonts($midnight, rem(16), $base-font, $bold);
@@ -23,16 +23,16 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   &.mx-300 {
-    max-width: 350px;
-    margin: 10px auto;
+    max-width: rem(350);
+    margin: rem(10) auto;
   }
 }
 .bg-icon {
   @extend .icon-bg;
 }
 .mx-600 {
-  max-width: 600px;
-  margin: 30px auto;
+  max-width: rem(600);
+  margin: rem(30) auto;
 }
 .bg-selego {
   background-color: $selago;

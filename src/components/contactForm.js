@@ -1,9 +1,26 @@
-import React from "react"
+import React, { useState } from "react"
 import { Form, Button, Image } from "react-bootstrap"
 import Avatar from "../images/waqasServer.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 const ContactForm = () => {
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    number: "",
+    company: "",
+    textarea: "",
+  })
+  const handleInputChange = event => {
+    const target = event.target
+    const value = target.value
+    const name = target.name
+    setState({ ...state, [name]: value })
+  }
+  const handleSubmit = event => {
+    event.preventDefault()
+    alert(`Welcome ${state.name} ${state.email}!`)
+  }
   return (
     <div className="testimonial-form">
       <div className="px-3">
@@ -15,7 +32,7 @@ const ContactForm = () => {
       </div>
       <div className="row">
         <div className="col-md-8">
-          <Form className="contact-form">
+          <Form className="contact-form" onSubmit={handleSubmit}>
             <div className="row m-0">
               <div className="col-md-12">
                 <Form.Group
@@ -32,31 +49,58 @@ const ContactForm = () => {
                 </Form.Group>
               </div>
               <div className="col-md-6">
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Control type="text" placeholder="Name" />
+                <Form.Group>
+                  <Form.Control
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                    value={state.name}
+                    onChange={handleInputChange}
+                  />
                 </Form.Group>
               </div>
               <div className="col-md-6">
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Control type="email" placeholder="Email" />
+                <Form.Group>
+                  <Form.Control
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    value={state.email}
+                    onChange={handleInputChange}
+                  />
                 </Form.Group>
               </div>
               <div className="col-md-6">
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Control type="text" placeholder="Phone" />
+                <Form.Group>
+                  <Form.Control
+                    type="text"
+                    placeholder="Phone"
+                    name="number"
+                    value={state.number}
+                    onChange={handleInputChange}
+                  />
                 </Form.Group>
               </div>
               <div className="col-md-6">
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Control type="text" placeholder="Company" />
+                <Form.Group>
+                  <Form.Control
+                    type="text"
+                    placeholder="Company"
+                    name="company"
+                    value={state.company}
+                    onChange={handleInputChange}
+                  />
                 </Form.Group>
               </div>
               <div className="col-md-12">
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                   <Form.Control
+                    name="textarea"
                     as="textarea"
+                    value={state.textarea}
                     rows={4}
                     placeholder="Company"
+                    onChange={handleInputChange}
                     className="py-2"
                   />
                 </Form.Group>
