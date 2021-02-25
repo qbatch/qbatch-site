@@ -16,6 +16,9 @@
   }
   .carousel-indicators {
     bottom: rem(-69);
+    @include sm {
+      bottom: rem(-50);
+    }
     li {
       background-color: $midnight;
       &.active {

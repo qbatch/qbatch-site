@@ -148,7 +148,7 @@ const Devops = props => {
             </Col>
           </Row>
         </div>
-        <div className="py-75">
+        <div className="process">
           <ul className="list-unstyled  process__container">
             <li className="process__step">
               <div className="process__circles"></div>

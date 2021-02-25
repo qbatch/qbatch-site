@@ -7,6 +7,13 @@
   background-color: $white;
   .navbar {
     padding: rem(8) 0;
+    @include sm {
+      .navbar-nav {
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
     .goBack {
       padding-right: rem(30);
       text-transform: uppercase;

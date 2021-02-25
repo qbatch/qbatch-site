@@ -5,7 +5,9 @@
   &__list {
     @include fonts($storm-gray, rem(18), $base-font, $light);
     margin-bottom: rem(20);
-    height: rem(50);
+    @include lg {
+      @include fonts($storm-gray, rem(16), $base-font, $light);
+    }
     &::before {
       content: "\2022";
       color: $danube;
@@ -24,6 +26,9 @@
     @include fonts($white, rem(18), $base-font, $light);
     margin-bottom: rem(15);
     letter-spacing: rem(1);
+    @include lg {
+      @include fonts($white, rem(16), $base-font, $light);
+    }
     &::before {
       content: "\2022";
       color: $danube;
@@ -47,5 +52,15 @@
   .inner-h6 {
     border-left: $cornflowerBorder;
     padding-left: rem(10);
+  }
+}
+.text-short {
+  @include lg {
+    .text-light {
+      text-align: left;
+    }
+    .px-30 {
+      padding: 0;
+    }
   }
 }

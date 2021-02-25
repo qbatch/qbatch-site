@@ -55,7 +55,7 @@ const IndexPage = () => {
       icon: faDesktop,
       title: "Web  Development",
       paragraph:
-        "we develop tailor-made Respons- -ive Web Apps to assimilate the user-base providing accessibilities.",
+        "we develop tailor-made Responsive Web Apps to assimilate the user-base providing accessibilities.",
       to: "/services/webDevelopment",
     },
     {
@@ -289,7 +289,7 @@ const IndexPage = () => {
                   We facilitate in translation of thoughts and ideal experiences
                 </p>
               </div>
-              <div className="d-flex align-items-center pt-30">
+              <div className="align-items-center pt-30 arrow">
                 <Image src={amazonUp} />
               </div>
               <div className="pt-30 d-flex justify-content-center align-items-center flex-column">
@@ -302,7 +302,7 @@ const IndexPage = () => {
                   Prototype Design
                 </p>
               </div>
-              <div className="d-flex align-items-center pt-30">
+              <div className="align-items-center pt-30 arrow">
                 <Image src={amazonDown} />
               </div>
               <div className="pt-30 d-flex justify-content-center align-items-center flex-column">
@@ -316,7 +316,7 @@ const IndexPage = () => {
                   scalability
                 </p>
               </div>
-              <div className="d-flex align-items-center pt-30">
+              <div className="align-items-center pt-30 arrow">
                 <Image src={amazonUp} />
               </div>
               <div className="pt-30 d-flex justify-content-center align-items-center flex-column">

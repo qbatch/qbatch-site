@@ -1,6 +1,12 @@
 .work {
   &.pl-100 {
     padding-left: rem(100);
+    @include lg {
+      padding-left: rem(30);
+    }
+    @include md {
+      padding-left: rem(0);
+    }
     img {
       padding-bottom: rem(10);
     }
@@ -13,6 +19,9 @@
     $this: &;
     &__item {
       @include fonts($storm-gray, rem(16), $base-font, $light);
+    }
+    @include lg {
+      display: none;
     }
   }
 }

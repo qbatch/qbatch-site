@@ -4,6 +4,11 @@ import Layout from "../../components/layout"
 import WorkDetail from "../../components/workDetail"
 import BwdImg from "../../images/work/bwd.png"
 import WorkSlider from "../../components/workSlider"
+import BWDWeb1 from "../../images/BWDweb/BWDWeb1.png"
+import BWDWeb2 from "../../images/BWDweb/BWDWeb2.png"
+import BWDWeb3 from "../../images/BWDweb/BWDWeb3.png"
+import BWDWeb4 from "../../images/BWDweb/BWDWeb4.png"
+import BWDWeb5 from "../../images/BWDweb/BWDWeb5.png"
 const Bwd = () => {
   const firstList = [
     "ReactJS",
@@ -24,19 +29,19 @@ const Bwd = () => {
   ]
   const products = [
     {
-      img: BwdImg,
+      img: BWDWeb1,
     },
     {
-      img: BwdImg,
+      img: BWDWeb2,
     },
     {
-      img: BwdImg,
+      img: BWDWeb3,
     },
     {
-      img: BwdImg,
+      img: BWDWeb4,
     },
     {
-      img: BwdImg,
+      img: BWDWeb5,
     },
   ]
   return (

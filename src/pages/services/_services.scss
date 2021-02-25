@@ -68,6 +68,9 @@
       width: 100%;
       text-align: center;
       margin-left: rem(-22);
+      @media (max-width: 1400px) {
+        font-size: rem(18);
+      }
     }
     &::before {
       content: counter(steps, decimal-leading-zero);
@@ -105,6 +108,9 @@
     padding-top: rem(70);
     &.pl-70 {
       padding-left: rem(50);
+      @include lg {
+        padding-left: rem(0);
+      }
     }
     .list {
       list-style-image: url("../images/research/tickIcon.svg");
@@ -114,6 +120,9 @@
       &__item {
         @include fonts($storm-gray, rem(16), $base-font, $light);
         letter-spacing: rem(1);
+        @include lg {
+          display: none;
+        }
       }
     }
   }
@@ -124,8 +133,41 @@
     padding: rem(50) rem(0);
   }
 }
-@media (max-width: 1200px) {
-  .process__container {
+.process {
+  padding: rem(75) 0;
+  @include xl {
     display: none;
+  }
+}
+.reserve-data {
+  display: flex;
+  @include md {
+    flex-direction: column-reverse;
+  }
+}
+.para-ellipse {
+  @include lg {
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+@include lg {
+  .lg-ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+.align-center {
+  text-align: center;
+  @include md {
+    text-align: left;
   }
 }

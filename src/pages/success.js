@@ -14,7 +14,7 @@ function Success() {
               Thanks! We'll get back to you soon.
             </span>
           </h3>
-          <div className="btn-batch">
+          <div className="btn-batch justify-content-center">
             <Button className="endeavour-button" type="submit">
               View our portfolio
             </Button>

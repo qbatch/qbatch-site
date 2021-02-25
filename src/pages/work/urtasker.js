@@ -4,6 +4,12 @@ import Layout from "../../components/layout"
 import WorkDetail from "../../components/workDetail"
 import urtasker from "../../images/work/urtasker.png"
 import WorkSlider from "../../components/workSlider"
+import Urtasker1 from "../../images/Urtasker/Urtasker1.png"
+import Urtasker2 from "../../images/Urtasker/Urtasker2.png"
+import Urtasker3 from "../../images/Urtasker/Urtasker3.png"
+import Urtasker4 from "../../images/Urtasker/Urtasker4.png"
+import Urtasker5 from "../../images/Urtasker/Urtasker5.png"
+import Urtasker6 from "../../images/Urtasker/Urtasker6.png"
 const Urtasker = () => {
   const firstList = [
     "ReactJS",
@@ -24,19 +30,22 @@ const Urtasker = () => {
   ]
   const products = [
     {
-      img: urtasker,
+      img: Urtasker1,
     },
     {
-      img: urtasker,
+      img: Urtasker2,
     },
     {
-      img: urtasker,
+      img: Urtasker3,
     },
     {
-      img: urtasker,
+      img: Urtasker4,
     },
     {
-      img: urtasker,
+      img: Urtasker5,
+    },
+    {
+      img: Urtasker6,
     },
   ]
   return (

@@ -10,6 +10,12 @@ h2 {
   .endeavour {
     color: $endeavour;
   }
+  @include lg {
+    @include fonts($midnight, rem(32), $base-font, $extra-bold);
+  }
+  @include sm {
+    @include fonts($midnight, rem(24), $base-font, $extra-bold);
+  }
 }
 h3 {
   @include fonts($midnight, rem(36), $base-font, $extra-bold);
@@ -17,12 +23,14 @@ h3 {
     color: $endeavour;
     margin-left: rem(10);
   }
+  @include lg {
+    @include fonts($midnight, rem(20), $base-font, $extra-bold);
+  }
 }
 h4 {
   @include fonts($midnight, rem(28), $base-font, $bold);
   .endeavour {
     color: $endeavour;
-    margin-left: rem(10);
   }
 }
 h5 {

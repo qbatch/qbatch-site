@@ -1,43 +1,27 @@
 import React from "react"
-import Slider from "react-slick"
 import { Image } from "react-bootstrap"
-import SliderBwd from "../images/work/bwd.png"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-const WorkSlider = props => {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "80px",
-    slidesToShow: 2,
-    variableWidth: true,
-    slidesToScroll: 1,
-    speed: 500,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-    ],
-  }
+import Carousel from "react-elastic-carousel"
 
+const WorkSlider = props => {
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 1, itemsToScroll: 1 },
+    { width: 768, itemsToShow: 1 },
+    { width: 991, itemsToShow: 1 },
+    { width: 1200, itemsToShow: 2 },
+    { width: 1400, itemsToShow: 3 },
+  ]
   return (
     <div className="bg-midnight p-75">
-      <Slider {...settings}>
-        {props.products.map((x, i) => {
+      <Carousel breakPoints={breakPoints} dots>
+        {props.products.map((carouselImg, carouselKey) => {
           return (
-            <div key="{i}" classname="img-card">
-              <Image classname="img" src={x.img} />
+            <div key={carouselKey} classname="img-card">
+              <Image classname="img" src={carouselImg.img} />
             </div>
           )
         })}
-      </Slider>
+      </Carousel>
     </div>
   )
 }

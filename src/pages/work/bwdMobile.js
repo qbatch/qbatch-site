@@ -4,6 +4,12 @@ import Layout from "../../components/layout"
 import WorkDetail from "../../components/workDetail"
 import BwdImg from "../../images/work/bwdNative.png"
 import WorkSlider from "../../components/workSlider"
+import Mobile1 from "../../images/MobileBWD/Mobile1.png"
+import Mobile2 from "../../images/MobileBWD/Mobile2.png"
+import Mobile3 from "../../images/MobileBWD/Mobile3.png"
+import Mobile4 from "../../images/MobileBWD/Mobile4.png"
+import Mobile5 from "../../images/MobileBWD/Mobile5.png"
+import Mobile6 from "../../images/MobileBWD/Mobile6.png"
 const BwdMobile = () => {
   const firstList = [
     "ReactJS",
@@ -24,19 +30,22 @@ const BwdMobile = () => {
   ]
   const products = [
     {
-      img: BwdImg,
+      img: Mobile1,
     },
     {
-      img: BwdImg,
+      img: Mobile2,
     },
     {
-      img: BwdImg,
+      img: Mobile3,
     },
     {
-      img: BwdImg,
+      img: Mobile4,
     },
     {
-      img: BwdImg,
+      img: Mobile5,
+    },
+    {
+      img: Mobile6,
     },
   ]
   return (

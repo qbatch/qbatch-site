@@ -4,6 +4,10 @@ import Layout from "../../components/layout"
 import WorkDetail from "../../components/workDetail"
 import ecomCircle from "../../images/work/ecom.png"
 import WorkSlider from "../../components/workSlider"
+import ecomCircle1 from "../../images/ecomCircles/ecomCircle1.png"
+import ecomCircle2 from "../../images/ecomCircles/ecomCircle2.png"
+import ecomCircle3 from "../../images/ecomCircles/ecomCircle3.png"
+import ecomCircle4 from "../../images/ecomCircles/ecomCircle4.png"
 const EcomCircle = () => {
   const firstList = [
     "ReactJS",
@@ -24,19 +28,16 @@ const EcomCircle = () => {
   ]
   const products = [
     {
-      img: ecomCircle,
+      img: ecomCircle1,
     },
     {
-      img: ecomCircle,
+      img: ecomCircle2,
     },
     {
-      img: ecomCircle,
+      img: ecomCircle3,
     },
     {
-      img: ecomCircle,
-    },
-    {
-      img: ecomCircle,
+      img: ecomCircle4,
     },
   ]
   return (

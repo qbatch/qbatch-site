@@ -4,6 +4,10 @@ import Layout from "../../components/layout"
 import WorkDetail from "../../components/workDetail"
 import salesSupport from "../../images/work/salesSupport.png"
 import WorkSlider from "../../components/workSlider"
+import SalesSupport1 from "../../images/SalesSupport/SalesSupport1.png"
+import SalesSupport2 from "../../images/SalesSupport/SalesSupport2.png"
+import SalesSupport3 from "../../images/SalesSupport/SalesSupport3.png"
+import SalesSupport4 from "../../images/SalesSupport/SalesSupport4.png"
 const SalesSupport = () => {
   const firstList = [
     "ReactJS",
@@ -24,19 +28,16 @@ const SalesSupport = () => {
   ]
   const products = [
     {
-      img: salesSupport,
+      img: SalesSupport1,
     },
     {
-      img: salesSupport,
+      img: SalesSupport2,
     },
     {
-      img: salesSupport,
+      img: SalesSupport3,
     },
     {
-      img: salesSupport,
-    },
-    {
-      img: salesSupport,
+      img: SalesSupport4,
     },
   ]
   return (

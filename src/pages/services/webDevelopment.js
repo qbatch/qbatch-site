@@ -132,37 +132,38 @@ const WebDevelopment = () => {
               </Col>
             </Row>
           </div>
-
-          <ul className="list-unstyled  process__container">
-            <li className="process__step">
-              <div className="process__circles"></div>
-              <h5>Consult Idea</h5>
-            </li>
-            <hr></hr>
-            <li className="process__step">
-              {" "}
-              <div className="process__circles"></div>
-              <h5>Choose Technology</h5>
-            </li>
-            <hr></hr>
-            <li className="process__step">
-              {" "}
-              <div className="process__circles"></div>
-              <h5>Design</h5>
-            </li>
-            <hr></hr>
-            <li className="process__step">
-              {" "}
-              <div className="process__circles"></div>
-              <h5>Development</h5>
-            </li>
-            <hr></hr>
-            <li className="process__step">
-              {" "}
-              <div className="process__circles"></div>
-              <h5>Launch</h5>
-            </li>
-          </ul>
+          <div className="process">
+            <ul className="list-unstyled  process__container">
+              <li className="process__step">
+                <div className="process__circles"></div>
+                <h5>Consult Idea</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Choose Technology</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Design</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Development</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Launch</h5>
+              </li>
+            </ul>
+          </div>
         </Container>
       </div>
       <ToolsList
@@ -182,14 +183,14 @@ const WebDevelopment = () => {
                   Italian home decor e-commerce app featured by Forbes and The
                   New York Times
                 </h6>
-                <p className="mb-0 ">
+                <p>
                   Artemest is a native mobile app featuring curated home décor,
                   jewellery, and lifestyle art created by over 500 top Italian
                   artists. Users can explore handcrafted art and shop directly
                   from the app. The app also offers an augmented reality module
                   to preview luxury furniture right in the home.
                 </p>
-                <p className="mb-0">
+                <p>
                   Netguru provided a full-stack solution: a comprehensive review
                   of the existing platform, UX design and native mobile
                   development.

@@ -11,6 +11,9 @@
       @include fonts($storm-gray, rem(16), $base-font, $light);
       letter-spacing: rem(1);
     }
+    @include lg {
+      display: none;
+    }
   }
   .slide {
     .carousel-indicators {
@@ -31,5 +34,10 @@
   .carousel-control-next,
   .carousel-control-prev {
     display: none;
+  }
+  .lg-hide {
+    @include lg {
+      display: none;
+    }
   }
 }

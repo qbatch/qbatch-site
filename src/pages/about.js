@@ -136,7 +136,7 @@ const About = () => {
                   Since 2015, we’ve been committed to providing dedicated remote
                   teams to engineer finest digital experiences
                 </p>
-                <div className="d-flex justify-content-around">
+                <div className="d-flex justify-content-between flex-wrap">
                   <div className="d-flex flex-column text-center">
                     <h2>2015</h2>
                     <span>Established</span>
@@ -243,10 +243,7 @@ const About = () => {
                     </div>
                   </Col>
                   <Col md={6} className="p-0">
-                    <div
-                      className="text-center b-left
-                     px-50"
-                    >
+                    <div className="text-center b-leftGrey px-50">
                       <Image src={Driven} className="aboutImg" alt="no-image" />
                       <h6>Driven</h6>
                       <p className="text-center">
@@ -262,7 +259,7 @@ const About = () => {
           </Row>
         </Container>
       </div>
-      <div className="py-75 bg-selego">
+      <div className="py-75 bg-selego hideLarge">
         <Container>
           {
             <div className="row m-0">
@@ -335,7 +332,7 @@ const About = () => {
           <Image src={Dotted} className="dottedImg" alt="no-image" />
           <Image src={Tour} alt="no-image" />
         </div>
-        <div className="d-flex flex-column">
+        <div className="group-images">
           <Image src={firstGroup} className="w-420" alt="no-image" />
           <Image src={scndGroup} className="w-420" alt="no-image" />
           <Image src={thirdGroup} className="w-420" alt="no-image" />
@@ -348,7 +345,7 @@ const About = () => {
         <Container>
           <Row className="m-0">
             <Col md={6}>
-              <div className="bg-selego text-center py-50 pb-0">
+              <div className="bg-selego text-center py-50 pb-0 mb-4">
                 <Image src={Lahore} alt="no-image" />
                 <div className="address">
                   <h3>Lahore</h3>

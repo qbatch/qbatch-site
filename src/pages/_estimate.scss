@@ -20,12 +20,16 @@
   }
 }
 .select-box {
-  box-shadow: 0px 6px 6px #498ccd1a;
-  border: 0.25px solid #70707066;
+  box-shadow: $estimateShadow;
+  border: $estimate;
   text-align: center;
-  padding: 12px 23px 20px;
+  padding: rem(12) rem(23) rem(20);
   cursor: pointer;
   min-height: rem(220);
+  margin-bottom: rem(10);
+  @include lg {
+    padding: rem(12) rem(15) rem(20);
+  }
   .form-check {
     text-align: right;
     input[type="checkbox"] {
@@ -37,6 +41,11 @@
   }
   img {
     padding-bottom: rem(15);
+  }
+  h5 {
+    @include lg {
+      @include fonts($midnight, rem(14), $base-font, $regular);
+    }
   }
 }
 .estimate_form {

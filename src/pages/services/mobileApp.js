@@ -73,7 +73,7 @@ const mobileApp = () => {
       </div>
       <div className="py-75">
         <Container>
-          <Row className="m-0 justify-content-md-center">
+          <Row className="m-0 justify-content-md-center para-ellipse">
             <Col md={6}>
               <h3>
                 Grow your business with the{" "}
@@ -120,7 +120,7 @@ const mobileApp = () => {
                 </h3>
               </Col>
               <Col md={6}>
-                <p>
+                <p className="lg-ellipse">
                   Mobile development is an ongoing process of a constant,
                   iterative effort to make your product better and better.
                   Devices and technologies through which users interact with
@@ -172,7 +172,7 @@ const mobileApp = () => {
           <div className="py-75">
             <Row>
               <Col md={6}>
-                <div className="d-flex flex-column justify-content-between h-100">
+                <div className="d-flex flex-column justify-content-between h-100 para-ellipse">
                   <h3>
                     E-commerce platform with an
                     <span className="endeavour"> augmented reality module</span>

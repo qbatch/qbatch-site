@@ -93,37 +93,39 @@ const Index = () => {
                 <Image src={medecertsImg} alt="no-image" />
               </div>
             </Col>
-            <Col md={6} sm={12}>
-              <div className="py-50">
-                <Image src={ecomImg} alt="no-image" />
-              </div>
-            </Col>
-            <Col md={6} sm={12}>
-              <div className="work py-75 pl-100">
-                <Image src={ecomCircle} alt="no-image" />
-                <p>
-                  We offer expertise for end-to-end product design
-                  anddevelopment, with solutions tailor-made to fit your
-                  product’s unique requirements.
-                </p>
-                <ul className="listItem ">
-                  {Twenty.map((list, listKey) => {
-                    return (
-                      <li className="listItem__item" key={listKey}>
-                        {list}
-                      </li>
-                    )
-                  })}
-                </ul>
-                <div className="btn-batch d-flex">
-                  <Link to="/work/ecomCircle">
-                    <Button variant="primary" className="endeavour-button">
-                      View Case Study
-                    </Button>
-                  </Link>
+            <span className="reserve-data">
+              <Col md={6} sm={12}>
+                <div className="py-50">
+                  <Image src={ecomImg} alt="no-image" />
                 </div>
-              </div>
-            </Col>
+              </Col>
+              <Col md={6} sm={12}>
+                <div className="work py-75 pl-100">
+                  <Image src={ecomCircle} alt="no-image" />
+                  <p>
+                    We offer expertise for end-to-end product design
+                    anddevelopment, with solutions tailor-made to fit your
+                    product’s unique requirements.
+                  </p>
+                  <ul className="listItem ">
+                    {Twenty.map((list, listKey) => {
+                      return (
+                        <li className="listItem__item" key={listKey}>
+                          {list}
+                        </li>
+                      )
+                    })}
+                  </ul>
+                  <div className="btn-batch d-flex">
+                    <Link to="/work/ecomCircle">
+                      <Button variant="primary" className="endeavour-button">
+                        View Case Study
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </Col>
+            </span>
             <Col md={6} sm={12}>
               <div className="work py-75">
                 <Image src={bwdLogo} alt="no-image" />
@@ -155,38 +157,39 @@ const Index = () => {
                 <Image src={bwdMobile} alt="no-image" />
               </div>
             </Col>
-            <Col md={6} sm={12}>
-              <div className="py-50">
-                <Image src={uratskerlogo} alt="no-image" />
-              </div>
-            </Col>
-            <Col md={6} sm={12}>
-              <div className="work py-75 pl-100">
-                <Image src={urtaskerLogo} alt="no-image" />
-                <p>
-                  We offer expertise for end-to-end product design
-                  anddevelopment, with solutions tailor-made to fit your
-                  product’s unique requirements.
-                </p>
-                <ul className="listItem ">
-                  {Twenty.map((list, listKey) => {
-                    return (
-                      <li className="listItem__item" key={listKey}>
-                        {list}
-                      </li>
-                    )
-                  })}
-                </ul>
-                <div className="btn-batch">
-                  <Link to="/work/urtasker">
-                    <Button variant="primary" className="endeavour-button">
-                      View Case Study
-                    </Button>
-                  </Link>
+            <span className="reserve-data">
+              <Col md={6} sm={12}>
+                <div className="py-50">
+                  <Image src={uratskerlogo} alt="no-image" />
                 </div>
-              </div>
-            </Col>
-
+              </Col>
+              <Col md={6} sm={12}>
+                <div className="work py-75 pl-100">
+                  <Image src={urtaskerLogo} alt="no-image" />
+                  <p>
+                    We offer expertise for end-to-end product design
+                    anddevelopment, with solutions tailor-made to fit your
+                    product’s unique requirements.
+                  </p>
+                  <ul className="listItem ">
+                    {Twenty.map((list, listKey) => {
+                      return (
+                        <li className="listItem__item" key={listKey}>
+                          {list}
+                        </li>
+                      )
+                    })}
+                  </ul>
+                  <div className="btn-batch">
+                    <Link to="/work/urtasker">
+                      <Button variant="primary" className="endeavour-button">
+                        View Case Study
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </Col>
+            </span>
             <Col md={6} sm={12}>
               <div className="work py-75">
                 <Image src={bwdLogo} alt="no-image" />
@@ -218,37 +221,39 @@ const Index = () => {
                 <Image src={bwdWeb} alt="no-image" />
               </div>
             </Col>
-            <Col md={6} sm={12}>
-              <div className="py-50">
-                <Image src={salesSupportImg} alt="no-image" />
-              </div>
-            </Col>
-            <Col md={6} sm={12}>
-              <div className="work py-75 pl-100">
-                <Image src={salesSupport} alt="no-image" />
-                <p>
-                  We offer expertise for end-to-end product design
-                  anddevelopment, with solutions tailor-made to fit your
-                  product’s unique requirements.
-                </p>
-                <ul className="listItem ">
-                  {Twenty.map((list, listKey) => {
-                    return (
-                      <li className="listItem__item" key={listKey}>
-                        {list}
-                      </li>
-                    )
-                  })}
-                </ul>
-                <div className="btn-batch">
-                  <Link to="/work/salesSupport">
-                    <Button variant="primary" className="endeavour-button">
-                      View Case Study
-                    </Button>
-                  </Link>
+            <span className="reserve-data">
+              <Col md={6} sm={12}>
+                <div className="py-50">
+                  <Image src={salesSupportImg} alt="no-image" />
                 </div>
-              </div>
-            </Col>
+              </Col>
+              <Col md={6} sm={12}>
+                <div className="work py-75 pl-100">
+                  <Image src={salesSupport} alt="no-image" />
+                  <p>
+                    We offer expertise for end-to-end product design
+                    anddevelopment, with solutions tailor-made to fit your
+                    product’s unique requirements.
+                  </p>
+                  <ul className="listItem ">
+                    {Twenty.map((list, listKey) => {
+                      return (
+                        <li className="listItem__item" key={listKey}>
+                          {list}
+                        </li>
+                      )
+                    })}
+                  </ul>
+                  <div className="btn-batch">
+                    <Link to="/work/salesSupport">
+                      <Button variant="primary" className="endeavour-button">
+                        View Case Study
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </Col>
+            </span>
           </Row>
         </div>
       </Container>

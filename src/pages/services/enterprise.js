@@ -82,7 +82,7 @@ const Enterprise = () => {
               </h3>
             </Col>
             <Col md={6}>
-              <p>
+              <p className="lg-ellipse">
                 Rapid revolution in technology brings the profound variation in
                 legacy systems of the enterprises. The need-of-the-time is to
                 get lift-up the efficiency of the systems through modernizations
@@ -94,7 +94,7 @@ const Enterprise = () => {
               </p>
             </Col>
 
-            <div className="text-center p-100">
+            <div className="align-center p-100">
               <h4>
                 <span className="endeavour">Increase ROI to your business</span>
               </h4>
@@ -108,50 +108,50 @@ const Enterprise = () => {
             <ServicesList list={list} />
           </Row>
         </Container>
-        <Container>
-          <div className="py-75">
-            <Row>
-              <Col md={6}>
-                <div className="d-flex flex-column justify-content-between h-100">
-                  <h3>
-                    Designing the agents app for{" "}
-                    <span className="endeavour">
-                      {" "}
-                      the Middle East’s leading developer{" "}
-                    </span>{" "}
-                    of luxury homes
-                  </h3>
-
-                  <p className="mb-0 ">
-                    Artemest is a native mobile app featuring curated home
-                    décor, jewellery, and lifestyle art created by over 500 top
-                    Italian artists. Users can explore handcrafted art and shop
-                    directly from the app. The app also offers an augmented
-                    reality module to preview luxury furniture right in the
-                    home.
-                  </p>
-                  <p className="mb-0">
-                    Netguru provided a full-stack solution: a comprehensive
-                    review of the existing platform, UX design and native mobile
-                    development.
-                  </p>
-                  <div className="btn-batch">
-                    <Button variant="primary" className="endeavour-button">
-                      read case study
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md={6}>
-                <Image src={Bwd} alt="no-image" />
-              </Col>
-            </Row>
-          </div>
-        </Container>
-        <FeaturedWork />
-        <ClientFeedback />
-        <OtherServices />
       </div>
+      <Container>
+        <div className="py-75">
+          <Row>
+            <Col md={6}>
+              <div className="d-flex flex-column justify-content-between h-100 para-ellipse">
+                <h3>
+                  Designing the agents app for{" "}
+                  <span className="endeavour">
+                    {" "}
+                    the Middle East’s leading developer{" "}
+                  </span>{" "}
+                  of luxury homes
+                </h3>
+
+                <p className="mb-0 ">
+                  Artemest is a native mobile app featuring curated home décor,
+                  jewellery, and lifestyle art created by over 500 top Italian
+                  artists. Users can explore handcrafted art and shop directly
+                  from the app. The app also offers an augmented reality module
+                  to preview luxury furniture right in the home.
+                </p>
+                <p className="mb-0">
+                  Netguru provided a full-stack solution: a comprehensive review
+                  of the existing platform, UX design and native mobile
+                  development.
+                </p>
+                <div className="btn-batch">
+                  <Button variant="primary" className="endeavour-button">
+                    read case study
+                  </Button>
+                </div>
+              </div>
+            </Col>
+            <Col md={6}>
+              <Image src={Bwd} alt="no-image" />
+            </Col>
+          </Row>
+        </div>
+      </Container>
+      <FeaturedWork />
+      <ClientFeedback />
+      <OtherServices />
+
       <div className="py-75 bg-mdnight">
         <Container>
           <ContactForm />

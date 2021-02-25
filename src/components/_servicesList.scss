@@ -40,3 +40,8 @@
     margin: rem(20) rem(45);
   }
 }
+.inherit {
+  @include md {
+    font-size: inherit;
+  }
+}

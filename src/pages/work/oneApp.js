@@ -4,6 +4,10 @@ import Layout from "../../components/layout"
 import WorkDetail from "../../components/workDetail"
 import oneApp from "../../images/work/oneApp.png"
 import WorkSlider from "../../components/workSlider"
+import OneApp1 from "../../images/OneApp/OneApp1.png"
+import OneApp2 from "../../images/OneApp/OneApp2.png"
+import OneApp3 from "../../images/OneApp/OneApp3.png"
+import OneApp4 from "../../images/OneApp/OneApp4.png"
 const OneApp = () => {
   const firstList = [
     "ReactJS",
@@ -24,19 +28,16 @@ const OneApp = () => {
   ]
   const products = [
     {
-      img: oneApp,
+      img: OneApp1,
     },
     {
-      img: oneApp,
+      img: OneApp2,
     },
     {
-      img: oneApp,
+      img: OneApp3,
     },
     {
-      img: oneApp,
-    },
-    {
-      img: oneApp,
+      img: OneApp4,
     },
   ]
   return (

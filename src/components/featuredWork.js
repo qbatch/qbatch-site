@@ -43,7 +43,7 @@ const FeaturedWork = () => {
   return (
     <div className="slider py-75 bg-selego">
       <Container>
-        <div className="text-center">
+        <div className="text-center text-xs-left">
           <h5 className="slider-h3">Our Featured Work</h5>
         </div>
         <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -52,10 +52,10 @@ const FeaturedWork = () => {
               <CarouselItem key={i}>
                 <div className="row m-0">
                   <div className="col-md-6">
-                    <div className="pl-28">
+                    <div>
                       <Image src={values.logo} />
                       <p>{values.paragraph}</p>
-                      <h5 className="mb-3">Areas of focus</h5>
+                      <h5 className="mb-3 lg-hide">Areas of focus</h5>
                       <ul className="listItem">
                         {values.list.map((lists, i) => {
                           return (

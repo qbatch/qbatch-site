@@ -123,11 +123,11 @@ const ContactForm = () => {
             <h5 className="text-light">Quick actions</h5>
             <hr className="action-line"></hr>
           </div>
-          <div className="d-flex mt-30">
+          <div className="d-flex text-center-md">
             <div className="mr-3">
               <Image src={Avatar} alt="Avatar" className="avatar" />
             </div>
-            <div className="d-flex flex-column text-light">
+            <div className="d-flex flex-column  text-light">
               <strong className="text-light">Waqas Sarwar</strong>
               <small className="small-text">Customer Care</small>
             </div>

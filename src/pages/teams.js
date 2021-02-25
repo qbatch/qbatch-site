@@ -174,12 +174,10 @@ const Teams = () => {
         </Container>
       </div>
       <div className="bg-midnight">
-        <div className="py-75">
+        <div className="py-75 text-short">
           <Container>
-            <h3 className="text-light text-center">
-              Why Dedicated Teams With Qbatch?
-            </h3>
-            <p className="text-light text-center px-30">
+            <h3 className="text-light">Why Dedicated Teams With Qbatch?</h3>
+            <p className="text-light  px-30">
               Hiring our highly scrutinized dedicated teams will provide you
               with some exceptional added advantages,<br></br> that can make the
               whole process secure and hassle-free for you.
@@ -235,7 +233,7 @@ const Teams = () => {
                   <div className="execution">
                     <Image src={execution.image} alt="no-image" />
                     <h6 className="inner-h6">{execution.title}</h6>
-                    <p>{execution.paragraph}</p>
+                    <p className="lg-ellipse">{execution.paragraph}</p>
                   </div>
                 </Col>
               )

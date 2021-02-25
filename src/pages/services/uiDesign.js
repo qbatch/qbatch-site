@@ -122,7 +122,7 @@ const UiDesign = () => {
       </div>
       <div className="py-75">
         <Container>
-          <Row className="m-0 justify-content-md-center">
+          <Row className="m-0 justify-content-md-center para-ellipse">
             <Col md={6}>
               <h3>
                 Accelerate growth with
@@ -130,7 +130,7 @@ const UiDesign = () => {
               </h3>
             </Col>
             <Col md={6}>
-              <p>
+              <p className="lg-ellipse">
                 We offer an aesthetical approach for the seamless customer
                 experience with a narrow focus on the look and feel of the
                 systems and software. The process of defining the touch points,
@@ -158,7 +158,7 @@ const UiDesign = () => {
         <Container>
           <Row className="m-0">
             <Col md={6}>
-              <div className="d-flex flex-column justify-content-between h-100">
+              <div className="d-flex flex-column justify-content-between h-100 para-ellipse">
                 <h4>
                   <span className="endeavour ml-0">
                     Find a digital product design solution{" "}
@@ -209,7 +209,7 @@ const UiDesign = () => {
               </h3>
             </Col>
             <Col md={6}>
-              <p>
+              <p className="lg-ellipse">
                 Design is an ongoing process of a constant, iterative effort to
                 make your product better and better. Devices and technologies
                 through which users interact with your product will change so as
@@ -219,36 +219,38 @@ const UiDesign = () => {
               </p>
             </Col>
           </Row>
-          <ul className="list-unstyled  process__container">
-            <li className="process__step">
-              <div className="process__circles"></div>
-              <h5>Research</h5>
-            </li>
-            <hr></hr>
-            <li className="process__step">
-              {" "}
-              <div className="process__circles"></div>
-              <h5>Wireframing</h5>
-            </li>
-            <hr></hr>
-            <li className="process__step">
-              {" "}
-              <div className="process__circles"></div>
-              <h5>Testing</h5>
-            </li>
-            <hr></hr>
-            <li className="process__step">
-              {" "}
-              <div className="process__circles"></div>
-              <h5>Visual design</h5>
-            </li>
-            <hr></hr>
-            <li className="process__step">
-              {" "}
-              <div className="process__circles"></div>
-              <h5>Dev handover</h5>
-            </li>
-          </ul>
+          <div className="process">
+            <ul className="list-unstyled  process__container">
+              <li className="process__step">
+                <div className="process__circles"></div>
+                <h5>Research</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Wireframing</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Testing</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Visual design</h5>
+              </li>
+              <hr></hr>
+              <li className="process__step">
+                {" "}
+                <div className="process__circles"></div>
+                <h5>Dev handover</h5>
+              </li>
+            </ul>
+          </div>
         </Container>
       </div>
       <ToolList

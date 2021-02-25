@@ -64,7 +64,7 @@ const footer = ({ logo }) => {
       <footer>
         <div className="upper">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-4 col-sm-6">
               <div className="logo-box">
                 <Image src={logo} alt="no-image" />
               </div>
@@ -85,7 +85,7 @@ const footer = ({ logo }) => {
                 </span>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4 col-sm-6">
               <h5>Menu</h5>
               <ListGroup className="footerList">
                 {menu.map((menuList, menuListKey) => {
@@ -103,7 +103,7 @@ const footer = ({ logo }) => {
                 })}
               </ListGroup>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4 col-sm-6">
               <h5>Services</h5>
               <ListGroup className="footerList">
                 {services.map((serviceList, servicesListKey) => {
@@ -120,10 +120,10 @@ const footer = ({ logo }) => {
                 })}
               </ListGroup>
             </div>
-            <div className="col-md-3">
+            {/* <div className="col-md-3 col-sm-6">
               <h5>Award</h5>
               <Image src={award} alt="no-image" />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="social d-flex justify-content-between ">

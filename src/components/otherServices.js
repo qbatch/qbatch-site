@@ -19,12 +19,12 @@ const otherServices = () => {
               <div className="bg-icon">
                 <Image src={Android} alt="no-image" />
               </div>
-              <h5>Android Development</h5>
+              <h5 className="inherit">Android Development</h5>
               <p className="listPara text-center mx-300 mb-4">
                 Create mobile native applications for Android with
                 top-of-the-league practices.
               </p>
-              <div className="btn-batch">
+              <div className="btn-batch justify-content-center">
                 <Button
                   variant="primary"
                   type="submit"
@@ -40,12 +40,12 @@ const otherServices = () => {
               <div className="bg-icon">
                 <Image src={Ios} alt="no-image" />
               </div>
-              <h5>iOS Development</h5>
+              <h5 className="inherit">iOS Development</h5>
               <p className="listPara text-center mx-300 mb-4">
                 Build mobile native applications using state-of-the-art
                 technology standards for iOS.
               </p>
-              <div className="btn-batch">
+              <div className="btn-batch justify-content-center">
                 <Button
                   variant="primary"
                   type="submit"

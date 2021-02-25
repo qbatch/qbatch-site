@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Container, Image, Button } from "react-bootstrap"
+import { Container, Image, Button, Row, Col } from "react-bootstrap"
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
 import shapeUpper from "../../images/services/shapeUpper.png"
@@ -36,8 +36,8 @@ function Index() {
       <div className="services-list">
         <Container>
           <div className="pt-100">
-            <div className="row m-0">
-              <div className="col-md-6 ">
+            <Row className="row m-0">
+              <Col md={6}>
                 <div className="d-flex flex-column justify-content-between h-100 pt-50">
                   <h5>Enterprise Business Solutions</h5>
                   <p>
@@ -63,8 +63,8 @@ function Index() {
                     </div>
                   </Link>
                 </div>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <div className="pt-50">
                   <Image
                     src={EnterpriseBusiness}
@@ -72,42 +72,44 @@ function Index() {
                     alt="no-image"
                   />
                 </div>
-              </div>
-              <div className="col-md-6">
-                <div className="pt-50">
-                  <Image
-                    src={CrossPlatform}
-                    className="mw-100"
-                    alt="no-image"
-                  />
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="d-flex flex-column justify-content-between h-100 pt-50 pl-70">
-                  <h5>Cross Platform Mobile Development</h5>
-                  <p>
-                    We develop the Mobile applications using Native and Cross
-                    platform Frameworks for Android and iOS with a premium
-                    attention about the scalability and optimization
-                  </p>
-                  <ul className="list-unstyled list">
-                    <li className="list__item">Cross Platform Development</li>
-                    <li className="list__item">Quality Assurance</li>
-                    <li className="list__item">
-                      Native Application Development
-                    </li>
-                    <li className="list__item">User Oriented Design</li>
-                  </ul>
-                  <Link to="/services/mobileApp">
-                    <div className="btn-batch">
-                      <Button variant="primary" className="endeavour-button">
-                        See More details
-                      </Button>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="col-md-6 ">
+              </Col>
+              <span className="reserve-data">
+                <Col md={6}>
+                  <div className="pt-50">
+                    <Image
+                      src={CrossPlatform}
+                      className="mw-100"
+                      alt="no-image"
+                    />
+                  </div>
+                </Col>
+                <Col md={6}>
+                  <div className="d-flex flex-column justify-content-between h-100 pt-50 pl-70">
+                    <h5>Cross Platform Mobile Development</h5>
+                    <p>
+                      We develop the Mobile applications using Native and Cross
+                      platform Frameworks for Android and iOS with a premium
+                      attention about the scalability and optimization
+                    </p>
+                    <ul className="list-unstyled list">
+                      <li className="list__item">Cross Platform Development</li>
+                      <li className="list__item">Quality Assurance</li>
+                      <li className="list__item">
+                        Native Application Development
+                      </li>
+                      <li className="list__item">User Oriented Design</li>
+                    </ul>
+                    <Link to="/services/mobileApp">
+                      <div className="btn-batch">
+                        <Button variant="primary" className="endeavour-button">
+                          See More details
+                        </Button>
+                      </div>
+                    </Link>
+                  </div>
+                </Col>
+              </span>
+              <Col md={6}>
                 <div className="d-flex flex-column justify-content-between h-100 pt-50">
                   <h5>Web Development</h5>
                   <p>
@@ -129,8 +131,8 @@ function Index() {
                     </div>
                   </Link>
                 </div>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <div className="pt-50">
                   <Image
                     src={WebDevelopment}
@@ -138,41 +140,43 @@ function Index() {
                     alt="no-image"
                   />
                 </div>
+              </Col>
+              <div className="reserve-data">
+                <Col md={6}>
+                  <div className="pt-50">
+                    <Image
+                      src={CloudEngineering}
+                      className="mw-100"
+                      alt="no-image"
+                    />
+                  </div>
+                </Col>
+                <Col md={6}>
+                  <div className="d-flex flex-column justify-content-between h-100 pt-50 pl-70">
+                    <h5>Cloud Engineering Services</h5>
+                    <p>
+                      Developing accessible solutions for better customer
+                      experience with Cloud Engineering Services bring a
+                      wide-array of models that redefines the seamless customer
+                      experience.
+                    </p>
+                    <ul className="list-unstyled list">
+                      <li className="list__item">Cloud Strategy</li>
+                      <li className="list__item">Cloud Transitioning</li>
+                      <li className="list__item">Cloud Migration</li>
+                      <li className="list__item">Cloud Advisory</li>
+                    </ul>
+                    <Link to="/services/devops">
+                      <div className="btn-batch">
+                        <Button variant="primary" className="endeavour-button">
+                          See More details
+                        </Button>
+                      </div>
+                    </Link>
+                  </div>
+                </Col>
               </div>
-              <div className="col-md-6">
-                <div className="pt-50">
-                  <Image
-                    src={CloudEngineering}
-                    className="mw-100"
-                    alt="no-image"
-                  />
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="d-flex flex-column justify-content-between h-100 pt-50 pl-70">
-                  <h5>Cloud Engineering Services</h5>
-                  <p>
-                    Developing accessible solutions for better customer
-                    experience with Cloud Engineering Services bring a
-                    wide-array of models that redefines the seamless customer
-                    experience.
-                  </p>
-                  <ul className="list-unstyled list">
-                    <li className="list__item">Cloud Strategy</li>
-                    <li className="list__item">Cloud Transitioning</li>
-                    <li className="list__item">Cloud Migration</li>
-                    <li className="list__item">Cloud Advisory</li>
-                  </ul>
-                  <Link to="/services/devops">
-                    <div className="btn-batch">
-                      <Button variant="primary" className="endeavour-button">
-                        See More details
-                      </Button>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="col-md-6 ">
+              <Col md={6}>
                 <div className="d-flex flex-column justify-content-between h-100 pt-50">
                   <h5>UI/UX Design & Development</h5>
                   <p>
@@ -196,52 +200,55 @@ function Index() {
                     </div>
                   </Link>
                 </div>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <div className="pt-50">
                   <Image src={UIUX} className="mw-100" alt="no-image" />
                 </div>
+              </Col>
+              <div className="reserve-data">
+                <Col md={6}>
+                  <div className="pt-50">
+                    <Image
+                      src={BusinessConsulting}
+                      className="mw-100"
+                      alt="no-image"
+                    />
+                  </div>
+                </Col>
+                <Col md={6}>
+                  <div className="d-flex flex-column justify-content-between h-100 pt-50 pl-70">
+                    <h5>Business Consulting</h5>
+                    <p>
+                      We enable and facilitate in steering an exhaustive
+                      activity of translation of thoughts and ideal experiences
+                      to the real-time products. Advice on modern technology and
+                      tools.
+                    </p>
+                    <ul className="list-unstyled list">
+                      <li className="list__item">Discovery Workshops</li>
+                      <li className="list__item">Features Exploration</li>
+                      <li className="list__item">Sketching Ideas</li>
+                      <li className="list__item">Advisory Services</li>
+                      <li className="list__item">
+                        Tech-Enabled Business Strategy
+                      </li>
+                      <li className="list__item">Technology Assurance</li>
+                      <li className="list__item">
+                        Modern Technology & Industry Best Practices
+                      </li>
+                    </ul>
+                    <Link to="/services/business">
+                      <div className="btn-batch">
+                        <Button variant="primary" className="endeavour-button">
+                          See More details
+                        </Button>
+                      </div>
+                    </Link>
+                  </div>
+                </Col>
               </div>
-              <div className="col-md-6">
-                <div className="pt-50">
-                  <Image
-                    src={BusinessConsulting}
-                    className="mw-100"
-                    alt="no-image"
-                  />
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="d-flex flex-column justify-content-between h-100 pt-50 pl-70">
-                  <h5>Business Consulting</h5>
-                  <p>
-                    We enable and facilitate in steering an exhaustive activity
-                    of translation of thoughts and ideal experiences to the
-                    real-time products. Advice on modern technology and tools.
-                  </p>
-                  <ul className="list-unstyled list">
-                    <li className="list__item">Discovery Workshops</li>
-                    <li className="list__item">Features Exploration</li>
-                    <li className="list__item">Sketching Ideas</li>
-                    <li className="list__item">Advisory Services</li>
-                    <li className="list__item">
-                      Tech-Enabled Business Strategy
-                    </li>
-                    <li className="list__item">Technology Assurance</li>
-                    <li className="list__item">
-                      Modern Technology & Industry Best Practices
-                    </li>
-                  </ul>
-                  <Link to="/services/business">
-                    <div className="btn-batch">
-                      <Button variant="primary" className="endeavour-button">
-                        See More details
-                      </Button>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
+            </Row>
           </div>
         </Container>
       </div>
