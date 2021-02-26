@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container, Image, Button } from "react-bootstrap"
+import { Container, Image, Button, Row, Col } from "react-bootstrap"
 import ClientFeedback from "../components/clientFeedback"
 import FeaturedWork from "../components/featuredWork"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -137,8 +137,8 @@ const IndexPage = () => {
         <div className="skewed-bg">
           <div className="content">
             <Container className="pt-155">
-              <div className="row m-0">
-                <div className="col-md-6">
+              <Row className="m-0">
+                <Col md={6}>
                   <div className="text-left">
                     <h1>Automating Ideas for Optimum ROI</h1>
                     <p>
@@ -157,26 +157,26 @@ const IndexPage = () => {
                       <Button className="outline-button ml-4">Our Work</Button>
                     </div>
                   </div>
-                </div>
-                <div className="col-md-6">
+                </Col>
+                <Col md={6}>
                   <div className="text-right">
                     <Image src={IndexImage} className="image-space" />
                   </div>
-                </div>
-              </div>
+                </Col>
+              </Row>
             </Container>
           </div>
         </div>
         <div className="inner-skewed">
           <Container>
-            <div className="row m-0">
-              <div className="col-md-6">
+            <Row className="row">
+              <Col md={6}>
                 <h6 className="hwr">Who We Are </h6>
                 <h4 className="hwr-types">
                   Strategists, Devbots, Visualizers & Executors
                 </h4>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <p className="pb-3">
                   We are a team of diverse masters, encompassing holistic
                   services required to design seamless experiences and
@@ -185,8 +185,8 @@ const IndexPage = () => {
                   user-friendly products & features & Test the minimum viability
                   as well as optimum performance of the systems.
                 </p>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <div className="d-flex justify-content-between">
                   <div className="d-flex flex-column">
                     <h1>2015</h1>
@@ -199,8 +199,8 @@ const IndexPage = () => {
                     <h6 className="h-title">Clients</h6>
                   </div>
                 </div>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <div className="d-flex justify-content-around">
                   <div className="d-flex flex-column">
                     <h1>
@@ -216,16 +216,16 @@ const IndexPage = () => {
                     <h6 className="h-title">Teams</h6>
                   </div>
                 </div>
-              </div>
-            </div>
+              </Col>
+            </Row>
           </Container>
         </div>
       </div>
       <section>
         <Container>
           <div className="services py-50">
-            <div className="row m-0">
-              <div className="col-md-4">
+            <Row className="m-0">
+              <Col md={4}>
                 <div className="d-flex">
                   <div className="serviceBox">
                     <h5 className="popularService">Popular Services</h5>
@@ -246,12 +246,12 @@ const IndexPage = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
-              <div className="col-md-8">
-                <div className="row m-o">
+              </Col>
+              <Col md={8}>
+                <Row className="m-0">
                   {services.map((values, i) => {
                     return (
-                      <div className="col-md-4" key={i}>
+                      <Col md={4} key={i}>
                         <Link to={values.to}>
                           <div className="services-list">
                             <div className="linkIcon rounded-circle">
@@ -265,12 +265,12 @@ const IndexPage = () => {
                             />
                           </div>
                         </Link>
-                      </div>
+                      </Col>
                     )
                   })}
-                </div>
-              </div>
-            </div>
+                </Row>
+              </Col>
+            </Row>
           </div>
         </Container>
       </section>
@@ -338,8 +338,8 @@ const IndexPage = () => {
         <div className="teams">
           <Container>
             <div className="teams-detail">
-              <div className="row m-0">
-                <div className="col-md-6">
+              <Row className=" m-0">
+                <Col md={6}>
                   <h1>Dedicated Teams for your Product</h1>
                   <p>
                     We at Qbatch hosts the dedicated cloud teams with effective
@@ -356,21 +356,21 @@ const IndexPage = () => {
                       </Button>
                     </div>
                   </Link>
-                </div>
-                <div className="col-md-6">
+                </Col>
+                <Col md={6}>
                   <div className="text-right">
                     <Image src={teamImg} alt="no-image" />
                   </div>
-                </div>
-              </div>
+                </Col>
+              </Row>
             </div>
           </Container>
         </div>
         <div className="experites">
           <Container>
             <div className="inner-content">
-              <div className="row m-0">
-                <div className="col-md-10 col-sm-12">
+              <Row className="m-0">
+                <Col md={10} sm={12}>
                   <h1 className="text-light mb-22">
                     Our World Class Expertise to Help Your Business Make Dent on
                     Earth
@@ -379,7 +379,7 @@ const IndexPage = () => {
                     We facilitate our clients to unleash the potential of their
                     product
                   </p>
-                </div>
+                </Col>
                 {expertise.map((values, i) => {
                   return (
                     <div className="col-md-3" key={i}>
@@ -395,7 +395,7 @@ const IndexPage = () => {
                     </div>
                   )
                 })}
-              </div>
+              </Row>
             </div>
           </Container>
           <div className="bg-cornflower"></div>

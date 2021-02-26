@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Container, Image, ListGroup } from "react-bootstrap"
+import { Container, Image, ListGroup, Row, Col } from "react-bootstrap"
 import award from "../images/footer/award.png"
 import facebook from "../images/socialIcons/facebook.svg"
 import twitter from "../images/socialIcons/twitter.svg"
@@ -63,8 +63,8 @@ const footer = ({ logo }) => {
     <Container>
       <footer>
         <div className="upper">
-          <div className="row">
-            <div className="col-md-4 col-sm-6">
+          <Row className="m-0">
+            <Col md={4} sm={6}>
               <div className="logo-box">
                 <Image src={logo} alt="no-image" />
               </div>
@@ -84,8 +84,8 @@ const footer = ({ logo }) => {
                   Mezzanine floor, Sitara Tower, Bilal Rd, Civil Lines
                 </span>
               </div>
-            </div>
-            <div className="col-md-4 col-sm-6">
+            </Col>
+            <Col md={4} sm={6}>
               <h5>Menu</h5>
               <ListGroup className="footerList">
                 {menu.map((menuList, menuListKey) => {
@@ -102,8 +102,8 @@ const footer = ({ logo }) => {
                   )
                 })}
               </ListGroup>
-            </div>
-            <div className="col-md-4 col-sm-6">
+            </Col>
+            <Col className="col-md-4 col-sm-6">
               <h5>Services</h5>
               <ListGroup className="footerList">
                 {services.map((serviceList, servicesListKey) => {
@@ -119,12 +119,12 @@ const footer = ({ logo }) => {
                   )
                 })}
               </ListGroup>
-            </div>
+            </Col>
             {/* <div className="col-md-3 col-sm-6">
               <h5>Award</h5>
               <Image src={award} alt="no-image" />
             </div> */}
-          </div>
+          </Row>
         </div>
         <div className="social d-flex justify-content-between ">
           <span className="small-text">

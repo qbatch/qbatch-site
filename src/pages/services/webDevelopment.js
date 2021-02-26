@@ -51,8 +51,8 @@ const WebDevelopment = () => {
         <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
         <Image src={shapeLower} className="shapeLower" alt="no-image" />
         <Container>
-          <div className="row m-0">
-            <div className="col-md-7">
+          <Row className="m-0">
+            <Col md={7}>
               <div className="pt-174">
                 <h2 className="mb-4">
                   Crafting digital future through
@@ -66,13 +66,13 @@ const WebDevelopment = () => {
                   usual business operations.
                 </p>
               </div>
-            </div>
-            <div className="col-md-5">
+            </Col>
+            <Col md={6}>
               <div className="pt-150 text-right">
                 <Image src={webDevelop} alt="no-image" />
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </Container>
       </div>
       <div className="py-75">

@@ -74,8 +74,8 @@ const Devops = props => {
         <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
         <Image src={shapeLower} className="shapeLower" alt="no-image" />
         <Container>
-          <div className="row m-0">
-            <div className="col-md-6">
+          <Row className="m-0">
+            <Col md={6}>
               <div className="pt-174">
                 <h2 className="mb-4">
                   <span className="endeavour">Cloud Engineering </span>
@@ -87,34 +87,34 @@ const Devops = props => {
                   usual business operations.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6">
+            </Col>
+            <Col md={6}>
               <div className="pt-150 text-right">
                 <Image src={cloud} alt="no-image" className="mw-100" />
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </Container>
       </div>
       <Container>
         <div className="py-75">
-          <div className="row m-0">
-            <div className="col-md-6">
+          <Row className="m-0">
+            <Col md={6}>
               <h3 className="heading">
                 Update, test and deploy at lightning-speed with
                 <span className="endeavour">cloud application development</span>
               </h3>
-            </div>
-            <div className="col-md-6">
+            </Col>
+            <Col md={6}>
               <p>
                 Developing accessible solutions for better customer experience
                 with Cloud Engineering Services bring a wide-array of models
                 that redefines the seamless customer experience with high-end
                 data security and easy accessibility.
               </p>
-            </div>
+            </Col>
 
-            <div className="col-md-12 col-sm-12">
+            <Col md={12} sm={12}>
               <div className="text-center p-100">
                 <h4>
                   Save <span className="endeavour">20%</span> on operational
@@ -128,8 +128,8 @@ const Devops = props => {
                   an equivalent on-premises installation:
                 </p>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
         <ServicesList list={list} />
         <div className="py-75">

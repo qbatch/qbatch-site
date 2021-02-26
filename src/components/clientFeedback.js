@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Carousel, Image } from "react-bootstrap"
+import { Container, Carousel, Image, Row, Col } from "react-bootstrap"
 import first from "../images/sliderImage/first.png"
 const clientFeedback = () => {
   const clientReview = [
@@ -35,8 +35,8 @@ const clientFeedback = () => {
   return (
     <div className="view-sliders">
       <Container>
-        <div className="row">
-          <div className="col-md-12">
+        <Row className="m-0">
+          <Col md={12}>
             <div className="text-center">
               <h5 className="mb-4">What Clients Say About Us</h5>
               <Carousel>
@@ -60,8 +60,8 @@ const clientFeedback = () => {
                 })}
               </Carousel>
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </Container>
     </div>
   )

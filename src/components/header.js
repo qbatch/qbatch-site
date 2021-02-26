@@ -67,7 +67,9 @@ const Header = props => {
                             : "/contact"
                           : link.route
                       }
-                      className="navbar__item"
+                      className={
+                        link.title === "estimate" ? "d-none" : "navbar__item"
+                      }
                       key={i}
                     >
                       {link.title === "contact" ? (

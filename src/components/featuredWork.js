@@ -6,6 +6,8 @@ import {
   Carousel,
   Figure,
   CarouselItem,
+  Row,
+  Col,
 } from "react-bootstrap"
 import sliderImg from "../images/research/slideImg.png"
 import medcertsLogo from "../images/index/medecerts.png"
@@ -50,8 +52,8 @@ const FeaturedWork = () => {
           {work.map((values, i) => {
             return (
               <CarouselItem key={i}>
-                <div className="row m-0">
-                  <div className="col-md-6">
+                <Row>
+                  <Col md={6}>
                     <div>
                       <Image src={values.logo} />
                       <p>{values.paragraph}</p>
@@ -74,15 +76,15 @@ const FeaturedWork = () => {
                         </Button>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-md-6">
+                  </Col>
+                  <Col md={6}>
                     <div className="text-left">
                       <Figure className="imgBox">
                         <Figure.Image alt="First slide" src={values.img} />
                       </Figure>
                     </div>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
               </CarouselItem>
             )
           })}

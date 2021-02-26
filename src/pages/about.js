@@ -125,8 +125,8 @@ const About = () => {
         <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
         <Image src={shapeLower} className="shapeLower" alt="no-image" />
         <Container>
-          <div className="row m-0">
-            <div className="col-md-12">
+          <Row className="m-0">
+            <Col md={12}>
               <div className="pt-174">
                 <h2 className="mb-4">
                   <span className="endeavour mr-2">About</span>
@@ -155,8 +155,8 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </Container>
       </div>
       <div className="our-story">
@@ -261,35 +261,33 @@ const About = () => {
       </div>
       <div className="py-75 bg-selego hideLarge">
         <Container>
-          {
-            <div className="row m-0">
-              <div className="col-md-10 col-sm-12">
-                <h3 className=" mb-22 ">
-                  Our World Class Expertise to Help Your Business Make Dent on
-                  Earth
-                </h3>
-                <p className="mb-50">
-                  We facilitate our clients to unleash the potential of their
-                  product
-                </p>
-              </div>
-              {expertise.map((values, i) => {
-                return (
-                  <div className="col-md-3" key={i}>
-                    <div className="bg-roseWhite">
-                      <Image
-                        src={values.img}
-                        alt="no-image"
-                        className="exp-img"
-                      />
-                      <h6 className="title-b pl-2">{values.title}</h6>
-                      <p className="exp-p">{values.paragraph}</p>
-                    </div>
+          <Row className="m-0">
+            <Col md={10} sm={12}>
+              <h3 className=" mb-22 ">
+                Our World Class Expertise to Help Your Business Make Dent on
+                Earth
+              </h3>
+              <p className="mb-50">
+                We facilitate our clients to unleash the potential of their
+                product
+              </p>
+            </Col>
+            {expertise.map((values, i) => {
+              return (
+                <Col md={3} key={i}>
+                  <div className="bg-roseWhite">
+                    <Image
+                      src={values.img}
+                      alt="no-image"
+                      className="exp-img"
+                    />
+                    <h6 className="title-b pl-2">{values.title}</h6>
+                    <p className="exp-p">{values.paragraph}</p>
                   </div>
-                )
-              })}
-            </div>
-          }
+                </Col>
+              )
+            })}
+          </Row>
         </Container>
       </div>
       <div className="py-75">

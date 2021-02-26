@@ -67,8 +67,8 @@ const Teams = () => {
         <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
         <Image src={shapeLower} className="shapeLower" alt="no-image" />
         <Container>
-          <div className="row m-0">
-            <div className="col-md-6">
+          <Row className="m-0">
+            <Col md={6}>
               <div className="pt-174">
                 <h2>Your Software Development</h2>
                 <h2 className="mb-4">
@@ -79,13 +79,13 @@ const Teams = () => {
                   to Us.
                 </p>
               </div>
-            </div>
-            <div className="col-md-6">
+            </Col>
+            <Col md={6}>
               <div className="pt-150 text-right">
                 <Image src={TeamsImg} alt="no-image" className="mw-100" />
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </Container>
       </div>
       <Container>

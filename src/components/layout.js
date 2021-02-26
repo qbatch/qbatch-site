@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Header from "./header"
 import "./layout.css"
 import Footer from "../components/footer"
-import Logo from "../images/logo.png"
+import Logo from "../images/logo.svg"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

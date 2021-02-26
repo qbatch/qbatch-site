@@ -1229,6 +1229,12 @@ p {
   min-height: 13.4375rem;
 }
 
+@media (max-width: 1200px) {
+  .bg-roseWhite {
+    min-height: 16.5rem;
+  }
+}
+
 .bg-roseWhite .exp-img {
   max-width: 2.5rem;
   max-height: 2.5rem;

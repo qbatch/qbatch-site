@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Form, Button, Image } from "react-bootstrap"
+import { Form, Button, Image, Row, Col } from "react-bootstrap"
 import Avatar from "../images/waqasServer.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
@@ -30,11 +30,11 @@ const ContactForm = () => {
         </div>
         <h4 className="text-light mt-3 mb-10">Ready to get Started?</h4>
       </div>
-      <div className="row">
-        <div className="col-md-8">
+      <Row>
+        <Col md={8}>
           <Form className="contact-form" onSubmit={handleSubmit}>
-            <div className="row m-0">
-              <div className="col-md-12">
+            <Row>
+              <Col md={12}>
                 <Form.Group
                   controlId="exampleForm.ControlSelect1"
                   className="contactUs-dropdown position-relative"
@@ -47,8 +47,8 @@ const ContactForm = () => {
                     <option>How we can help you?</option>
                   </Form.Control>
                 </Form.Group>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <Form.Group>
                   <Form.Control
                     type="text"
@@ -58,8 +58,8 @@ const ContactForm = () => {
                     onChange={handleInputChange}
                   />
                 </Form.Group>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <Form.Group>
                   <Form.Control
                     type="email"
@@ -69,8 +69,8 @@ const ContactForm = () => {
                     onChange={handleInputChange}
                   />
                 </Form.Group>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <Form.Group>
                   <Form.Control
                     type="text"
@@ -80,8 +80,8 @@ const ContactForm = () => {
                     onChange={handleInputChange}
                   />
                 </Form.Group>
-              </div>
-              <div className="col-md-6">
+              </Col>
+              <Col md={6}>
                 <Form.Group>
                   <Form.Control
                     type="text"
@@ -91,8 +91,8 @@ const ContactForm = () => {
                     onChange={handleInputChange}
                   />
                 </Form.Group>
-              </div>
-              <div className="col-md-12">
+              </Col>
+              <Col md={12}>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                   <Form.Control
                     name="textarea"
@@ -104,21 +104,21 @@ const ContactForm = () => {
                     className="py-2"
                   />
                 </Form.Group>
-              </div>
-              <div className="col-md-12">
+              </Col>
+              <Col md={12}>
                 <span className="text-spam mt-4">
                   Don't worry we do not span your information.
                 </span>
-              </div>
+              </Col>
               <div className="btn-batch mt-4">
                 <Button variant="primary" type="submit" className="btn-send">
                   Send
                 </Button>
               </div>
-            </div>
+            </Row>
           </Form>
-        </div>
-        <div className="col-md-4">
+        </Col>
+        <Col md={4}>
           <div className="actions">
             <h5 className="text-light">Quick actions</h5>
             <hr className="action-line"></hr>
@@ -139,8 +139,8 @@ const ContactForm = () => {
               <li className="detail__list">571 549 8431</li>
             </ul>
           </div>
-        </div>
-      </div>
+        </Col>
+      </Row>
     </div>
   )
 }

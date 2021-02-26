@@ -58,6 +58,9 @@
   margin-bottom: rem(25);
   padding: rem(20);
   min-height: rem(215);
+  @include xl {
+    min-height: rem(264);
+  }
   .exp-img {
     max-width: rem(40);
     max-height: rem(40);
