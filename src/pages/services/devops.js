@@ -175,10 +175,16 @@ const Devops = props => {
           </ul>
         </div>
       </Container>
-      <ToolsList
-        tools={tools}
-        heading="Tools and Technologies for Cloud Engineering"
-      />
+      <div className="bg-selego py-75">
+        <Container>
+          <div>
+            <ToolsList
+              tools={tools}
+              heading="Tools and Technologies for Cloud Engineering"
+            />
+          </div>
+        </Container>
+      </div>
       <Container>
         <div className="py-75">
           <Row>

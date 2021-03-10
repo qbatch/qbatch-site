@@ -20,6 +20,7 @@ import Vue from "../../images/services/vue.svg"
 import MongoDb from "../../images/services/mongodb.svg"
 import MySql from "../../images/services/mysql.svg"
 import PostSql from "../../images/services/postsql.svg"
+import native from "../../images/services/native.svg"
 import Neo4j from "../../images/services/neo4j.svg"
 import DevopsImg from "../../images/services/devops.png"
 const WebDevelopment = () => {
@@ -43,7 +44,7 @@ const WebDevelopment = () => {
         "Creating enriched user experience apps that not only look good but also work good.",
     },
   ]
-  const tools = [Rails, Node, Vue, MongoDb, MySql, PostSql, Neo4j]
+  const tools = [Rails, Node, native, Vue, MongoDb, MySql, PostSql, Neo4j]
   return (
     <Layout>
       <SEO title="webDevelopment" />
@@ -67,7 +68,7 @@ const WebDevelopment = () => {
                 </p>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={5}>
               <div className="pt-150 text-right">
                 <Image src={webDevelop} alt="no-image" />
               </div>
@@ -166,10 +167,16 @@ const WebDevelopment = () => {
           </div>
         </Container>
       </div>
-      <ToolsList
-        tools={tools}
-        heading="Tech Stacks For Effective & Up-To-Date Mobile Apps"
-      />
+      <div className="bg-selego py-75">
+        <Container>
+          <div className="mx-960">
+            <ToolsList
+              tools={tools}
+              heading="Tech Stacks For Effective & Up-To-Date Mobile Apps"
+            />
+          </div>
+        </Container>
+      </div>
       <Container>
         <div className="py-75">
           <Row>

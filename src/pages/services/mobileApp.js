@@ -164,10 +164,16 @@ const mobileApp = () => {
             </li>
           </ul>
         </Container>
-        <ToolsList
-          tools={tools}
-          heading="Tech Stacks For Effective & Up-To-Date Mobile Apps"
-        />
+        <div className="bg-selego py-75">
+          <Container>
+            <div className="mx-536">
+              <ToolsList
+                tools={tools}
+                heading="Tech Stacks For Effective & Up-To-Date Mobile Apps"
+              />
+            </div>
+          </Container>
+        </div>
         <Container>
           <div className="py-75">
             <Row>

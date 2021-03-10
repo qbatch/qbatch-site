@@ -253,10 +253,16 @@ const UiDesign = () => {
           </div>
         </Container>
       </div>
-      <ToolList
-        tools={tools}
-        heading="Tools For Effective & Up-To-Date Experience Design"
-      />
+      <div className="bg-selego py-75">
+        <Container>
+          <div className="mx-680">
+            <ToolList
+              tools={tools}
+              heading="Tools For Effective & Up-To-Date Experience Design"
+            />
+          </div>
+        </Container>
+      </div>
       <Container>
         <div className="py-75">
           <Row>
