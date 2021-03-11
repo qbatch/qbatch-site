@@ -324,7 +324,7 @@ const About = () => {
       <div className="bg-midnight d-flex justify-content-around flex-wrap feedback">
         <div className="left-image position-relative">
           <h4 className="text-light midnight-h4 w-75 ">
-            Our Culture E<b>mpowers</b> individuals to learn from experiences,
+            Our Culture <b>Empowers</b> individuals to learn from experiences,
             interactions & people around them.
           </h4>
           <Image src={Dotted} className="dottedImg" alt="no-image" />

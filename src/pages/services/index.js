@@ -56,8 +56,8 @@ function Index() {
                     <li className="list__item">Reporting and Analysis</li>
                   </ul>
                   <Link to="/services/enterprise">
-                    <div className="btn-batch">
-                      <Button variant="primary" className="endeavour-button">
+                    <div className="btn-batch mb-0">
+                      <Button variant="primary" className="endeavour-button ">
                         See More details
                       </Button>
                     </div>
@@ -100,7 +100,7 @@ function Index() {
                       <li className="list__item">User Oriented Design</li>
                     </ul>
                     <Link to="/services/mobileApp">
-                      <div className="btn-batch">
+                      <div className="btn-batch mb-0">
                         <Button variant="primary" className="endeavour-button">
                           See More details
                         </Button>
@@ -124,7 +124,7 @@ function Index() {
                     <li className="list__item">Web Apps Modernization</li>
                   </ul>
                   <Link to="/services/webDevelopment">
-                    <div className="btn-batch">
+                    <div className="btn-batch mb-0">
                       <Button variant="primary" className="endeavour-button">
                         See More details
                       </Button>
@@ -167,7 +167,7 @@ function Index() {
                       <li className="list__item">Cloud Advisory</li>
                     </ul>
                     <Link to="/services/devops">
-                      <div className="btn-batch">
+                      <div className="btn-batch mb-0">
                         <Button variant="primary" className="endeavour-button">
                           See More details
                         </Button>
@@ -239,7 +239,7 @@ function Index() {
                       </li>
                     </ul>
                     <Link to="/services/business">
-                      <div className="btn-batch">
+                      <div className="btn-batch mb-0">
                         <Button variant="primary" className="endeavour-button">
                           See More details
                         </Button>

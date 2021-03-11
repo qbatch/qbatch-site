@@ -139,6 +139,7 @@ const UiDesign = () => {
               </p>
             </Col>
             <Col md={12}>
+              Our Culture
               <div className="py-75 text-center">
                 <h4>Design thinking empowers</h4>
                 <h4>

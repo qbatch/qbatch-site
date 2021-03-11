@@ -29,13 +29,13 @@ const WebDevelopment = () => {
       icon: Transform,
       title: "Transform Idea to product",
       para:
-        "We ideate discoveries and craft it well for your customers to create a delighted experience",
+        "We ideate discoveries and craft it well for your customers to create a delighted experience.",
     },
     {
       icon: Innovate,
       title: "Innovate",
       para:
-        "We empower the ideations with the modern technology to fuel-up the usability and fulfill user need",
+        "We empower the ideations with the modern technology to fuel-up the usability and fulfill user need.",
     },
     {
       icon: Favourite,
@@ -82,7 +82,7 @@ const WebDevelopment = () => {
             <Col md={6}>
               <h3>
                 Grow your business with the
-                <span className="endeavour">
+                <span className="endeavour pl-1">
                   custom web development services
                 </span>
               </h3>
@@ -183,8 +183,11 @@ const WebDevelopment = () => {
             <Col md={6}>
               <div className="d-flex flex-column justify-content-between h-100">
                 <h3>
-                  E-commerce platform with an
-                  <span className="endeavour"> augmented reality module</span>
+                  E-commerce platform with
+                  <span className="endeavour">
+                    {" "}
+                    an augmented reality module
+                  </span>
                 </h3>
                 <h6>
                   Italian home decor e-commerce app featured by Forbes and The

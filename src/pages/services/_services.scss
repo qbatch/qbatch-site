@@ -4,9 +4,12 @@
   background-color: $selago;
   position: relative;
   .pt-174 {
-    padding-top: rem(110);
     padding-bottom: rem(100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+
   .color-change {
     @include fonts($pictonBlue, rem(38), $base-font, $extra-bold);
   }

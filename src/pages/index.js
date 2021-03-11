@@ -55,7 +55,7 @@ const IndexPage = () => {
       icon: faDesktop,
       title: "Web  Development",
       paragraph:
-        "we develop tailor-made Responsive Web Apps to assimilate the user-base providing accessibilities.",
+        "We develop tailor-made Responsive Web Apps to assimilate the user-base providing accessibilities.",
       to: "/services/webDevelopment",
     },
     {
@@ -69,14 +69,14 @@ const IndexPage = () => {
       title: "UI/UX Design",
       paragraph:
         "We help to design seamless experience of your product. Solving problems.",
-      to: "ui/ux",
+      to: "/services/uiDesign",
     },
     {
       icon: faBriefcase,
       title: "Business Consulting",
       paragraph:
         "We deliver balanced solutions & unmatched client experiences.",
-      to: "businessConsulting",
+      to: "/services/business",
     },
   ]
   const expertise = [

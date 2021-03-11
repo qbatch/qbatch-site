@@ -9,7 +9,7 @@ import mapBg from "../images/about/mapbg.png"
 function MarketPresence() {
   const market = [
     {
-      title: "upWork",
+      title: "UpWork",
       image: upwork,
       list: ["20,000+ hours", "150+ projects", "100+ Clients"],
       link: "",

@@ -11,6 +11,16 @@ import {
 } from "react-bootstrap"
 import sliderImg from "../images/research/slideImg.png"
 import medcertsLogo from "../images/index/medecerts.png"
+import oneApp from "../images/work/oneApp.svg"
+import medecertsImg from "../images/work/medcrets.png"
+import ecomImg from "../images/work/ecomImg.png"
+import ecomCircle from "../images/work/ecomCircle.svg"
+import uratskerlogo from "../images/work/uratskerlogo.png"
+import urtaskerLogo from "../images/work/urtaskerLogo.png"
+import bwdWeb from "../images/work/bwdWeb.png"
+import bwdLogo from "../images/work/bwdLogo.png"
+import salesSupportImg from "../images/work/salesSupportImg.png"
+import salesSupport from "../images/work/salesSupport.svg"
 const FeaturedWork = () => {
   const [index, setIndex] = useState(0)
   const handleSelect = (selectedIndex, e) => {
@@ -18,19 +28,20 @@ const FeaturedWork = () => {
   }
   const work = [
     {
-      logo: medcertsLogo,
+      logo: bwdLogo,
       paragraph:
-        "We offer expertise for end-to-end product design anddevelopment, with solutions tailor-made to fit your product’s unique requirements.",
+        "We offer expertise for end-to-end product design anddevelopment, with solutions tailor-made to fit your  product’s unique requirements.",
       list: [
         "User Research",
         "UI Design + Branding",
         "Content Management System",
         "Full Stack Development",
       ],
-      img: sliderImg,
+      img: bwdWeb,
+      link: "/work/oneApp",
     },
     {
-      logo: medcertsLogo,
+      logo: ecomCircle,
       paragraph:
         "We offer expertise for end-to-end product design anddevelopment, with solutions tailor-made to fit your product’s unique requirements.",
       list: [
@@ -39,7 +50,21 @@ const FeaturedWork = () => {
         "Content Management System",
         "Full Stack Development",
       ],
-      img: sliderImg,
+      img: ecomImg,
+      link: "/work/oneApp",
+    },
+    {
+      logo: salesSupport,
+      paragraph:
+        "We offer expertise for end-to-end product design anddevelopment, with solutions tailor-made to fit your product’s unique requirements.",
+      list: [
+        "User Research",
+        "UI Design + Branding",
+        "Content Management System",
+        "Full Stack Development",
+      ],
+      img: salesSupportImg,
+      link: "/work/oneApp",
     },
   ]
   return (
@@ -68,11 +93,15 @@ const FeaturedWork = () => {
                         })}
                       </ul>
                       <div className="btn-batch d-flex">
-                        <Button variant="primary" className="endeavour-button">
+                        <Button
+                          variant="primary"
+                          className="endeavour-button"
+                          to={values.link}
+                        >
                           See details
                         </Button>
                         <Button className="outline-button ml-4">
-                          Our Work
+                          Portfolio
                         </Button>
                       </div>
                     </div>

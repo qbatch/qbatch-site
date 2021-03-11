@@ -118,7 +118,7 @@ const Devops = props => {
               <div className="text-center p-100">
                 <h4>
                   Save <span className="endeavour">20%</span> on operational
-                  costs and<span className="endeavour">100% </span> on capital
+                  costs and <span className="endeavour">100% </span> on capital
                   <br></br>
                   expenditure for increased
                   <span className="endeavour"> business efficiency</span>

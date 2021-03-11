@@ -23,7 +23,7 @@ const ContactForm = () => {
   }
   return (
     <div className="testimonial-form">
-      <div className="px-3">
+      <div>
         <div className="contact-heading">
           <h5 className="contact-h5">Contact Us</h5>
           <hr className="b-border"></hr>
@@ -99,7 +99,7 @@ const ContactForm = () => {
                     as="textarea"
                     value={state.textarea}
                     rows={4}
-                    placeholder="Company"
+                    placeholder="Message"
                     onChange={handleInputChange}
                     className="py-2"
                   />

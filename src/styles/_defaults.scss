@@ -21,14 +21,13 @@ h3 {
   @include fonts($midnight, rem(36), $base-font, $extra-bold);
   .endeavour {
     color: $endeavour;
-    margin-left: rem(10);
   }
   @include lg {
     @include fonts($midnight, rem(20), $base-font, $extra-bold);
   }
 }
 h4 {
-  @include fonts($midnight, rem(28), $base-font, $bold);
+  @include fonts($midnight, rem(30), $base-font, $bold);
   .endeavour {
     color: $endeavour;
   }

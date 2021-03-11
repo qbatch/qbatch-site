@@ -111,7 +111,6 @@ const Estimate = () => {
                         name="checkedB"
                         type="checkbox"
                         checked={state.checkedB}
-                        onChange={stateChange}
                       />
                     </Form.Group>
 
@@ -129,7 +128,6 @@ const Estimate = () => {
                         name="checkedC"
                         type="checkbox"
                         checked={state.checkedC}
-                        onChange={stateChange}
                       />
                     </Form.Group>
 
@@ -181,7 +179,6 @@ const Estimate = () => {
                         name="checkedE"
                         type="checkbox"
                         checked={state.checkedE}
-                        onChange={stateChange}
                       />
                     </Form.Group>
 
@@ -199,7 +196,6 @@ const Estimate = () => {
                         name="checkedF"
                         type="checkbox"
                         checked={state.checkedF}
-                        onChange={stateChange}
                       />
                     </Form.Group>
 
@@ -297,14 +293,14 @@ const Estimate = () => {
                       as="textarea"
                       name="textarea"
                       rows={5}
-                      placeholder="short description of your idea"
+                      placeholder="Short description of your idea"
                       value={value.textarea}
                       onChange={handleInputChange}
                     />
                   </Form.Group>
                   <span className="email-sent">
                     Need NDA first? E-mail us at
-                    <ins> hello@qbatch.com</ins>
+                    <ins className="pl-1">hello@qbatch.com</ins>
                   </span>
                   <p>
                     Qbatch respects the privacy of your data and queries. This
@@ -317,8 +313,8 @@ const Estimate = () => {
                       name="agree"
                       type="checkbox"
                       label="I agree to receive marketing communication from Qbatch."
-                      checked={value.agreed}
-                      onChange={handleInputChange}
+                      // checked={value.agreed}
+                      // onChange={handleInputChange}
                     />
                   </Form.Group>
                   <p>
@@ -330,7 +326,7 @@ const Estimate = () => {
                       <ins>Privacy Policy.</ins>
                     </Link>
                   </p>
-                  <Link to="/success">
+                  <Link>
                     <div className="btn-batch">
                       <Button className="btn-send m-0" type="submit">
                         Send
