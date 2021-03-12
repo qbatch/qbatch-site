@@ -2,7 +2,6 @@
 import React from "react"
 import { Container, Navbar, Nav, Image, Button } from "react-bootstrap"
 import { Link } from "gatsby"
-import { useHistory } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 const Header = props => {
@@ -36,7 +35,6 @@ const Header = props => {
       title: "estimate",
     },
   ]
-  const history = useHistory()
   const url = typeof window !== "undefined" ? window.location.href : ""
   return (
     <header className="header w-100">

@@ -51,6 +51,9 @@ const ContactForm = () => {
               <Col md={6}>
                 <Form.Group>
                   <Form.Control
+                    onKeyPress={e => {
+                      if (e.key === "Enter") handleInputChange()
+                    }}
                     type="text"
                     placeholder="Name"
                     name="name"
@@ -62,6 +65,9 @@ const ContactForm = () => {
               <Col md={6}>
                 <Form.Group>
                   <Form.Control
+                    onKeyPress={e => {
+                      if (e.key === "Enter") handleInputChange()
+                    }}
                     type="email"
                     placeholder="Email"
                     name="email"
@@ -84,6 +90,9 @@ const ContactForm = () => {
               <Col md={6}>
                 <Form.Group>
                   <Form.Control
+                    onKeyPress={e => {
+                      if (e.key === "Enter") handleInputChange()
+                    }}
                     type="text"
                     placeholder="Company"
                     name="company"
@@ -95,6 +104,9 @@ const ContactForm = () => {
               <Col md={12}>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                   <Form.Control
+                    onKeyPress={e => {
+                      if (e.key === "Enter") handleInputChange()
+                    }}
                     name="textarea"
                     as="textarea"
                     value={state.textarea}

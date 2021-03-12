@@ -49,8 +49,6 @@ const Estimate = () => {
 
     setValidated(true)
     event.preventDefault()
-
-    alert(`Welcome ${value.firstName} ${value.lastName}!`)
   }
   return (
     <Layout>

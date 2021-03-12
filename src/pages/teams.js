@@ -177,7 +177,7 @@ const Teams = () => {
         <div className="py-75 text-short">
           <Container>
             <h3 className="text-light">Why Dedicated Teams With Qbatch?</h3>
-            <p className="text-light  px-30">
+            <p className="text-light">
               Hiring our highly scrutinized dedicated teams will provide you
               with some exceptional added advantages,<br></br> that can make the
               whole process secure and hassle-free for you.

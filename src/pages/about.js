@@ -127,7 +127,7 @@ const About = () => {
         <Container>
           <Row className="m-0">
             <Col md={12}>
-              <div className="pt-174">
+              <div className="pt-174 pt-100">
                 <h2 className="mb-4">
                   <span className="endeavour mr-2">About</span>
                   Qbatch

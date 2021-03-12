@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Container, Image, ListGroup, Row, Col } from "react-bootstrap"
-import award from "../images/footer/award.png"
+// import award from "../images/footer/award.png"
 import facebook from "../images/socialIcons/facebook.svg"
 import twitter from "../images/socialIcons/twitter.svg"
 import instagram from "../images/socialIcons/instagram.svg"
@@ -17,7 +17,7 @@ const footer = ({ logo }) => {
       title: "estimate",
     },
     {
-      link: "",
+      link: "/",
       title: "career",
     },
     {
@@ -90,12 +90,12 @@ const footer = ({ logo }) => {
               <ListGroup className="footerList">
                 {menu.map((menuList, menuListKey) => {
                   return (
-                    <Link to={menuList.link} className="footerList__link">
-                      <ListGroup.Item
-                        key={menuListKey}
-                        as="ul"
-                        className="footerList__item"
-                      >
+                    <Link
+                      to={menuList.link}
+                      key={menuListKey}
+                      className="footerList__link"
+                    >
+                      <ListGroup.Item as="ul" className="footerList__item">
                         {menuList.title}
                       </ListGroup.Item>
                     </Link>
@@ -108,11 +108,12 @@ const footer = ({ logo }) => {
               <ListGroup className="footerList">
                 {services.map((serviceList, servicesListKey) => {
                   return (
-                    <Link to={serviceList.link} className="footerList__link">
-                      <ListGroup.Item
-                        key={servicesListKey}
-                        className="footerList__item"
-                      >
+                    <Link
+                      to={serviceList.link}
+                      className="footerList__link"
+                      key={servicesListKey}
+                    >
+                      <ListGroup.Item className="footerList__item">
                         {serviceList.title}
                       </ListGroup.Item>
                     </Link>

@@ -12,7 +12,7 @@ function MarketPresence() {
       title: "UpWork",
       image: upwork,
       list: ["20,000+ hours", "150+ projects", "100+ Clients"],
-      link: "",
+      link: "/",
     },
     {
       title: "Behance",
@@ -22,7 +22,7 @@ function MarketPresence() {
         "35,0000+ Appreciations",
         "200+ Projects Listed",
       ],
-      link: "",
+      link: "/",
     },
     {
       title: "Dribble",
@@ -32,7 +32,7 @@ function MarketPresence() {
         "35,0000+ Appreciations",
         "200+ Projects Listed",
       ],
-      link: "",
+      link: "/",
     },
     {
       title: "Github",
@@ -42,7 +42,7 @@ function MarketPresence() {
         "35,0000+ Appreciations",
         "200+ Projects Listed",
       ],
-      link: "",
+      link: "/",
     },
     {
       title: "Behance",
@@ -52,7 +52,7 @@ function MarketPresence() {
         "35,0000+ Appreciations",
         "200+ Projects Listed",
       ],
-      link: "",
+      link: "/",
     },
     {
       title: "Dribble",
@@ -62,7 +62,7 @@ function MarketPresence() {
         "35,0000+ Appreciations",
         "200+ Projects Listed",
       ],
-      link: "",
+      link: "/",
     },
   ]
   return (
@@ -78,7 +78,7 @@ function MarketPresence() {
         <Row className="m-0">
           {market.map((values, i) => {
             return (
-              <Col md={4}>
+              <Col md={4} key={i} to={values.link}>
                 <div className="box-shadow">
                   <div className="bg-selego ">
                     <span className="d-block mb-4">{values.title}</span>
@@ -86,8 +86,8 @@ function MarketPresence() {
                   </div>
                   <div className="profile">
                     <ul className="list-unstyled list">
-                      {values.list.map(list => {
-                        return <li>{list}</li>
+                      {values.list.map((list, index) => {
+                        return <li key={index}>{list}</li>
                       })}
                     </ul>
                     <Link to={values.profile}>

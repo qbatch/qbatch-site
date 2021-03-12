@@ -9,18 +9,12 @@ import {
   Row,
   Col,
 } from "react-bootstrap"
-import sliderImg from "../images/research/slideImg.png"
-import medcertsLogo from "../images/index/medecerts.png"
-import oneApp from "../images/work/oneApp.svg"
-import medecertsImg from "../images/work/medcrets.png"
-import ecomImg from "../images/work/ecomImg.png"
-import ecomCircle from "../images/work/ecomCircle.svg"
-import uratskerlogo from "../images/work/uratskerlogo.png"
-import urtaskerLogo from "../images/work/urtaskerLogo.png"
-import bwdWeb from "../images/work/bwdWeb.png"
-import bwdLogo from "../images/work/bwdLogo.png"
-import salesSupportImg from "../images/work/salesSupportImg.png"
-import salesSupport from "../images/work/salesSupport.svg"
+import BWDwebShot from "../images/work/BWDwebShot.png"
+import OneAppShot from "../images/work/OneAppShot.png"
+import oneAppLogo from "../images/work/oneAppLogo.svg"
+import BWDLogo from "../images/work/BWDLogo.svg"
+import salessupportShot from "../images/work/salessupportShot.png"
+import salesSupportLogo from "../images/work/salesSupportLogo.svg"
 const FeaturedWork = () => {
   const [index, setIndex] = useState(0)
   const handleSelect = (selectedIndex, e) => {
@@ -28,7 +22,7 @@ const FeaturedWork = () => {
   }
   const work = [
     {
-      logo: bwdLogo,
+      logo: BWDLogo,
       paragraph:
         "We offer expertise for end-to-end product design anddevelopment, with solutions tailor-made to fit your  product’s unique requirements.",
       list: [
@@ -37,11 +31,12 @@ const FeaturedWork = () => {
         "Content Management System",
         "Full Stack Development",
       ],
-      img: bwdWeb,
+      img: BWDwebShot,
       link: "/work/oneApp",
     },
     {
-      logo: ecomCircle,
+      logo: oneAppLogo,
+
       paragraph:
         "We offer expertise for end-to-end product design anddevelopment, with solutions tailor-made to fit your product’s unique requirements.",
       list: [
@@ -50,11 +45,11 @@ const FeaturedWork = () => {
         "Content Management System",
         "Full Stack Development",
       ],
-      img: ecomImg,
+      img: OneAppShot,
       link: "/work/oneApp",
     },
     {
-      logo: salesSupport,
+      logo: salesSupportLogo,
       paragraph:
         "We offer expertise for end-to-end product design anddevelopment, with solutions tailor-made to fit your product’s unique requirements.",
       list: [
@@ -63,7 +58,7 @@ const FeaturedWork = () => {
         "Content Management System",
         "Full Stack Development",
       ],
-      img: salesSupportImg,
+      img: salessupportShot,
       link: "/work/oneApp",
     },
   ]

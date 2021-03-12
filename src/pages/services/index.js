@@ -21,7 +21,7 @@ function Index() {
         <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
         <Image src={shapeLower} className="shapeLower" alt="no-image" />
         <Container>
-          <div className="pt-174">
+          <div className="pt-174 pt-100">
             <h1>
               Our <span className="color-change">Services</span>
             </h1>

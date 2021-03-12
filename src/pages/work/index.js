@@ -7,18 +7,17 @@ import ContactForm from "../../components/contactForm"
 import { Container, Image, Row, Col, Button } from "react-bootstrap"
 import shapeLower from "../../images/services/shapeLower.png"
 import shapeUpper from "../../images/services/shapeUpper.png"
-import medcertsLogo from "../../images/index/medecerts.png"
-import medecertsImg from "../../images/work/medcrets.png"
-import oneApp from "../../images/work/oneApp.svg"
-import ecomCircle from "../../images/work/ecomCircle.svg"
-import ecomImg from "../../images/work/ecomImg.png"
-import bwdLogo from "../../images/work/bwdLogo.png"
-import bwdMobile from "../../images/work/bwdMobile.png"
-import uratskerlogo from "../../images/work/uratskerlogo.png"
-import urtaskerLogo from "../../images/work/urtaskerLogo.png"
-import salesSupport from "../../images/work/salesSupport.svg"
-import salesSupportImg from "../../images/work/salesSupportImg.png"
-import bwdWeb from "../../images/work/bwdWeb.png"
+import OneAppShot from "../../images/work/OneAppShot.png"
+import salessupportShot from "../../images/work/salessupportShot.png"
+import ecomcirclesShot from "../../images/work/ecomcirclesShot.png"
+import urtaskerShot from "../../images/work/urtaskerShot.png"
+import BWDwebShot from "../../images/work/BWDwebShot.png"
+import BWDmobileShot from "../../images/work/BWDmobileShot.png"
+import oneAppLogo from "../../images/work/oneAppLogo.svg"
+import EcomCirclesLogo from "../../images/work/EcomCirclesLogo.svg"
+import BWDLogo from "../../images/work/BWDLogo.svg"
+import UrtaskerLogo from "../../images/work/UrtaskerLogo.svg"
+import salesSupportLogo from "../../images/work/salesSupportLogo.svg"
 const Index = () => {
   const medecerts = [
     "User Research",
@@ -41,7 +40,7 @@ const Index = () => {
         <Container>
           <Row className="m-0">
             <Col md={7} sm={12}>
-              <div className="pt-174">
+              <div className="pt-174 pt-100">
                 <h2>
                   Qbatch
                   <span className="endeavour mr-2">
@@ -64,11 +63,11 @@ const Index = () => {
           <Row>
             <Col md={6} sm={12}>
               <div className="work py-75">
-                <Image src={oneApp} alt="no-image" />
+                <Image src={oneAppLogo} alt="no-image" />
                 <p>
                   We offer expertise for end-to-end product design
                   anddevelopment, with solutions tailor-made to fit your
-                  product’s unique requirements.
+                  product’s unique requirements
                 </p>
                 <ul className="listItem ">
                   {medecerts.map((list, listKey) => {
@@ -90,18 +89,18 @@ const Index = () => {
             </Col>
             <Col md={6} sm={12}>
               <div className="py-50">
-                <Image src={medecertsImg} alt="no-image" />
+                <Image src={OneAppShot} alt="no-image" />
               </div>
             </Col>
             <span className="reserve-data">
               <Col md={6} sm={12}>
                 <div className="py-50">
-                  <Image src={ecomImg} alt="no-image" />
+                  <Image src={ecomcirclesShot} alt="no-image" />
                 </div>
               </Col>
               <Col md={6} sm={12}>
                 <div className="work py-75 pl-100">
-                  <Image src={ecomCircle} alt="no-image" />
+                  <Image src={EcomCirclesLogo} alt="no-image" />
                   <p>
                     We offer expertise for end-to-end product design
                     anddevelopment, with solutions tailor-made to fit your
@@ -128,11 +127,11 @@ const Index = () => {
             </span>
             <Col md={6} sm={12}>
               <div className="work py-75">
-                <Image src={bwdLogo} alt="no-image" />
+                <Image src={BWDLogo} alt="no-image" />
                 <p>
                   We offer expertisesssss for end-to-end product design
                   anddevelopment, with solutions tailor-made to fit your
-                  product’s unique requirements.
+                  product’s unique requirements
                 </p>
                 <ul className="listItem ">
                   {medecerts.map((list, listKey) => {
@@ -154,18 +153,18 @@ const Index = () => {
             </Col>
             <Col md={6} sm={12}>
               <div className="py-50">
-                <Image src={bwdMobile} alt="no-image" />
+                <Image src={BWDmobileShot} alt="no-image" />
               </div>
             </Col>
             <span className="reserve-data">
               <Col md={6} sm={12}>
                 <div className="py-50">
-                  <Image src={uratskerlogo} alt="no-image" />
+                  <Image src={urtaskerShot} alt="no-image" />
                 </div>
               </Col>
               <Col md={6} sm={12}>
                 <div className="work py-75 pl-100">
-                  <Image src={urtaskerLogo} alt="no-image" />
+                  <Image src={UrtaskerLogo} alt="no-image" />
                   <p>
                     We offer expertise for end-to-end product design
                     anddevelopment, with solutions tailor-made to fit your
@@ -192,11 +191,11 @@ const Index = () => {
             </span>
             <Col md={6} sm={12}>
               <div className="work py-75">
-                <Image src={bwdLogo} alt="no-image" />
+                <Image src={BWDLogo} alt="no-image" />
                 <p>
                   We offer expertisesssss for end-to-end product design
                   anddevelopment, with solutions tailor-made to fit your
-                  product’s unique requirements.
+                  product’s unique requirements
                 </p>
                 <ul className="listItem ">
                   {medecerts.map((list, listKey) => {
@@ -218,18 +217,18 @@ const Index = () => {
             </Col>
             <Col md={6} sm={12}>
               <div className="py-50">
-                <Image src={bwdWeb} alt="no-image" />
+                <Image src={BWDwebShot} alt="no-image" />
               </div>
             </Col>
             <span className="reserve-data">
               <Col md={6} sm={12}>
                 <div className="py-50">
-                  <Image src={salesSupportImg} alt="no-image" />
+                  <Image src={salessupportShot} alt="no-image" />
                 </div>
               </Col>
               <Col md={6} sm={12}>
                 <div className="work py-75 pl-100">
-                  <Image src={salesSupport} alt="no-image" />
+                  <Image src={salesSupportLogo} alt="no-image" />
                   <p>
                     We offer expertise for end-to-end product design
                     anddevelopment, with solutions tailor-made to fit your

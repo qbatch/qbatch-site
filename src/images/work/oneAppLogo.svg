@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="234.895" height="43.654" viewBox="0 0 234.895 43.654">
+  <g id="oneAppLogo" transform="translate(-442.105 -660.173)">
+    <text id="TheOneApp" transform="translate(581 693)" fill="#959595" font-size="36" font-family="PTSans-Regular, PT Sans" letter-spacing="0.035em"><tspan x="-95.04" y="0">The</tspan><tspan y="0" fill="#0054a6" font-family="PTSans-Bold, PT Sans" font-weight="700">One</tspan><tspan y="0">App</tspan></text>
+    <g id="Group_7577" data-name="Group 7577" transform="translate(-9.896 -0.827)">
+      <line id="Line_580" data-name="Line 580" y1="19.902" transform="translate(473.827 668.692)" fill="none" stroke="#03305c" stroke-width="4"/>
+      <g id="Ellipse_3243" data-name="Ellipse 3243" transform="translate(479.675 704.654) rotate(-150)" fill="none" stroke="#0d64b0" stroke-width="5">
+        <circle cx="15.978" cy="15.978" r="15.978" stroke="none"/>
+        <circle cx="15.978" cy="15.978" r="13.478" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="54.687" height="40.853" viewBox="0 0 54.687 40.853"><defs><style>.a{fill:#8ebdea;}.a,.b,.d{stroke:#0a54a6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:3px;}.b{fill:#5981c1;}.c{fill:#4766b0;}.d{fill:none;}</style></defs><g transform="translate(0.058 -8.121)"><path class="a" d="M42.673,23.556a15.464,15.464,0,0,0-30.776,0,12.009,12.009,0,0,0,1.554,23.918H41.12a12.009,12.009,0,0,0,1.554-23.918Z"/><g transform="translate(18.58 20.154)"><path class="b" d="M36.419,45.3H24.4a2.7,2.7,0,0,1-2.7-2.7V33.585a2.7,2.7,0,0,1,2.7-2.7H36.419a2.7,2.7,0,0,1,2.7,2.7V42.6A2.7,2.7,0,0,1,36.419,45.3Z" transform="translate(-21.707 -23.435)"/><g transform="translate(6.723 11.685)"><path class="c" d="M33.62,37.875a1.982,1.982,0,1,0-3.2,1.549l-.362,3.445a.264.264,0,0,0,.263.292h2.654a.265.265,0,0,0,.265-.265.276.276,0,0,0-.019-.1l-.355-3.373A1.971,1.971,0,0,0,33.62,37.875Z" transform="translate(-29.656 -35.893)"/></g><path class="d" d="M38.093,29.528a7.452,7.452,0,1,0-14.9,0Z" transform="translate(-21.935 -22.076)"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="43.579" height="32.718" viewBox="0 0 43.579 32.718">
+  <g id="strong" transform="translate(0.058 -8.121)">
+    <path id="Path_1041" data-name="Path 1041" d="M33.813,20.561a12.14,12.14,0,0,0-24.162,0,9.429,9.429,0,0,0,1.22,18.778H32.593a9.429,9.429,0,0,0,1.22-18.778Z" fill="#8ebdea" stroke="#0a54a6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <g id="Group_861" data-name="Group 861" transform="translate(14.897 17.891)">
+      <path id="Path_1042" data-name="Path 1042" d="M33.258,42.2H23.825a2.118,2.118,0,0,1-2.118-2.118V33.005a2.118,2.118,0,0,1,2.118-2.118h9.432a2.118,2.118,0,0,1,2.118,2.118v7.08A2.118,2.118,0,0,1,33.258,42.2Z" transform="translate(-21.707 -25.037)" fill="#8ebdea" stroke="#0a54a6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+      <g id="Group_860" data-name="Group 860" transform="translate(5.278 9.174)">
+        <g id="Group_859" data-name="Group 859">
+          <g id="Group_858" data-name="Group 858">
+            <g id="Group_857" data-name="Group 857">
+              <g id="Group_856" data-name="Group 856">
+                <g id="Group_855" data-name="Group 855">
+                  <path id="Path_1043" data-name="Path 1043" d="M32.768,37.449a1.556,1.556,0,1,0-2.515,1.216l-.284,2.705a.207.207,0,0,0,.206.229h2.084a.208.208,0,0,0,.208-.208.217.217,0,0,0-.015-.078l-.279-2.648A1.547,1.547,0,0,0,32.768,37.449Z" transform="translate(-29.656 -35.893)" fill="#0054a6"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <path id="Path_1044" data-name="Path 1044" d="M34.89,27.927a5.851,5.851,0,0,0-11.7,0Z" transform="translate(-22.205 -22.076)" fill="none" stroke="#0a54a6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
