@@ -1,35 +1,38 @@
 import React from "react"
 import { Container, Carousel, Image, Row, Col } from "react-bootstrap"
-import first from "../images/sliderImage/first.png"
+import victor from "../images/sliderImage/victor.png"
+import Valentine from "../images/sliderImage/Valentine.png"
+import Ershad from "../images/sliderImage/Ershad.png"
+import Michael from "../images/sliderImage/Ershad.png"
 const clientFeedback = () => {
   const clientReview = [
     {
       feedback:
-        "The team took self-initiative on various aspects of theproduct to ensure efficient delivery and development. Their enterprising spirit is commendable",
-      img: first,
+        "“Hassan worked with us for 2 years and he was one of the most important members of our team. Very skillful and responsible.Highly responsible.”",
+      img: victor,
       name: "Victor Simon",
-      detail: "Shop Owner, Fee Suites",
+      detail: "North Aware",
     },
     {
       feedback:
-        "The team took self-initiative on various aspects of theproduct to ensure efficient delivery and development. Their enterprising spirit is commendable",
-      img: first,
-      name: "Victor Simon",
-      detail: "Shop Owner, Fee Suites",
+        "“It was fantastic working with Qbatch. They had a great eye for detail and was able to deliver the requested design with thoroughness and full quality. I look forward to hiring them again for future design work.”",
+      img: Valentine,
+      name: "Valentine Nwachukwu",
+      detail: "Zaden Technologies",
     },
     {
       feedback:
-        "The team took self-initiative on various aspects of theproduct to ensure efficient delivery and development. Their enterprising spirit is commendable",
-      img: first,
-      name: "Victor Simon",
-      detail: "Shop Owner, Fee Suites",
+        "“One of the most hardworking guys I have ever seen! Will definitely work with Qbatch team in the future!”",
+      img: Ershad,
+      name: "Ershad Anari",
+      detail: "SecondBind",
     },
     {
       feedback:
-        "The team took self-initiative on various aspects of theproduct to ensure efficient delivery and development. Their enterprising spirit is commendable",
-      img: first,
-      name: "Victor Simon",
-      detail: "Shop Owner, Fee Suites",
+        "“It has been my pleasure to work with the development team at Qbatch for the past 3 years on a number of very large and complex web applications. The attention to detail and level of communication has been superior.”",
+      img: Michael,
+      name: "Michael Flanagan",
+      detail: "Minmax Industries",
     },
   ]
   return (

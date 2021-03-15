@@ -2,6 +2,7 @@ import React from "react"
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
 import WorkDetail from "../../components/workDetail"
+import { Container } from "react-bootstrap"
 import urtasker from "../../images/work/urtasker.png"
 import WorkSlider from "../../components/workSlider"
 import Urtasker1 from "../../images/Urtasker/Urtasker1.png"
@@ -10,6 +11,8 @@ import Urtasker3 from "../../images/Urtasker/Urtasker3.png"
 import Urtasker4 from "../../images/Urtasker/Urtasker4.png"
 import Urtasker5 from "../../images/Urtasker/Urtasker5.png"
 import Urtasker6 from "../../images/Urtasker/Urtasker6.png"
+import ContactForm from "../../components/contactForm"
+import ClientFeedback from "../../components/clientFeedback"
 const Urtasker = () => {
   const firstList = [
     "ReactJS",
@@ -64,6 +67,12 @@ const Urtasker = () => {
         secondList={secondList}
       />
       <WorkSlider products={products} />
+      <ClientFeedback />
+      <div className="py-75 bg-mdnight">
+        <Container>
+          <ContactForm />
+        </Container>
+      </div>
     </Layout>
   )
 }

@@ -43,10 +43,7 @@ const Index = () => {
               <div className="pt-174 pt-100">
                 <h2>
                   Qbatch
-                  <span className="endeavour mr-2">
-                    {" "}
-                    Enterprise Business to
-                  </span>
+                  <span className="endeavour mr-2"> Enabling Business to</span>
                 </h2>
                 <h2>Impact through Technology</h2>
                 <p>

@@ -1,0 +1,50 @@
+@import "../styles/variables";
+.bg-header {
+  background-color: $linkWater;
+  .pt-50 {
+    padding-top: rem(70);
+    padding-left: rem(70);
+  }
+}
+.p-50 {
+  padding-top: rem(50);
+  padding-bottom: rem(50);
+}
+.p-55 {
+  padding-top: rem(55);
+  padding-bottom: rem(55);
+  height: rem(300);
+}
+.qbatchList {
+  .process__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    padding: rem(50) 0;
+    margin-bottom: rem(100);
+    .process__step {
+      flex: 1 0 10rem;
+      position: relative;
+      padding: 0 rem(36);
+      text-align: left;
+      counter-increment: steps;
+      margin: rem(-56);
+      @include fonts($storm-gray, rem(18), $base-font, $light);
+      &::before {
+        content: counter(steps, decimal-leading-zero);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -5;
+        font-size: rem(24);
+        font-weight: bold;
+        line-height: 1;
+        color: #012140;
+      }
+    }
+  }
+}

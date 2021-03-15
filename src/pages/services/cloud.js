@@ -69,7 +69,7 @@ const Devops = props => {
   ]
   return (
     <Layout>
-      <SEO title="devops" />
+      <SEO title="cloud" />
       <div className="bg-selago">
         <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
         <Image src={shapeLower} className="shapeLower" alt="no-image" />
@@ -148,7 +148,7 @@ const Devops = props => {
             </Col>
           </Row>
         </div>
-        <div className="process">
+        <div className="process ">
           <ul className="list-unstyled  process__container">
             <li className="process__step">
               <div className="process__circles"></div>

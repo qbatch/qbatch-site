@@ -21,7 +21,7 @@ const Enterprise = () => {
       icon: Product,
       title: "Business Advisory",
       para:
-        "Business advisory for various solutions like, new business models, risk, governance, data and security.)",
+        "Business advisory for various solutions like, new business models, risk, governance, data and security.",
     },
     {
       icon: upgrade,

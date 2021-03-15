@@ -14,6 +14,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -92,6 +94,10 @@ body {
   font-weight: 400;
 }
 
+.header #collapse-navbar-nav .navbar__item .endeavour-button:hover {
+  background-color: #004181;
+}
+
 .header #collapse-navbar-nav .navbar__item .endeavour-button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -152,6 +158,10 @@ footer .upper .footerList__item {
   font-size: 0.875rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+}
+
+footer .upper .footerList__item:hover {
+  color: #0054a6;
 }
 
 footer .social {
@@ -368,7 +378,7 @@ p {
 
 .listPara {
   color: #6d7384;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   margin-top: 0.625rem;
@@ -814,7 +824,14 @@ p {
   font-size: 1.75rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  min-height: 8.125rem;
   text-align: center;
+}
+
+@media (max-width: 991px) {
+  .view-sliders .slider-p {
+    min-height: 8.125rem;
+  }
 }
 
 .view-sliders .profile-box {
@@ -882,6 +899,72 @@ p {
 
 .p-75 .rec-carousel-wrapper .rec-pagination {
   display: none;
+}
+
+.bg-header {
+  background-color: #e0eaf4;
+}
+
+.bg-header .pt-50 {
+  padding-top: 4.375rem;
+  padding-left: 4.375rem;
+}
+
+.p-50 {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.p-55 {
+  padding-top: 3.4375rem;
+  padding-bottom: 3.4375rem;
+  height: 18.75rem;
+}
+
+.qbatchList .process__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  padding: 3.125rem 0;
+  margin-bottom: 6.25rem;
+}
+
+.qbatchList .process__container .process__step {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 10rem;
+          flex: 1 0 10rem;
+  position: relative;
+  padding: 0 2.25rem;
+  text-align: left;
+  counter-increment: steps;
+  margin: -3.5rem;
+  color: #6d7384;
+  font-size: 1.125rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.qbatchList .process__container .process__step::before {
+  content: counter(steps, decimal-leading-zero);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #012140;
 }
 
 .terms-module {
@@ -1204,6 +1287,16 @@ p {
   position: absolute;
   bottom: 26%;
   top: 74%;
+}
+
+.about-counter {
+  width: 50%;
+}
+
+@media (max-width: 576px) {
+  .about-counter {
+    width: 100%;
+  }
 }
 
 .px-50 {
@@ -1561,9 +1654,10 @@ p {
 
 .layout .inner-skewed .hwr {
   color: #0054a6;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  padding-bottom: 0.5rem;
 }
 
 .layout .inner-skewed .hwr-types {
@@ -1604,6 +1698,10 @@ p {
   font-weight: 400;
 }
 
+.btn-batch .endeavour-button:hover {
+  background-color: #004181;
+}
+
 .btn-batch .endeavour-button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1637,8 +1735,8 @@ p {
 }
 
 .btn-batch .outline-button:hover {
-  background-color: #0054a6;
-  color: #ffffff;
+  -webkit-box-shadow: inset 0 0 0 1.5px #0054a6;
+          box-shadow: inset 0 0 0 1.5px #0054a6;
 }
 
 .btn-batch .outline-button:focus {
@@ -1745,7 +1843,7 @@ p {
   border-radius: 0.3125rem;
   cursor: pointer;
   min-height: 13.125rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5625rem;
   position: relative;
 }
 
@@ -1759,9 +1857,13 @@ p {
 .services .services-list .linkIcon {
   width: 2.75rem;
   height: 2.75rem;
-  background-color: #e4effa;
+  background-color: #e0eaf4;
   text-align: center;
   padding: 0.6875rem 0rem;
+}
+
+.services .services-list .linkIcon svg {
+  color: #0054a6;
 }
 
 @media (max-width: 767px) {

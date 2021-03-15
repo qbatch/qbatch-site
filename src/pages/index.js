@@ -139,13 +139,13 @@ const IndexPage = () => {
                     <div className="btn-batch d-flex">
                       <Button
                         variant="primary"
-                        className="outline-button"
+                        className="endeavour-button"
                         onClick={() => scrollTo("#scroll")}
                       >
                         Let's Chat
                       </Button>
                       <Link to="/work">
-                        <Button className="outline-button ml-4">
+                        <Button className="outline-button ml-3">
                           Our Work
                         </Button>
                       </Link>
@@ -166,9 +166,8 @@ const IndexPage = () => {
             <Row className="row">
               <Col md={6}>
                 <h6 className="hwr">Who We Are </h6>
-                <h4 className="hwr-types">
-                  Strategists, Devbots, Visualizers & Executors
-                </h4>
+                <h4>Strategists, Devbots</h4>
+                <h4>Visualizers & Executors</h4>
               </Col>
               <Col md={6}>
                 <p className="pb-3">
@@ -234,7 +233,7 @@ const IndexPage = () => {
                   </div>
                   <div className="btn-batch mb-3">
                     <Link to="/services">
-                      <Button variant="primary" className="outline-button">
+                      <Button variant="primary" className="endeavour-button">
                         See all services
                       </Button>
                     </Link>
@@ -345,7 +344,7 @@ const IndexPage = () => {
                   </p>
                   <Link to="/teams">
                     <div className="btn-batch">
-                      <Button variant="primary" className="outline-button">
+                      <Button variant="primary" className="endeavour-button">
                         See outsourcing Plan
                       </Button>
                     </div>

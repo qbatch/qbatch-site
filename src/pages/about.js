@@ -30,7 +30,7 @@ import scndGroup from "../images/about/team/scndGroup.png"
 import thirdGroup from "../images/about/team/thirdGroup.png"
 import Lahore from "../images/about/team/lahore.png"
 import Fsd from "../images/about/team/Faisalabad.png"
-
+import { Helmet } from "react-helmet"
 import Dotted from "../images/about/dotted.png"
 const About = () => {
   const expertise = [
@@ -136,18 +136,21 @@ const About = () => {
                   Since 2015, we’ve been committed to providing dedicated remote
                   teams to engineer finest digital experiences
                 </p>
-                <div className="d-flex justify-content-between flex-wrap">
-                  <div className="d-flex flex-column text-center">
+                <div
+                  className="d-flex justify-content-between about-counter
+                 flex-wrap"
+                >
+                  <div className="d-flex flex-column text-center  mb-3">
                     <h2>2015</h2>
                     <span>Established</span>
                   </div>
-                  <div className="d-flex flex-column text-center">
+                  <div className="d-flex flex-column text-center mb-3">
                     <h2>
                       <CountUp start={0} end={300} duration={5} />+
                     </h2>
                     <span>Clients</span>
                   </div>
-                  <div className="d-flex flex-column text-center">
+                  <div className="d-flex flex-column text-center  mb-3">
                     <h2>
                       <CountUp start={0} end={100} duration={5} />
                     </h2>
@@ -189,6 +192,7 @@ const About = () => {
                 </p>
               </div>
             </Col>
+
             <Col md={12}>
               <div className="text-center">
                 <h2>We are What Our Values</h2>
@@ -363,6 +367,7 @@ const About = () => {
           </Row>
         </Container>
       </div>
+      <div id="freshteam-widget"></div>
       <div className="py-75 bg-midnight">
         <Container>
           <ContactForm />

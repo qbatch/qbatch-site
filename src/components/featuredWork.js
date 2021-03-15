@@ -75,7 +75,7 @@ const FeaturedWork = () => {
                 <Row>
                   <Col md={6}>
                     <div>
-                      <Image src={values.logo} />
+                      <Image src={values.logo} className="pb-2" />
                       <p>{values.paragraph}</p>
                       <h5 className="mb-3 lg-hide">Areas of focus</h5>
                       <ul className="listItem">

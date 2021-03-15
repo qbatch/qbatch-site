@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Form, Button, Image, Row, Col } from "react-bootstrap"
-import Avatar from "../images/waqasServer.png"
+import Avatar from "../images/MaxWilson.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 const ContactForm = () => {
@@ -140,15 +140,14 @@ const ContactForm = () => {
               <Image src={Avatar} alt="Avatar" className="avatar" />
             </div>
             <div className="d-flex flex-column  text-light">
-              <strong className="text-light">Waqas Sarwar</strong>
+              <strong className="text-light">Max Wilson</strong>
               <small className="small-text">Customer Care</small>
             </div>
           </div>
           <div className="list-detail">
             <ul className="list-unstyled detail">
-              <li className="detail__list">waqas@qbatch.com</li>
-              <li className="detail__list">571 549 8431</li>
-              <li className="detail__list">571 549 8431</li>
+              <li className="detail__list">max.wilson@qbatch.io</li>
+              <li className="detail__list">(737) 377-2428</li>
             </ul>
           </div>
         </Col>

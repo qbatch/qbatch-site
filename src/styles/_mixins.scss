@@ -84,6 +84,9 @@ $base-size: $base-font-size;
   letter-spacing: rem(1);
   border-color: $endeavour;
   @include fonts($white, rem(14), $base-font, $regular);
+  &:hover {
+    background-color: #004181;
+  }
   &:focus {
     box-shadow: none;
   }
@@ -102,8 +105,7 @@ $base-size: $base-font-size;
   border-color: $endeavour;
   @include fonts($endeavour, rem(14), $base-font, $regular);
   &:hover {
-    background-color: $endeavour;
-    color: $white;
+    box-shadow: inset 0 0 0 1.5px $endeavour;
   }
   &:focus {
     box-shadow: none;

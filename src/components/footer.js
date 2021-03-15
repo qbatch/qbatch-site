@@ -17,7 +17,7 @@ const footer = ({ logo }) => {
       title: "estimate",
     },
     {
-      link: "/",
+      link: "/career",
       title: "career",
     },
     {
@@ -47,7 +47,7 @@ const footer = ({ logo }) => {
       title: "Web Development",
     },
     {
-      link: "/services/devops",
+      link: "/services/cloud",
       title: "Cloud Engineering Services",
     },
     {

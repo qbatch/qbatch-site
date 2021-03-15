@@ -166,7 +166,7 @@ function Index() {
                       <li className="list__item">Cloud Migration</li>
                       <li className="list__item">Cloud Advisory</li>
                     </ul>
-                    <Link to="/services/devops">
+                    <Link to="/services/cloud">
                       <div className="btn-batch mb-0">
                         <Button variant="primary" className="endeavour-button">
                           See More details

@@ -39,7 +39,8 @@
       padding-top: rem(500);
     }
     .hwr {
-      @include fonts($endeavour, rem(20), $base-font, $bold);
+      @include fonts($endeavour, rem(18), $base-font, $bold);
+      padding-bottom: rem(8);
     }
     .hwr-types {
       @include fonts($midnight, rem(28), $base-font, $bold);
@@ -132,7 +133,7 @@
     @include border-radius(rem(5));
     cursor: pointer;
     min-height: rem(210);
-    margin-bottom: rem(16);
+    margin-bottom: rem(25);
     position: relative;
     .rightArrow {
       color: $endeavour;
@@ -146,6 +147,9 @@
       background-color: $linkWater;
       text-align: center;
       padding: rem(11) rem(0);
+      svg {
+        color: $endeavour;
+      }
       @include md {
         margin: 0 auto;
       }

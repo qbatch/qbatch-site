@@ -2,12 +2,15 @@ import React from "react"
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
 import WorkDetail from "../../components/workDetail"
+import { Container } from "react-bootstrap"
 import ecomCircle from "../../images/work/ecom.png"
 import WorkSlider from "../../components/workSlider"
 import ecomCircle1 from "../../images/ecomCircles/ecomCircle1.png"
 import ecomCircle2 from "../../images/ecomCircles/ecomCircle2.png"
 import ecomCircle3 from "../../images/ecomCircles/ecomCircle3.png"
 import ecomCircle4 from "../../images/ecomCircles/ecomCircle4.png"
+import ContactForm from "../../components/contactForm"
+import ClientFeedback from "../../components/clientFeedback"
 const EcomCircle = () => {
   const firstList = [
     "ReactJS",
@@ -56,6 +59,12 @@ const EcomCircle = () => {
         secondList={secondList}
       />
       <WorkSlider products={products} />
+      <ClientFeedback />
+      <div className="py-75 bg-mdnight">
+        <Container>
+          <ContactForm />
+        </Container>
+      </div>
     </Layout>
   )
 }
