@@ -231,7 +231,11 @@ const Teams = () => {
               return (
                 <Col md={4} key={executionKey}>
                   <div className="execution">
-                    <Image src={execution.image} alt="no-image" />
+                    <Image
+                      src={execution.image}
+                      alt="no-image"
+                      className="pb-2"
+                    />
                     <h6 className="inner-h6">{execution.title}</h6>
                     <p className="lg-ellipse">{execution.paragraph}</p>
                   </div>

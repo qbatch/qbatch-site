@@ -30,7 +30,7 @@ const mobileApp = () => {
     },
     {
       icon: Ios,
-      title: "Ios",
+      title: "iOs",
       para:
         "Developing secure, high performance and enhanced customer experience apps using Swift or Objective-C",
     },

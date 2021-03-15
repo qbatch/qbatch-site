@@ -16,7 +16,6 @@ import {
   faChartPie,
 } from "@fortawesome/free-solid-svg-icons"
 import CountUp from "react-countup"
-import { scroller } from "react-scroll"
 import discover from "../images/research/discover.svg"
 import design from "../images/research/website-design.svg"
 import data from "../images/research/data.svg"
@@ -32,10 +31,10 @@ import quality from "../images/expertise/quality.svg"
 import strong from "../images/expertise/strong.svg"
 import execution from "../images/expertise/execution.svg"
 import communication from "../images/expertise/communication.svg"
-import IndexImage from "../images/index.svg"
+import IndexImage from "../images/index/index.svg"
 import ContactForm from "../components/contactForm"
 import Recognized from "../components/recognized"
-
+import scrollTo from "gatsby-plugin-smoothscroll"
 const IndexPage = () => {
   const services = [
     {
@@ -121,15 +120,6 @@ const IndexPage = () => {
       paragraph: "We help our clients unleash innovation through.",
     },
   ]
-  const myRef = useRef(null)
-  const executeScroll = () => {
-    myRef.current.scrollIntoView()
-    scroller.scrollTo("", {
-      duration: 800,
-      delay: 800,
-      smooth: "easeInOutQuart",
-    })
-  }
   return (
     <Layout>
       <SEO title="Home" />
@@ -149,12 +139,16 @@ const IndexPage = () => {
                     <div className="btn-batch d-flex">
                       <Button
                         variant="primary"
-                        className="endeavour-button"
-                        onClick={executeScroll}
+                        className="outline-button"
+                        onClick={() => scrollTo("#scroll")}
                       >
                         Let's Chat
                       </Button>
-                      <Button className="outline-button ml-4">Our Work</Button>
+                      <Link to="/work">
+                        <Button className="outline-button ml-4">
+                          Our Work
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </Col>
@@ -187,7 +181,7 @@ const IndexPage = () => {
                 </p>
               </Col>
               <Col md={6}>
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-around">
                   <div className="d-flex flex-column">
                     <h1>2015</h1>
                     <h6 className="h-title">Established</h6>
@@ -240,7 +234,7 @@ const IndexPage = () => {
                   </div>
                   <div className="btn-batch mb-3">
                     <Link to="/services">
-                      <Button variant="primary" className="endeavour-button">
+                      <Button variant="primary" className="outline-button">
                         See all services
                       </Button>
                     </Link>
@@ -351,7 +345,7 @@ const IndexPage = () => {
                   </p>
                   <Link to="/teams">
                     <div className="btn-batch">
-                      <Button variant="primary" className="endeavour-button">
+                      <Button variant="primary" className="outline-button">
                         See outsourcing Plan
                       </Button>
                     </div>
@@ -402,7 +396,7 @@ const IndexPage = () => {
         </div>
       </section>
       <ClientFeedback />
-      <div className="position-relative testimonial" ref={myRef}>
+      <div className="position-relative testimonial" id="scroll">
         <div className="bg-cornflower"></div>
         <div className="contact-us">
           <div className="inner-contact">

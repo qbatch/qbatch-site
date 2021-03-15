@@ -25,7 +25,7 @@ const footer = ({ logo }) => {
       title: "privacy policy",
     },
     {
-      link: "/blog",
+      link: "https://blog.qbatch.com",
       title: "our blog",
     },
     {
@@ -75,6 +75,12 @@ const footer = ({ logo }) => {
                 </a>
               </div>
               <div className="d-flex flex-column location">
+                <small className="light-text">Headquarters</small>
+                <span className="address">
+                  1309 Coffeen Avenue STE 1200 Sheridan,Wyoming 82801{" "}
+                </span>
+              </div>
+              <div className="d-flex flex-column location">
                 <small className="light-text">Lahore</small>
                 <span className="address">106 Sector K, CCA Phase-1 DHA</span>
               </div>
@@ -103,7 +109,7 @@ const footer = ({ logo }) => {
                 })}
               </ListGroup>
             </Col>
-            <Col className="col-md-4 col-sm-6">
+            <Col md={4} sm={6}>
               <h5>Services</h5>
               <ListGroup className="footerList">
                 {services.map((serviceList, servicesListKey) => {

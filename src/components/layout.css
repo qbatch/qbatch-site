@@ -70,6 +70,14 @@ body {
   letter-spacing: 0.0625rem;
 }
 
+.header #collapse-navbar-nav .navbar__item:hover {
+  color: #3995f0;
+}
+
+.header #collapse-navbar-nav .navbar__item.active {
+  color: #3995f0;
+}
+
 .header #collapse-navbar-nav .navbar__item .endeavour-button {
   background-color: #0054a6;
   color: #ffffff;
@@ -360,14 +368,14 @@ p {
 
 .listPara {
   color: #6d7384;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   margin-top: 0.625rem;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
@@ -1207,6 +1215,10 @@ p {
 }
 
 .px-50 .text-center {
+  color: #6d7384;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 4;
@@ -1237,9 +1249,12 @@ p {
 }
 
 .border-right-bottom .text-center {
+  color: #6d7384;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 4;
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
@@ -1604,6 +1619,10 @@ p {
   }
 }
 
+.btn-batch .endeavour-button.hover {
+  background-color: tr;
+}
+
 .btn-batch .outline-button {
   background-color: transparent;
   border-radius: 0.3125rem;
@@ -1615,6 +1634,11 @@ p {
   font-size: 0.875rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+
+.btn-batch .outline-button:hover {
+  background-color: #0054a6;
+  color: #ffffff;
 }
 
 .btn-batch .outline-button:focus {
@@ -1809,7 +1833,7 @@ p {
 
 @media (max-width: 576px) {
   .teams {
-    min-height: 200rem;
+    min-height: 202rem;
   }
 }
 
@@ -1849,7 +1873,7 @@ p {
 }
 
 .experites .inner-content .exp-img {
-  padding-bottom: 2.1875rem;
+  padding-bottom: 1rem;
   padding-left: 0.125rem;
 }
 

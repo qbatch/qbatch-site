@@ -20,6 +20,7 @@
     padding: rem(15) rem(0);
   }
   .text-center {
+    @include fonts($storm-gray, rem(16), $base-font, $light);
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 4;
@@ -41,9 +42,9 @@
     border-bottom: none;
   }
   .text-center {
+    @include fonts($storm-gray, rem(16), $base-font, $light);
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
   }

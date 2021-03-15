@@ -101,6 +101,10 @@ $base-size: $base-font-size;
   letter-spacing: rem(1);
   border-color: $endeavour;
   @include fonts($endeavour, rem(14), $base-font, $regular);
+  &:hover {
+    background-color: $endeavour;
+    color: $white;
+  }
   &:focus {
     box-shadow: none;
   }

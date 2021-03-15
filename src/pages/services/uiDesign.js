@@ -139,7 +139,6 @@ const UiDesign = () => {
               </p>
             </Col>
             <Col md={12}>
-              Our Culture
               <div className="py-75 text-center">
                 <h4>Design thinking empowers</h4>
                 <h4>
@@ -174,7 +173,7 @@ const UiDesign = () => {
                   involves a schematic journey to begin to execute.
                 </p>
                 <div className="btn-batch">
-                  <Button variant="primary" className="endeavour-button">
+                  <Button variant="primary" className="outline-button">
                     Let's work together
                   </Button>
                 </div>
@@ -206,7 +205,7 @@ const UiDesign = () => {
             <Col md={6}>
               <h3>
                 Apply the modern features of design for
-                <span className="endeavour">better experience</span>
+                <span className="endeavour ml-1"> better experience</span>
               </h3>
             </Col>
             <Col md={6}>
@@ -271,7 +270,7 @@ const UiDesign = () => {
               <div className="d-flex flex-column justify-content-between h-100">
                 <h3>
                   Designing the agents app for the
-                  <span className="endeavour">
+                  <span className="endeavour pl-1 pr-1">
                     Middle East’s leading developer
                   </span>
                   of luxury homes

@@ -34,7 +34,7 @@ function Terms() {
     },
     {
       id: "#Indemity",
-      title: "Indemity",
+      title: "Indemnity",
     },
     {
       id: "#Copyright",

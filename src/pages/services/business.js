@@ -50,7 +50,7 @@ const Business = () => {
               <div className="pt-174">
                 <h2>
                   Consulting:
-                  <span className="endeavour mr-2">
+                  <span className="endeavour ml-1">
                     Translate your business challenges into opportunities
                   </span>
                 </h2>

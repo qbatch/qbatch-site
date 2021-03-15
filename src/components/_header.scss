@@ -32,6 +32,12 @@
         @include fonts($midnight, rem(14), $base-font, $regular);
         padding: rem(10) rem(18);
         letter-spacing: rem(1);
+        &:hover {
+          color: #3995f0;
+        }
+        &.active {
+          color: #3995f0;
+        }
         .endeavour-button {
           @include endeavour;
         }

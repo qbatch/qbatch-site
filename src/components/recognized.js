@@ -36,7 +36,7 @@ const Recognized = () => {
               <Image src={upWork} alt="no-image" />
             </div>
             <div className="d-flex flex-column justify-content-center ml-3">
-              <h6>upWork</h6>
+              <h6>UpWork</h6>
               <small>5000+ hours, 200 Clients, 150 Projects</small>
             </div>
           </div>

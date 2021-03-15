@@ -28,7 +28,7 @@ const otherServices = () => {
                 <Button
                   variant="primary"
                   type="submit"
-                  className="endeavour-button"
+                  className="outline-button"
                 >
                   Learn more
                 </Button>

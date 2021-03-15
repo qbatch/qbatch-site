@@ -15,7 +15,7 @@ import expert from "../images/expertise/expert.svg"
 import domain from "../images/expertise/domain.svg"
 import growth from "../images/expertise/growth.svg"
 import start from "../images/expertise/start.svg"
-import quality from "../images/expertise/start.svg"
+import quality from "../images/expertise/quality.svg"
 import strong from "../images/expertise/strong.svg"
 import execution from "../images/expertise/execution.svg"
 import communication from "../images/expertise/communication.svg"
@@ -149,7 +149,7 @@ const About = () => {
                   </div>
                   <div className="d-flex flex-column text-center">
                     <h2>
-                      <CountUp start={0} end={100} duration={5} />+
+                      <CountUp start={0} end={100} duration={5} />
                     </h2>
                     <span>Team</span>
                   </div>

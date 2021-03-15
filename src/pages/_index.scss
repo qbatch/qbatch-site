@@ -60,6 +60,9 @@
   // }
   .endeavour-button {
     @include endeavour;
+    &.hover {
+      background-color: tr;
+    }
   }
   .outline-button {
     @include outline;
@@ -189,7 +192,7 @@
     min-height: rem(1970);
   }
   @include sm {
-    min-height: rem(3200);
+    min-height: rem(3232);
   }
   .teams-detail {
     padding: rem(120) rem(0) rem(0);
@@ -217,7 +220,7 @@
       margin-bottom: rem(22);
     }
     .exp-img {
-      padding-bottom: rem(35);
+      padding-bottom: rem(16);
       padding-left: rem(2);
     }
   }

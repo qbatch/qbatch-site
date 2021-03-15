@@ -4,37 +4,37 @@ import { Container, Navbar, Nav, Image, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
+const NavLink = [
+  {
+    route: "/",
+    title: "Home",
+  },
+  {
+    route: "/services",
+    title: "Services",
+  },
+  {
+    route: "/work",
+    title: "Work",
+  },
+  {
+    route: "/about",
+    title: "About",
+  },
+  {
+    route: "https://blog.qbatch.com",
+    title: "Blog",
+  },
+  {
+    route: "/contact",
+    title: "contact",
+  },
+  {
+    route: "/estimate",
+    title: "estimate",
+  },
+]
 const Header = props => {
-  const NavLink = [
-    {
-      route: "/",
-      title: "Home",
-    },
-    {
-      route: "/services",
-      title: "Services",
-    },
-    {
-      route: "/work",
-      title: "Work",
-    },
-    {
-      route: "/about",
-      title: "About",
-    },
-    {
-      route: "https://blog.qbatch.com",
-      title: "Blog",
-    },
-    {
-      route: "/contact",
-      title: "contact",
-    },
-    {
-      route: "/estimate",
-      title: "estimate",
-    },
-  ]
   const url = typeof window !== "undefined" ? window.location.href : ""
   return (
     <header className="header w-100">
