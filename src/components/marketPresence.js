@@ -35,7 +35,7 @@ function MarketPresence() {
       link: "/",
     },
     {
-      title: "Github",
+      title: "GitHub",
       image: github,
       list: [
         "50,0000+ Project Views",

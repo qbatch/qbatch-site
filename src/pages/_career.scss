@@ -8,7 +8,12 @@
   .pt-50 {
     padding-top: rem(70);
     padding-left: rem(70);
+    @include sm{
+          padding-top: 0;
+    padding-left: rem(24);
+    }
   }
+
 }
 .p-50 {
   padding-top: rem(50);
@@ -57,14 +62,26 @@
   position: relative;
   .textPortion{
         position: absolute;
-        left: 5%;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    top: 37%;
-    justify-content: center;
+        top: 30%;
+        @include lg{
+          top: 20%;
+        }
+        @include md{
+          top: 7%;
+        }
+        @include sm{
+          display: none;
+        }
     .py-100{
       padding: 0 rem(180);
+       @include lg{
+              padding: 0 rem(70);
+              margin-bottom: 0;
+        }
+        @include md{
+          padding: 0 rem(0);
+          font-size: rem(14);
+        }
       text-align: center;
     }
   }

@@ -4,8 +4,9 @@
   .slider-p {
     @include fonts($abbey, rem(28), $base-font, $light);
     min-height: rem(130);
-    @include lg {
-      min-height: rem(130);
+
+    @include xl {
+      min-height: rem(165);
     }
     text-align: center;
   }

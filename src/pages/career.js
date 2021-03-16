@@ -103,7 +103,7 @@ const Career = () => {
               For over 5 years, our company has been growing and we’re proud of
               our history and excited about our future.
             </p>
-            <div className="btn-batch">
+            <div className="btn-batch d-block">
               <Link to="/about">
                 <button type="button" className=" btn  aboutUs">
                   About Us
