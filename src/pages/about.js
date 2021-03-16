@@ -30,7 +30,6 @@ import scndGroup from "../images/about/team/scndGroup.png"
 import thirdGroup from "../images/about/team/thirdGroup.png"
 import Lahore from "../images/about/team/lahore.png"
 import Fsd from "../images/about/team/Faisalabad.png"
-import { Helmet } from "react-helmet"
 import Dotted from "../images/about/dotted.png"
 const About = () => {
   const expertise = [
