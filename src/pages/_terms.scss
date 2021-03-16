@@ -13,6 +13,9 @@
   .terms-nav {
     display: block;
     padding: rem(100) rem(0) rem(100) rem(50);
+      @include sm{
+       padding: rem(100) rem(0) rem(100) rem(10);
+    }
     background: $white;
     width: rem(300);
     height: fit-content;
@@ -36,6 +39,9 @@
   .terms-text {
     padding: rem(100) rem(0) rem(100) rem(80);
     background: $alabaster;
+    @include sm{
+       padding: rem(100) rem(0) rem(100) rem(10);
+    }
     div {
       max-width: rem(800);
     }

@@ -42,6 +42,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .header .navbar {
+    padding: 1.5rem 0;
+  }
   .header .navbar .navbar-nav {
     height: 100vh;
     display: -webkit-box;
@@ -935,6 +938,12 @@ p {
   height: 18.75rem;
 }
 
+@media (max-width: 576px) {
+  .p-55 {
+    display: none;
+  }
+}
+
 .qbatchList .process__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1194,6 +1203,12 @@ p {
   top: 0;
 }
 
+@media (max-width: 576px) {
+  .terms-module .terms-nav {
+    padding: 6.25rem 0rem 6.25rem 0.625rem;
+  }
+}
+
 .terms-module .terms-nav .navigateList {
   color: #6d7384;
   font-size: 1.125rem;
@@ -1221,6 +1236,12 @@ p {
 .terms-module .terms-text {
   padding: 6.25rem 0rem 6.25rem 5rem;
   background: #fafafa;
+}
+
+@media (max-width: 576px) {
+  .terms-module .terms-text {
+    padding: 6.25rem 0rem 6.25rem 0.625rem;
+  }
 }
 
 .terms-module .terms-text div {

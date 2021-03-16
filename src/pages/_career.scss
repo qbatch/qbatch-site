@@ -25,6 +25,9 @@
   padding-bottom: rem(55);
   padding-left: rem(60);
   height: rem(300);
+  @include sm{
+    display: none;
+  }
 }
 .qbatchList {
   .process__container {

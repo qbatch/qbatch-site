@@ -8,6 +8,7 @@
   .navbar {
     padding: rem(8) 0;
     @include sm {
+      padding: rem(24) 0;
       .navbar-nav {
         height: 100vh;
         display: flex;
