@@ -76,6 +76,14 @@
     margin: rem(10) rem(12);
     text-transform: uppercase;
   }
+  .aboutUs{
+    background-color:$white ;
+    color: $endeavour;
+    border: none;
+    &:active{
+       background-color:$white ;
+    }
+  }
 }
 
 .driven-process {

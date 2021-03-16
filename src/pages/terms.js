@@ -33,7 +33,7 @@ function Terms() {
       title: "Our Proprietry Rights",
     },
     {
-      id: "#Indemity",
+      id: "#Indemnity",
       title: "Indemnity",
     },
     {

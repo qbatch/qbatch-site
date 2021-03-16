@@ -77,7 +77,7 @@ const footer = ({ logo }) => {
               <div className="d-flex flex-column location">
                 <small className="light-text">Headquarters</small>
                 <span className="address">
-                  1309 Coffeen Avenue STE 1200 Sheridan,Wyoming 82801{" "}
+                  1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801
                 </span>
               </div>
               <div className="d-flex flex-column location">

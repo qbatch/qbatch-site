@@ -1,14 +1,17 @@
 import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
+import Helmet from "react-helmet"
+import { Link } from "gatsby"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import hiring from "../images/career/hiring.svg"
 import mission from "../images/career/mission.svg"
+import teamImage from "../images/career/teamImage.png"
 const Career = () => {
   return (
     <Layout>
       <SEO title="Career" />
-      <Container>
+      <div className="mx-75 ">
         <div className="bg-header pt-100">
           <Row>
             <Col md={6}>
@@ -86,8 +89,31 @@ const Career = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
+      <Helmet>
+        <script src="https://s3.amazonaws.com/files.freshteam.com/production/65182/attachments/6000040247/original/6000003854_widget.js?1614695610"></script>
+      </Helmet>
       <div id="freshteam-widget"></div>
+      <div className="mx-75">
+        <div className="aboutUs text-center">
+          <div className="textPortion">
+            <h5 className="text-light">What Makes Us</h5>
+            <h1 className="text-light">Qbatch</h1>
+            <p className="text-light py-100">
+              For over 5 years, our company has been growing and we’re proud of
+              our history and excited about our future.
+            </p>
+            <div className="btn-batch">
+              <Link to="/about">
+                <button type="button" className=" btn  aboutUs">
+                  About Us
+                </button>
+              </Link>
+            </div>
+          </div>
+          <Image src={teamImage} alt="no-image" />
+        </div>
+      </div>
     </Layout>
   )
 }

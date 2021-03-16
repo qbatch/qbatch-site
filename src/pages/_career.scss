@@ -1,4 +1,8 @@
 @import "../styles/variables";
+.mx-75{
+  max-width: 75%;
+  margin: 0 auto;
+}
 .bg-header {
   background-color: $linkWater;
   .pt-50 {
@@ -13,6 +17,7 @@
 .p-55 {
   padding-top: rem(55);
   padding-bottom: rem(55);
+  padding-left: rem(60);
   height: rem(300);
 }
 .qbatchList {
@@ -45,6 +50,22 @@
         line-height: 1;
         color: #012140;
       }
+    }
+  }
+}
+.aboutUs{
+  position: relative;
+  .textPortion{
+        position: absolute;
+        left: 5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    top: 37%;
+    justify-content: center;
+    .py-100{
+      padding: 0 rem(180);
+      text-align: center;
     }
   }
 }

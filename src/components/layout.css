@@ -901,6 +901,11 @@ p {
   display: none;
 }
 
+.mx-75 {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
 .bg-header {
   background-color: #e0eaf4;
 }
@@ -918,6 +923,7 @@ p {
 .p-55 {
   padding-top: 3.4375rem;
   padding-bottom: 3.4375rem;
+  padding-left: 3.75rem;
   height: 18.75rem;
 }
 
@@ -965,6 +971,34 @@ p {
   font-weight: bold;
   line-height: 1;
   color: #012140;
+}
+
+.aboutUs {
+  position: relative;
+}
+
+.aboutUs .textPortion {
+  position: absolute;
+  left: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 37%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutUs .textPortion .py-100 {
+  padding: 0 11.25rem;
+  text-align: center;
 }
 
 .terms-module {
@@ -1761,6 +1795,16 @@ p {
   border: none;
   margin: 0.625rem 0.75rem;
   text-transform: uppercase;
+}
+
+.btn-batch .aboutUs {
+  background-color: #ffffff;
+  color: #0054a6;
+  border: none;
+}
+
+.btn-batch .aboutUs:active {
+  background-color: #ffffff;
 }
 
 .driven-process .img-bg {
