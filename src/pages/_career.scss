@@ -1,4 +1,5 @@
 @import "../styles/variables";
+@import "../styles/mixins";
 .mx-75{
   max-width: 75%;
   margin: 0 auto;
@@ -85,4 +86,109 @@
       text-align: center;
     }
   }
+}
+#freshteam-widget{
+  .content{
+    width: 70%!important;
+  }
+h1,h2,h3,h5,h6{
+font-family: "Lato", sans-serif!important;
+}
+.btn-primary {
+    background-color: $endeavour!important;
+  color: $white!important;
+  border-radius:rem(5)!important;
+  padding: rem(7) rem(22)!important;
+  text-transform: uppercase!important;
+  letter-spacing: rem(1)!important;
+  border-color: $endeavour!important;
+      line-height: 1.6!important;
+      font-size: rem(14)!important;
+}
+ .job-role-list{
+  .role-title {
+    padding: 50px 0 0!important;
+    h5{
+      color: $endeavour!important;
+    }
+   }
+.role-count{
+   font-family: "Lato", sans-serif!important;
+       background-color: #0054a633!important;
+    color:$endeavour;
+}
+  .role-count{
+       margin-right: 0px!important;
+ }
+}
+.icon-arrow-right{
+ fill: $endeavour!important;
+}
+ .job-list .job-title{
+   font-family: "Lato", sans-serif!important;
+   .job-desc {
+ font-family: "Lato", sans-serif!important;
+   }
+ }
+ .job-list .job-desc{
+   font-family: "Lato", sans-serif!important;
+   font-weight: 300;
+    color: #6d7384!important;
+ }
+ .job-role-list .open-list .hidden-content{
+   padding-bottom: rem(20)!important;
+ }
+  .job-details-header{
+    background-color: #f7fafe!important;
+    h1{
+          color: #012140!important;
+    }
+    .text-color{
+         color: #012140!important;
+    }
+  }
+  .job-details .link-back {
+    color: #012140!important;
+}
+.job-details .link-back .icon-arrow-left {
+      fill: #012140!important;
+}
+strong{
+    color: #012140!important;
+    font-family: "Lato", sans-serif!important;
+}
+h2{
+  font-size: 30px!important;
+    color: #012140!important;
+}
+.container-fluid{
+  ul{
+    padding-left: rem(20);
+    li{
+          color: #6d7384;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.0625rem;
+    }
+  }
+}
+.brand-color {
+    color: #012140!important;
+}
+.resume-upload .btn-success{
+  background-color: transparent!important;
+    border-radius: rem(5)!important;
+    padding: rem(14) rem(22)!important;
+    text-transform: uppercase!important;
+    border-color:$endeavour!important;
+    color: #0054a6!important;
+    font-size: 0.875rem!important;
+    font-family: "Lato", sans-serif!important;
+    font-weight: 400!important;
+
+}
+.form-control:focus {
+    border-color:$endeavour!important;
+}
 }

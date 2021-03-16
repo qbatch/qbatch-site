@@ -11,7 +11,7 @@ const Career = () => {
   return (
     <Layout>
       <SEO title="Career" />
-      <div className="mx-75 ">
+      <Container>
         <div className="bg-header pt-100">
           <Row>
             <Col md={6}>
@@ -89,12 +89,12 @@ const Career = () => {
             </div>
           </Col>
         </Row>
-      </div>
+      </Container>
       <Helmet>
         <script src="https://s3.amazonaws.com/files.freshteam.com/production/65182/attachments/6000040247/original/6000003854_widget.js?1614695610"></script>
       </Helmet>
       <div id="freshteam-widget"></div>
-      <div className="mx-75">
+      <Container>
         <div className="aboutUs text-center">
           <div className="textPortion">
             <h5 className="text-light">What Makes Us</h5>
@@ -113,7 +113,7 @@ const Career = () => {
           </div>
           <Image src={teamImage} alt="no-image" />
         </div>
-      </div>
+      </Container>
     </Layout>
   )
 }
