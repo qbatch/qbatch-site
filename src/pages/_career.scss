@@ -89,7 +89,13 @@
 }
 #freshteam-widget{
   .content{
-    width: 70%!important;
+    max-width: 1200px!important;
+    @include lg{
+       max-width: 960px!important;
+    }
+    @include md{
+      max-width: 540px!important;
+    }
   }
 h1,h2,h3,h5,h6{
 font-family: "Lato", sans-serif!important;

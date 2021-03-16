@@ -1028,7 +1028,19 @@ p {
 }
 
 #freshteam-widget .content {
-  width: 70% !important;
+  max-width: 1200px !important;
+}
+
+@media (max-width: 991px) {
+  #freshteam-widget .content {
+    max-width: 960px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #freshteam-widget .content {
+    max-width: 540px !important;
+  }
 }
 
 #freshteam-widget h1, #freshteam-widget h2, #freshteam-widget h3, #freshteam-widget h5, #freshteam-widget h6 {
