@@ -7,6 +7,7 @@
 
     @include xl {
       min-height: rem(165);
+      font-size: rem(16);
     }
     text-align: center;
   }
@@ -23,6 +24,7 @@
     bottom: rem(-69);
     @include sm {
       bottom: rem(-50);
+      display: none;
     }
     li {
       background-color: $midnight;

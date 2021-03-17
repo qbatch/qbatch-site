@@ -102,7 +102,7 @@ const WebDevelopment = () => {
               <h4>
                 <span className="endeavour">development services</span>
               </h4>
-              <p className="text-center px-30">
+              <p className="text-center py-30">
                 A perfect mechanism of a well-crafted system architecture and
                 code quality is what you can expect from top mobile products.
                 Use the best practices and most adequate technologies to speed
@@ -201,7 +201,7 @@ const WebDevelopment = () => {
                   to preview luxury furniture right in the home.
                 </p>
                 <p>
-                  Netguru provided a full-stack solution: a comprehensive review
+                  Netguru provided a full-stack solution, a comprehensive review
                   of the existing platform, UX design and native mobile
                   development.
                 </p>

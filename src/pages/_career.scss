@@ -11,7 +11,7 @@
     padding-left: rem(70);
     @include sm{
           padding-top: 0;
-    padding-left: rem(24);
+    padding-left: rem(16);
     }
   }
 
@@ -91,6 +91,10 @@
   }
 }
 #freshteam-widget{
+  .search-form-select{
+    margin-bottom: rem(8)!important;
+       margin-top: rem(8)!important;
+  }
   .content{
     max-width: 1200px!important;
     @include lg{
@@ -119,6 +123,7 @@ font-family: "Lato", sans-serif!important;
     padding: 50px 0 0!important;
     h5{
       color: $endeavour!important;
+      margin-bottom: rem(16)!important;
     }
    }
 .role-count{
@@ -173,6 +178,7 @@ h2{
 .container-fluid{
   ul{
     padding-left: rem(20);
+    padding-bottom: rem(20);
     li{
           color: #6d7384;
     font-size: 1rem;

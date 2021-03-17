@@ -73,7 +73,7 @@ const mobileApp = () => {
       </div>
       <div className="py-75">
         <Container>
-          <Row className="m-0 justify-content-md-center para-ellipse">
+          <Row className="m-0 justify-content-md-center">
             <Col md={6}>
               <h3>
                 Grow your business with the{" "}
@@ -97,7 +97,7 @@ const mobileApp = () => {
                 Crafting an attentive user-experience that<br></br> results
                 retention and minimizes churn
               </h4>
-              <p className="px-30 text-center">
+              <p className="py-30 text-center">
                 A perfect mechanism of a well-crafted system architecture and
                 code quality is what you can expect from top mobile products.
                 Use the best practices and most adequate technologies to speed
@@ -178,7 +178,7 @@ const mobileApp = () => {
           <div className="py-75">
             <Row>
               <Col md={6}>
-                <div className="d-flex flex-column justify-content-between h-100 para-ellipse">
+                <div className="d-flex flex-column justify-content-between h-100">
                   <h3>
                     E-commerce platform with an
                     <span className="endeavour"> augmented reality module</span>
@@ -187,7 +187,7 @@ const mobileApp = () => {
                     Italian home decor e-commerce app featured by Forbes and The
                     New York Times
                   </h6>
-                  <p className="mb-0 ">
+                  <p>
                     Artemest is a native mobile app featuring curated home
                     décor, jewellery, and lifestyle art created by over 500 top
                     Italian artists. Users can explore handcrafted art and shop
@@ -195,7 +195,7 @@ const mobileApp = () => {
                     reality module to preview luxury furniture right in the
                     home.
                   </p>
-                  <p className="mb-0">
+                  <p>
                     Netguru provided a full-stack solution: a comprehensive
                     review of the existing platform, UX design and native mobile
                     development.

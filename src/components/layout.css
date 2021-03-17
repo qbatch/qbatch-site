@@ -41,7 +41,7 @@ body {
   padding: 0.5rem 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .header .navbar {
     padding: 1.5rem 0;
   }
@@ -485,6 +485,12 @@ p {
   margin-bottom: 6.25rem;
 }
 
+@media (max-width: 767px) {
+  .process__container {
+    display: none;
+  }
+}
+
 .process__container .process__step {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 10rem;
@@ -673,6 +679,16 @@ p {
   margin: 0 auto;
 }
 
+.py-30 {
+  padding: 0 6.25rem;
+}
+
+@media (max-width: 767px) {
+  .py-30 {
+    padding: 0 0rem;
+  }
+}
+
 .slider .slider-h3 {
   padding: 1.875rem 0rem;
 }
@@ -835,6 +851,7 @@ p {
 @media (max-width: 1200px) {
   .view-sliders .slider-p {
     min-height: 10.3125rem;
+    font-size: 1rem;
   }
 }
 
@@ -863,6 +880,7 @@ p {
 @media (max-width: 576px) {
   .view-sliders .carousel-indicators {
     bottom: -3.125rem;
+    display: none;
   }
 }
 
@@ -922,7 +940,7 @@ p {
 @media (max-width: 576px) {
   .bg-header .pt-50 {
     padding-top: 0;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
   }
 }
 
@@ -1036,6 +1054,11 @@ p {
   }
 }
 
+#freshteam-widget .search-form-select {
+  margin-bottom: 0.5rem !important;
+  margin-top: 0.5rem !important;
+}
+
 #freshteam-widget .content {
   max-width: 1200px !important;
 }
@@ -1074,6 +1097,7 @@ p {
 
 #freshteam-widget .job-role-list .role-title h5 {
   color: #0054a6 !important;
+  margin-bottom: 1rem !important;
 }
 
 #freshteam-widget .job-role-list .role-count {
@@ -1140,6 +1164,7 @@ p {
 
 #freshteam-widget .container-fluid ul {
   padding-left: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 #freshteam-widget .container-fluid ul li {
@@ -1816,7 +1841,7 @@ p {
 
 @media (max-width: 991px) {
   .pt-90 {
-    padding-top: 3.9375rem;
+    padding-top: 5.8125rem;
   }
 }
 
