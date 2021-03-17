@@ -11,7 +11,7 @@ const Recognized = () => {
       </Col>
       <Col className="col-md-6">
         <div className="d-flex flex-column">
-          <div className="d-flex recognized-list">
+          <div className="d-flex flex-wrap  recognized-list">
             <div className="clutch">
               <Image src={clutch} alt="no-image" />
             </div>
@@ -22,24 +22,33 @@ const Recognized = () => {
               </small>
             </div>
           </div>
-          <div className="d-flex recognized-list">
+          <div className="d-flex flex-wrap recognized-list">
             <div className="clutch">
               <Image src={pasha} alt="no-image" />
             </div>
-            <div className="d-flex flex-column justify-content-center ml-3">
+            <div className="d-flex flex-column justify-content-center  ml-3">
               <h6>Pasha Recognized</h6>
               <small>Mobile and Web Development Agency In the Year 2016</small>
             </div>
           </div>
-          <div className="d-flex recognized-list">
+          <div className="d-flex flex-wrap recognized-list">
+            <div className="clutch">
+              <Image src={upWork} alt="no-image" />
+            </div>
+            <div className="d-flex flex-column justify-content-center  ml-3">
+              <h6>Pasha Recognized</h6>
+              <small>Mobile and Web Development Agency In the Year 2016</small>
+            </div>
+          </div>
+          {/* <div className="d-flex flex-wrap  recognized-list">
             <div className="clutch">
               <Image src={upWork} alt="no-image" />
             </div>
             <div className="d-flex flex-column justify-content-center ml-3">
-              <h6>UpWork</h6>
+              <h6>Top Rated Upwork</h6>
               <small>5000+ hours, 200 Clients, 150 Projects</small>
             </div>
-          </div>
+          </div> */}
         </div>
       </Col>
     </Row>

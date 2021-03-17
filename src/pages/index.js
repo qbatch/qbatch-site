@@ -61,7 +61,7 @@ const IndexPage = () => {
       icon: faCloud,
       title: "Cloud Engineering",
       paragraph: "Better customer experience with Cloud Engineering Services.",
-      to: "/services/devops",
+      to: "/services/cloudclutch",
     },
     {
       icon: faPencilRuler,

@@ -3,6 +3,9 @@
 .terms-module {
   margin-top: rem(0);
   background: linear-gradient(90deg, $white 50%, $alabaster 50%);
+  @include lg{
+    background:$white;
+  }
   .navigate {
     @include fonts($downriver, rem(22), $base-font, $regular);
   }
@@ -18,10 +21,9 @@
     height: fit-content;
     position: sticky;
     top: 0;
-          @include md{
-       padding: rem(100) rem(0) rem(100) rem(10);
-           width: rem(180);
-    }
+          @include lg{
+    display: none;
+  }
     .navigateList {
       @include fonts($storm-gray, rem(18), $base-font, $light);
       .list-group-item {
@@ -40,9 +42,10 @@
   .terms-text {
     padding: rem(100) rem(0) rem(100) rem(80);
     background: $alabaster;
-    @include sm{
-       padding: rem(100) rem(0) rem(100) rem(10);
-    }
+      @include lg{
+    background:$white;
+      padding: rem(20) rem(0) rem(100) rem(0);
+  }
     div {
       max-width: rem(800);
     }

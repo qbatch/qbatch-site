@@ -221,7 +221,7 @@ const Estimate = () => {
               </div>
             </Col>
             <Col md={8}>
-              <div className="py-75">
+              <div>
                 <Form
                   name="contact"
                   method="post"

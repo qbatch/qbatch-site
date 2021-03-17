@@ -296,7 +296,11 @@
   .clutch {
     width: rem(150);
     text-align: center;
+
   }
+     .marginLeft-3{
+      margin-left: rem(14);
+    }
 }
 @media (min-width: 1200px) {
   .container,

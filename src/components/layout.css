@@ -1201,6 +1201,12 @@ p {
   background: linear-gradient(90deg, #ffffff 50%, #fafafa 50%);
 }
 
+@media (max-width: 991px) {
+  .terms-module {
+    background: #ffffff;
+  }
+}
+
 .terms-module .navigate {
   color: #071b4d;
   font-size: 1.375rem;
@@ -1228,10 +1234,9 @@ p {
   top: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .terms-module .terms-nav {
-    padding: 6.25rem 0rem 6.25rem 0.625rem;
-    width: 11.25rem;
+    display: none;
   }
 }
 
@@ -1264,9 +1269,10 @@ p {
   background: #fafafa;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .terms-module .terms-text {
-    padding: 6.25rem 0rem 6.25rem 0.625rem;
+    background: #ffffff;
+    padding: 1.25rem 0rem 6.25rem 0rem;
   }
 }
 
@@ -1371,6 +1377,16 @@ p {
     font-size: 0.875rem;
     font-family: "Lato", sans-serif;
     font-weight: 400;
+  }
+}
+
+.estimate_form {
+  padding: 4.6875rem 0;
+}
+
+@media (max-width: 767px) {
+  .estimate_form {
+    padding: 0;
   }
 }
 
@@ -2319,6 +2335,10 @@ p {
 .recognized-list .clutch {
   width: 9.375rem;
   text-align: center;
+}
+
+.recognized-list .marginLeft-3 {
+  margin-left: 0.875rem;
 }
 
 @media (min-width: 1200px) {

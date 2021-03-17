@@ -80,7 +80,7 @@ const Business = () => {
               </h3>
             </Col>
             <Col md={6}>
-              <p className="lg-ellipse">
+              <p>
                 No matter how complex your business questions, we have the
                 capabilities and experience to deliver the answers you need to
                 succeed. Adopt groundbreaking technologies, an agile approach to
@@ -97,7 +97,7 @@ const Business = () => {
               <Col md={6}>
                 <div className="py-30">
                   <h6 className="mt-4">Discovery Workshops</h6>
-                  <p className="lg-ellipse">
+                  <p>
                     We enable and facilitate in steering an exhaustive activity
                     of translation of thoughts and ideal experiences to the
                     real-time products. Our think-tanks enable the organizations
@@ -124,7 +124,7 @@ const Business = () => {
                 <Col md={6}>
                   <div className="py-30">
                     <h6 className="mt-4">Advisory Services</h6>
-                    <p className="lg-ellipse">
+                    <p>
                       Our veteran professionals hold a wide range of experiences
                       accumulated throughout their journey that aid the
                       businesses and their services to cut through the
@@ -144,7 +144,7 @@ const Business = () => {
               <Col md={6}>
                 <div className="py-30">
                   <h6 className="mt-4">Technology Assurance</h6>
-                  <p className="lg-ellipse">
+                  <p>
                     We offer to perform a comprehensive evaluation exercise to
                     identify the knowing-happening gap and further to bridge
                     that gap to optimize business process through modern
@@ -172,7 +172,7 @@ const Business = () => {
                         of luxury homes
                       </h3>
 
-                      <p className="mb-0 lg-ellipse">
+                      <p className="mb-0 ">
                         Artemest is a native mobile app featuring curated home
                         décor, jewellery, and lifestyle art created by over 500
                         top Italian artists. Users can explore handcrafted art
