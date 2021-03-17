@@ -1,6 +1,9 @@
 footer {
   .upper {
     padding: rem(50) rem(0);
+    @include sm{
+        padding: rem(5) rem(0);
+    }
     .location {
       padding: rem(10) rem(0);
       .light-text {

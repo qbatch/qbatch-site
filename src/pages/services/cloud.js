@@ -198,13 +198,13 @@ const Devops = props => {
                   <span className="endeavour"> zero costs</span> using AWS
                 </h3>
                 <h6>The power of AWS Lambda</h6>
-                <p className="mb-0 ">
+                <p>
                   Lambda functions were used in the project allowing to pay
                   micropayments only for requests that have been handled –
                   serverless lets you process the code without needing to scale
                   up servers.
                 </p>
-                <p className="mb-0">
+                <p>
                   The cost? The first million requests in a month are totally
                   free of charge and once the limit has been exceeded Moonfare
                   is only charged $0.20 for every million requests.

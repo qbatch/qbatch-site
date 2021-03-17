@@ -113,7 +113,7 @@ const Enterprise = () => {
         <div className="py-75">
           <Row>
             <Col md={6}>
-              <div className="d-flex flex-column justify-content-between h-100 para-ellipse">
+              <div className="d-flex flex-column justify-content-between h-100">
                 <h3>
                   Designing the agents app for{" "}
                   <span className="endeavour">
@@ -123,14 +123,14 @@ const Enterprise = () => {
                   of luxury homes
                 </h3>
 
-                <p className="mb-0 ">
+                <p>
                   Artemest is a native mobile app featuring curated home décor,
                   jewellery, and lifestyle art created by over 500 top Italian
                   artists. Users can explore handcrafted art and shop directly
                   from the app. The app also offers an augmented reality module
                   to preview luxury furniture right in the home.
                 </p>
-                <p className="mb-0">
+                <p>
                   Netguru provided a full-stack solution: a comprehensive review
                   of the existing platform, UX design and native mobile
                   development.

@@ -173,7 +173,7 @@ const UiDesign = () => {
                   involves a schematic journey to begin to execute.
                 </p>
                 <div className="btn-batch">
-                  <Button variant="primary" className="outline-button">
+                  <Button variant="primary" className="outline-button mb-3">
                     Let's work together
                   </Button>
                 </div>
