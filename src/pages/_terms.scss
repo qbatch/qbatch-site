@@ -13,14 +13,15 @@
   .terms-nav {
     display: block;
     padding: rem(100) rem(0) rem(100) rem(50);
-      @include sm{
-       padding: rem(100) rem(0) rem(100) rem(10);
-    }
     background: $white;
     width: rem(300);
     height: fit-content;
     position: sticky;
     top: 0;
+          @include md{
+       padding: rem(100) rem(0) rem(100) rem(10);
+           width: rem(180);
+    }
     .navigateList {
       @include fonts($storm-gray, rem(18), $base-font, $light);
       .list-group-item {

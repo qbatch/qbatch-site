@@ -1228,9 +1228,10 @@ p {
   top: 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .terms-module .terms-nav {
     padding: 6.25rem 0rem 6.25rem 0.625rem;
+    width: 11.25rem;
   }
 }
 
