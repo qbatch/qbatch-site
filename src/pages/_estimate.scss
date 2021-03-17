@@ -81,3 +81,9 @@
     color: $storm-gray;
   }
 }
+.pt-50{
+  padding-top: rem(50);
+  @include sm{
+    padding-top: rem(0);
+  }
+}

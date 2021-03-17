@@ -80,7 +80,7 @@ const Estimate = () => {
             </div>
           </Col>
           <Col md={8}>
-            <div className="py-50">
+            <div className="pt-50">
               <Row className="m-0">
                 <Col md={4}>
                   <div
@@ -148,7 +148,7 @@ const Estimate = () => {
             </div>
           </Col>
           <Col md={8}>
-            <div className="py-50">
+            <div className="pt-50">
               <Row className="m-0">
                 <Col md={4}>
                   <div

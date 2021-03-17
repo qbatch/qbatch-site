@@ -1456,6 +1456,16 @@ p {
   color: #6d7384;
 }
 
+.pt-50 {
+  padding-top: 3.125rem;
+}
+
+@media (max-width: 576px) {
+  .pt-50 {
+    padding-top: 0rem;
+  }
+}
+
 .work.pl-100 {
   padding-left: 6.25rem;
 }
