@@ -172,7 +172,7 @@ const Business = () => {
                         of luxury homes
                       </h3>
 
-                      <p className="mb-0 ">
+                      <p>
                         Artemest is a native mobile app featuring curated home
                         décor, jewellery, and lifestyle art created by over 500
                         top Italian artists. Users can explore handcrafted art
@@ -180,7 +180,7 @@ const Business = () => {
                         augmented reality module to preview luxury furniture
                         right in the home.
                       </p>
-                      <p className="mb-0">
+                      <p>
                         Netguru provided a full-stack solution: a comprehensive
                         review of the existing platform, UX design and native
                         mobile development.
