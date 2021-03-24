@@ -61,7 +61,7 @@ const IndexPage = () => {
       icon: faCloud,
       title: "Cloud Engineering",
       paragraph: "Better customer experience with Cloud Engineering Services.",
-      to: "/services/cloudclutch",
+      to: "/services/cloud",
     },
     {
       icon: faPencilRuler,
@@ -291,7 +291,7 @@ const IndexPage = () => {
                 </div>
                 <h6 className="mb-3">Design</h6>
                 <p className="research-p">
-                  Design and validate the early ideas through Iteractive
+                  Design and validate the early ideas through interactive
                   Prototype Design
                 </p>
               </div>
