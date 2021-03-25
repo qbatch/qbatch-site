@@ -62,46 +62,46 @@ const footer = ({ logo }) => {
   return (
     <Container>
       <footer>
-        <div className="upper">
-          <Row className="m-0">
+        <div className={`upper`}>
+          <Row className={`m-0`}>
             <Col md={4} sm={6}>
-              <div className="logo-box">
+              <div className={`logo-box`}>
                 <Image src={logo} alt="no-image" />
               </div>
-              <div className="d-flex flex-column location">
-                <small className="light-text">Contact</small>
-                <a href="https://www.qbatch.com/" className="mail-link">
+              <div className={`d-flex flex-column location`}>
+                <small className={`light-text`}>Contact</small>
+                <a href="https://www.qbatch.com/" className={`mail-link`}>
                   hello@qbatch.com
                 </a>
               </div>
-              <div className="d-flex flex-column location">
-                <small className="light-text">Headquarters</small>
-                <span className="address">
+              <div className={`d-flex flex-column location`}>
+                <small className={`light-text`}>Headquarters</small>
+                <span className={`address`}>
                   1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801
                 </span>
               </div>
-              <div className="d-flex flex-column location">
-                <small className="light-text">Lahore</small>
-                <span className="address">106 Sector K, CCA Phase-1 DHA</span>
+              <div className={`d-flex flex-column location`}>
+                <small className={`light-text`}>Lahore</small>
+                <span className={`address`}>106 Sector K, CCA Phase-1 DHA</span>
               </div>
-              <div className="d-flex flex-column location">
-                <small className="light-text">Faisalabad</small>
-                <span className="address">
+              <div className={`d-flex flex-column location`}>
+                <small className={`light-text`}>Faisalabad</small>
+                <span className={`address`}>
                   Mezzanine floor, Sitara Tower, Bilal Rd, Civil Lines
                 </span>
               </div>
             </Col>
             <Col md={4} sm={6}>
               <h5>Menu</h5>
-              <ListGroup className="footerList">
+              <ListGroup className={`footerList`}>
                 {menu.map((menuList, menuListKey) => {
                   return (
                     <Link
                       to={menuList.link}
                       key={menuListKey}
-                      className="footerList__link"
+                      className={`footerList__link`}
                     >
-                      <ListGroup.Item as="ul" className="footerList__item">
+                      <ListGroup.Item as="ul" className={`footerList__item`}>
                         {menuList.title}
                       </ListGroup.Item>
                     </Link>
@@ -111,15 +111,15 @@ const footer = ({ logo }) => {
             </Col>
             <Col md={4} sm={6}>
               <h5>Services</h5>
-              <ListGroup className="footerList">
+              <ListGroup className={`footerList`}>
                 {services.map((serviceList, servicesListKey) => {
                   return (
                     <Link
                       to={serviceList.link}
-                      className="footerList__link"
+                      className={`footerList__link`}
                       key={servicesListKey}
                     >
-                      <ListGroup.Item className="footerList__item">
+                      <ListGroup.Item className={`footerList__item`}>
                         {serviceList.title}
                       </ListGroup.Item>
                     </Link>
@@ -127,27 +127,27 @@ const footer = ({ logo }) => {
                 })}
               </ListGroup>
             </Col>
-            {/* <div className="col-md-3 col-sm-6">
+            {/* <div className={`col-md-3 col-sm-6">
               <h5>Award</h5>
               <Image src={award} alt="no-image" />
             </div> */}
           </Row>
         </div>
-        <div className="social d-flex justify-content-between ">
-          <span className="small-text">
+        <div className={`social d-flex justify-content-between `}>
+          <span className={`small-text`}>
             © 2021 Qbatch. All Rights Reserved.
           </span>
-          <ul className="list-unstyled socialLink  d-flex">
-            <li className="socialLink__list">
+          <ul className={`list-unstyled socialLink  d-flex`}>
+            <li className={`socialLink__list`}>
               <Image src={facebook} alt="no-image" />
             </li>
-            <li className="socialLink__list">
+            <li className={`socialLink__list`}>
               <Image src={twitter} alt="no-image" />
             </li>
-            <li className="socialLink__list">
+            <li className={`socialLink__list`}>
               <Image src={instagram} alt="no-image" />
             </li>
-            <li className="socialLink__list">
+            <li className={`socialLink__list`}>
               <Image src={linkdin} alt="no-image" />
             </li>
           </ul>

@@ -63,16 +63,16 @@ const Teams = () => {
   return (
     <Layout>
       <SEO title="Development Team" />
-      <div className="bg-selago">
-        <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
-        <Image src={shapeLower} className="shapeLower" alt="no-image" />
+      <div className={`bg-selago`}>
+        <Image src={shapeUpper} className={`shapeUpper`} alt="no-image" />
+        <Image src={shapeLower} className={`shapeLower`} alt="no-image" />
         <Container>
-          <Row className="m-0">
+          <Row className={`m-0`}>
             <Col md={6}>
-              <div className="pt-174">
+              <div className={`pt-174`}>
                 <h2>Your Software Development</h2>
-                <h2 className="mb-4">
-                  <span className="endeavour">Dream Team</span>
+                <h2 className={`mb-4`}>
+                  <span className={`endeavour`}>Dream Team</span>
                 </h2>
                 <p>
                   Deal with Your Strategic Business Plans & Leave IT Operations
@@ -81,15 +81,15 @@ const Teams = () => {
               </div>
             </Col>
             <Col md={6}>
-              <div className="pt-150 text-right">
-                <Image src={TeamsImg} alt="no-image" className="mw-100" />
+              <div className={`pt-150 text-right`}>
+                <Image src={TeamsImg} alt="no-image" className={`mw-100`} />
               </div>
             </Col>
           </Row>
         </Container>
       </div>
       <Container>
-        <div className="py-75">
+        <div className={`py-75`}>
           <h3>Team Augmentation</h3>
           <p>
             We adapt Agile Methodologies, Project Enablement tools for auditable
@@ -105,11 +105,11 @@ const Teams = () => {
           </p>
         </div>
       </Container>
-      <div className="bg-selago py-75">
-        <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
-        <Image src={shapeLower} className="shapeLower" alt="no-image" />
+      <div className={`bg-selago py-75`}>
+        <Image src={shapeUpper} className={`shapeUpper`} alt="no-image" />
+        <Image src={shapeLower} className={`shapeLower`} alt="no-image" />
         <Container>
-          <Row className="m-0">
+          <Row className={`m-0`}>
             <Col md={6}>
               <h4>Dedicated Team </h4>
               <p>
@@ -118,23 +118,23 @@ const Teams = () => {
                 by domestic and international boundaries.
               </p>
               <h6>Full Service Standalone Team</h6>
-              <ul className="list-unstyled dedicated">
-                <li className="dedicated__list">
+              <ul className={`list-unstyled dedicated`}>
+                <li className={`dedicated__list`}>
                   Not looking to build a complete software department but need
                   tech resources on demand.
                 </li>
-                <li className="dedicated__list">
+                <li className={`dedicated__list`}>
                   Offers a complete setup where you get access to the best tech
                   and management talent (developers, UI/UX experts).
                 </li>
               </ul>
-              <h6 className="pt-40">Suited best when:</h6>
-              <ul className="list-unstyled dedicated">
-                <li className="dedicated__list">
+              <h6 className={`pt-40`}>Suited best when:</h6>
+              <ul className={`list-unstyled dedicated`}>
+                <li className={`dedicated__list`}>
                   developing new products without defocusing your core team (if
                   exists)
                 </li>
-                <li className="dedicated__list">
+                <li className={`dedicated__list`}>
                   with evolving specifications based on feedbacks on features
                   not looking to go through long-lasting & expensive hiring
                   process.
@@ -149,23 +149,23 @@ const Teams = () => {
                 requirements and required support levels.
               </p>
               <h6>Full Stack Resource</h6>
-              <ul className="list-unstyled dedicated">
-                <li className="dedicated__list">
+              <ul className={`list-unstyled dedicated`}>
+                <li className={`dedicated__list`}>
                   Working on a small product and wanted to hire a single
                   resource to handle in and outs of the product.
                 </li>
-                <li className="dedicated__list">
+                <li className={`dedicated__list`}>
                   Need a research about the product and want a single product
                   designer.
                 </li>
               </ul>
-              <h6 className="pt-40">Suited best when:</h6>
-              <ul className="list-unstyled dedicated">
-                <li className="dedicated__list">
+              <h6 className={`pt-40`}>Suited best when:</h6>
+              <ul className={`list-unstyled dedicated`}>
+                <li className={`dedicated__list`}>
                   Complete UI/UX Design of the digital product. Using research
                   and complete ROI of the product.
                 </li>
-                <li className="dedicated__list">
+                <li className={`dedicated__list`}>
                   Need a Uni Focused resource to work on the product.
                 </li>
               </ul>
@@ -173,41 +173,41 @@ const Teams = () => {
           </Row>
         </Container>
       </div>
-      <div className="bg-midnight">
-        <div className="py-75 text-short">
+      <div className={`bg-midnight`}>
+        <div className={`py-75 text-short`}>
           <Container>
-            <h3 className="text-light">Why Dedicated Teams With Qbatch?</h3>
-            <p className="text-light">
+            <h3 className={`text-light`}>Why Dedicated Teams With Qbatch?</h3>
+            <p className={`text-light`}>
               Hiring our highly scrutinized dedicated teams will provide you
               with some exceptional added advantages,<br></br> that can make the
               whole process secure and hassle-free for you.
             </p>
-            <Row className="m-0">
+            <Row className={`m-0`}>
               <Col md={4}>
-                <h6 className="text-light mb-4">Team Augmentation</h6>
-                <ul className="teamsList">
+                <h6 className={`text-light mb-4`}>Team Augmentation</h6>
+                <ul className={`teamsList`}>
                   {Augmentation.map((argument, argumentKey) => (
-                    <li className="teamsList__list" key={argumentKey}>
+                    <li className={`teamsList__list`} key={argumentKey}>
                       {argument}
                     </li>
                   ))}
                 </ul>
               </Col>
               <Col md={4}>
-                <h6 className="text-light mb-4">Team Augmentation</h6>
-                <ul className="teamsList">
+                <h6 className={`text-light mb-4`}>Team Augmentation</h6>
+                <ul className={`teamsList`}>
                   {Enablement.map((enablement, enablementKey) => (
-                    <li className="teamsList__list" key={enablementKey}>
+                    <li className={`teamsList__list`} key={enablementKey}>
                       {enablement}
                     </li>
                   ))}
                 </ul>
               </Col>
               <Col md={4}>
-                <h6 className="text-light mb-4">Team Augmentation</h6>
-                <ul className="teamsList">
+                <h6 className={`text-light mb-4`}>Team Augmentation</h6>
+                <ul className={`teamsList`}>
                   {Assurance.map((assurance, assuranceKey) => (
-                    <li className="teamsList__list" key={assuranceKey}>
+                    <li className={`teamsList__list`} key={assuranceKey}>
                       {assurance}
                     </li>
                   ))}
@@ -217,7 +217,7 @@ const Teams = () => {
           </Container>
         </div>
       </div>
-      <div className="py-75">
+      <div className={`py-75`}>
         <Container>
           <h3>Transparent Execution</h3>
           <p>
@@ -226,18 +226,18 @@ const Teams = () => {
             100% online cloud based tools<br></br> to ensure round the clock
             visibility.
           </p>
-          <Row className="m-0">
+          <Row className={`m-0`}>
             {Execution.map((execution, executionKey) => {
               return (
                 <Col md={4} key={executionKey}>
-                  <div className="execution">
+                  <div className={`execution`}>
                     <Image
                       src={execution.image}
                       alt="no-image"
-                      className="pb-2"
+                      className={`pb-2`}
                     />
-                    <h6 className="inner-h6">{execution.title}</h6>
-                    <p className="lg-ellipse">{execution.paragraph}</p>
+                    <h6 className={`inner-h6`}>{execution.title}</h6>
+                    <p className={`lg-ellipse`}>{execution.paragraph}</p>
                   </div>
                 </Col>
               )
@@ -248,7 +248,7 @@ const Teams = () => {
       <MarketPresence />
       <ClientFeedback />
       <FeaturedWork />
-      <div className="py-75 bg-midnight">
+      <div className={`py-75 bg-midnight`}>
         <Container>
           <ContactForm />
         </Container>

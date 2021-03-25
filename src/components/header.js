@@ -4,6 +4,8 @@ import { Container, Navbar, Nav, Image, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
+import ReactDOM from "react-dom"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 const NavLink = [
   {
     route: "/",
@@ -37,21 +39,24 @@ const NavLink = [
 const Header = props => {
   const url = typeof window !== "undefined" ? window.location.href : ""
   return (
-    <header className="header w-100">
+    <header className={`header w-100`}>
       <Container>
-        <Navbar collapseOnSelect expand="lg">
+        <Navbar expand="lg">
           <Link to="/">
-            <Navbar.Brand className="py-0">
+            <Navbar.Brand className={`py-0`}>
               <Image src={props.logo} alt="no logo" />
             </Navbar.Brand>
           </Link>
           <Navbar.Toggle aria-controls="collapse-navbar-nav" />
-          <Navbar.Collapse id="collapse-navbar-nav">
-            <Nav className="ml-auto navbar">
+          <Navbar.Collapse id={`collapse-navbar-nav`}>
+            <Nav
+              className={`ml-auto navbar`}
+              activeKey={window.location.pathname}
+            >
               {url.split("/")[3] === "estimate" ? (
-                <Nav.Link href="/" className="goBack">
+                <Nav.Link href="/" className={`goBack`}>
                   {" "}
-                  <FontAwesomeIcon icon={faArrowLeft} className="backIcon" />
+                  <FontAwesomeIcon icon={faArrowLeft} className={`backIcon`} />
                   Back to home
                 </Nav.Link>
               ) : (
@@ -71,7 +76,7 @@ const Header = props => {
                       key={i}
                     >
                       {link.title === "contact" ? (
-                        <Button className="endeavour-button">
+                        <Button className={`endeavour-button`}>
                           {url.split("/")[3] === "services"
                             ? "Estimate"
                             : "contact"}

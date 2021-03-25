@@ -22,26 +22,26 @@ const ContactForm = () => {
     alert(`Welcome ${state.name} ${state.email}!`)
   }
   return (
-    <div className="testimonial-form">
+    <div className={`testimonial-form`}>
       <div>
-        <div className="contact-heading">
-          <h5 className="contact-h5">Contact Us</h5>
-          <hr className="b-border"></hr>
+        <div className={`contact-heading`}>
+          <h5 className={`contact-h5`}>Contact Us</h5>
+          <hr className={`b-border`}></hr>
         </div>
-        <h4 className="text-light mt-3 mb-10">Ready to get Started?</h4>
+        <h4 className={`text-light mt-3 mb-10`}>Ready to get Started?</h4>
       </div>
       <Row>
         <Col md={8}>
-          <Form className="contact-form" onSubmit={handleSubmit}>
+          <Form className={`contact-form`} onSubmit={handleSubmit}>
             <Row>
               <Col md={12}>
                 <Form.Group
                   controlId="exampleForm.ControlSelect1"
-                  className="contactUs-dropdown position-relative"
+                  className={`contactUs-dropdown position-relative`}
                 >
                   <FontAwesomeIcon
                     icon={faChevronDown}
-                    className="position-absolute text-light"
+                    className={`position-absolute text-light`}
                   />
                   <Form.Control as="select">
                     <option>How we can help you?</option>
@@ -113,17 +113,17 @@ const ContactForm = () => {
                     rows={4}
                     placeholder="Message"
                     onChange={handleInputChange}
-                    className="py-2"
+                    className={`py-2`}
                   />
                 </Form.Group>
               </Col>
               <Col md={12}>
-                <span className="text-spam mt-4">
+                <span className={`text-spam mt-4`}>
                   Don't worry we do not span your information.
                 </span>
               </Col>
-              <div className="btn-batch mt-4">
-                <Button variant="primary" type="submit" className="btn-send">
+              <div className={`btn-batch mt-4`}>
+                <Button variant="primary" type="submit" className={`btn-send`}>
                   Send
                 </Button>
               </div>
@@ -131,23 +131,23 @@ const ContactForm = () => {
           </Form>
         </Col>
         <Col md={4}>
-          <div className="actions">
-            <h5 className="text-light">Quick actions</h5>
-            <hr className="action-line"></hr>
+          <div className={`actions`}>
+            <h5 className={`text-light`}>Quick actions</h5>
+            <hr className={`action-line`}></hr>
           </div>
-          <div className="d-flex text-center-md">
-            <div className="mr-3">
-              <Image src={Avatar} alt="Avatar" className="avatar" />
+          <div className={`d-flex text-center-md`}>
+            <div className={`mr-3`}>
+              <Image src={Avatar} alt="Avatar" className={`avatar`} />
             </div>
-            <div className="d-flex flex-column  text-light">
-              <strong className="text-light">Max Wilson</strong>
-              <small className="small-text">Customer Care</small>
+            <div className={`d-flex flex-column  text-light`}>
+              <strong className={`text-light`}>Max Wilson</strong>
+              <small className={`small-text`}>Customer Care</small>
             </div>
           </div>
-          <div className="list-detail">
-            <ul className="list-unstyled detail">
-              <li className="detail__list">max.wilson@qbatch.io</li>
-              <li className="detail__list">(737) 377-2428</li>
+          <div className={`list-detail`}>
+            <ul className={`list-unstyled detail`}>
+              <li className={`detail__list`}>max.wilson@qbatch.io</li>
+              <li className={`detail__list`}>(737) 377-2428</li>
             </ul>
           </div>
         </Col>

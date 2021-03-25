@@ -19,7 +19,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-purgecss`,
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,

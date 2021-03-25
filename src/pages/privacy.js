@@ -85,18 +85,18 @@ const Privacy = () => {
   return (
     <Layout>
       <SEO title="PrivacyPolicy" />
-      <div className="terms-module">
-        <Container className="module-wrapper">
-          <div className="terms-nav">
-            <span className="navigate">Menu</span>
-            <ListGroup as="ul" className="navigateList">
+      <div className={`terms-module`}>
+        <Container className={`module-wrapper`}>
+          <div className={`terms-nav`}>
+            <span className={`navigate`}>Menu</span>
+            <ListGroup as="ul" className={`navigateList`}>
               {navigate.map((navigateList, navigateKey) => {
                 return (
                   <ListGroup.Item
                     key={navigateKey}
                     action
                     href={navigateList.id}
-                    className="navigate__link"
+                    className={`navigate__link`}
                   >
                     {navigateList.title}
                   </ListGroup.Item>
@@ -104,7 +104,7 @@ const Privacy = () => {
               })}
             </ListGroup>
           </div>
-          <div className="terms-text">
+          <div className={`terms-text`}>
             <h3>Privacy Policy</h3>
             <p>
               Effective date: March 24, 2020 Qbatch<br></br> (“us", “we", or
@@ -118,14 +118,14 @@ const Privacy = () => {
               used in this Privacy Policy have the same meanings as in our Terms
               and Conditions, accessible from qbatch.com/privacy-policy
             </p>
-            <div id="general">
+            <div id={`general`}>
               <h5>Information Collection And Use</h5>
               <p>
                 We collect several different types of information for various
                 purposes to provide and improve our Service to you.
               </p>
             </div>
-            <div id="collected">
+            <div id={`collected`}>
               <h5>Types of Data Collected</h5>
               <h6>Personal Data</h6>
               <p>
@@ -134,17 +134,17 @@ const Privacy = () => {
                 contact or identify you (“Personal Data”). Personally
                 identifiable information may include, but is not limited to:
               </p>
-              <ul className="privacyList">
+              <ul className={`privacyList`}>
                 {personal.map((data, dataKey) => {
                   return (
-                    <li className="privacyList__list" key={dataKey}>
+                    <li className={`privacyList__list`} key={dataKey}>
                       {data}
                     </li>
                   )
                 })}
               </ul>
             </div>
-            <div id="data">
+            <div id={`data`}>
               <h5>Usage Data</h5>
               <p>
                 We may also collect information how the Service is accessed and
@@ -156,7 +156,7 @@ const Privacy = () => {
                 diagnostic data.
               </p>
             </div>
-            <div id="tracking">
+            <div id={`tracking`}>
               <h5>Tracking & Cookies Data</h5>
               <p>
                 We use cookies and similar tracking technologies to track the
@@ -174,20 +174,20 @@ const Privacy = () => {
                 you may not be able to use some portions of our Service.
               </p>
             </div>
-            <div id="data">
+            <div id={`data`}>
               <h5>Use of Data</h5>
               <p>Qbatch uses the collected data for various purposes:</p>
-              <ul className="privacyList">
+              <ul className={`privacyList`}>
                 {data.map((data, dataKey) => {
                   return (
-                    <li className="privacyList__list" key={dataKey}>
+                    <li className={`privacyList__list`} key={dataKey}>
                       {data}
                     </li>
                   )
                 })}
               </ul>
             </div>
-            <div id="transfer">
+            <div id={`transfer`}>
               <h5>Transfer Of Data</h5>
               <p>
                 Your information, including Personal Data, may be transferred to
@@ -207,23 +207,23 @@ const Privacy = () => {
                 personal information.
               </p>
             </div>
-            <div id="disclosure">
+            <div id={`disclosure`}>
               <h5>Disclosure Of Data</h5>
               <p>
                 Qbatch may disclose your Personal Data in the good faith belief
                 that such action is necessary to:
               </p>
-              <ul className="privacyList">
+              <ul className={`privacyList`}>
                 {disclosure.map((data, dataKey) => {
                   return (
-                    <li className="privacyList__list" key={dataKey}>
+                    <li className={`privacyList__list`} key={dataKey}>
                       {data}
                     </li>
                   )
                 })}
               </ul>
             </div>
-            <div id="security">
+            <div id={`security`}>
               <h5>Security Of Data</h5>
               <p>
                 The security of your data is important to us, but remember that
@@ -233,7 +233,7 @@ const Privacy = () => {
                 cannot guarantee its absolute security.
               </p>
             </div>
-            <div id="provider">
+            <div id={`provider`}>
               <h5>Service Providers</h5>
               <p>
                 We may employ third party companies and individuals to
@@ -245,14 +245,14 @@ const Privacy = () => {
                 for any other purpose.
               </p>
             </div>
-            <div id="analytics">
+            <div id={`analytics`}>
               <h5>Analytics</h5>
               <p>
                 We may use third-party Service Providers to monitor and analyze
                 the use of our Service.
               </p>
             </div>
-            <div id="analytics">
+            <div id={`analytics`}>
               <h5>Google Analytics</h5>
               <p>
                 Google Analytics is a web analytics service offered by Google
@@ -270,7 +270,7 @@ const Privacy = () => {
                 Terms.
               </p>
             </div>
-            <div id="sites">
+            <div id={`sites`}>
               <h5>Links To Other Sites</h5>
               <p>
                 Our Service may contain links to other sites that are not
@@ -282,7 +282,7 @@ const Privacy = () => {
                 services.
               </p>
             </div>
-            <div id="privacy">
+            <div id={`privacy`}>
               <h5>Children’s Privacy</h5>
               <p>
                 Our Service does not address anyone under the age of 18
@@ -295,7 +295,7 @@ const Privacy = () => {
                 remove that information from our servers.
               </p>
             </div>
-            <div id="policy">
+            <div id={`policy`}>
               <h5>Changes To This Privacy Policy</h5>
               <p>
                 We may update our Privacy Policy from time to time. We will
@@ -308,16 +308,16 @@ const Privacy = () => {
                 effective when they are posted on this page.
               </p>
             </div>
-            <div id="contact">
+            <div id={`contact`}>
               <h5>Contact Us</h5>
               <p>
                 If you have any questions about this Privacy Policy, please
                 contact us:
               </p>
-              <ul className="privacyList">
+              <ul className={`privacyList`}>
                 {contact.map((data, dataKey) => {
                   return (
-                    <li className="privacyList__list" key={dataKey}>
+                    <li className={`privacyList__list`} key={dataKey}>
                       {data}
                     </li>
                   )

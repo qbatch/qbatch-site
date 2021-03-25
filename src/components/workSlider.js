@@ -12,12 +12,12 @@ const WorkSlider = props => {
     { width: 1400, itemsToShow: 2 },
   ]
   return (
-    <div className="bg-midnight p-75">
+    <div className={`bg-midnight p-75`}>
       <Carousel breakPoints={breakPoints} dots>
         {props.products.map((carouselImg, carouselKey) => {
           return (
-            <div key={carouselKey} classname="img-card">
-              <Image classname="img" src={carouselImg.img} />
+            <div key={carouselKey} className={`img-card`}>
+              <Image className={`img`} src={carouselImg.img} />
             </div>
           )
         })}

@@ -12,10 +12,10 @@ const Career = () => {
     <Layout>
       <SEO title="Career" />
       <Container>
-        <div className="bg-header pt-100">
+        <div className={`bg-header pt-100`}>
           <Row>
             <Col md={6}>
-              <div className="pt-50">
+              <div className={`pt-50`}>
                 <h1>We are hiring</h1>
                 <p>
                   We are a team of diverse masters, encompassing holistic
@@ -25,7 +25,7 @@ const Career = () => {
               </div>
             </Col>
             <Col md={6}>
-              <div className="text-center">
+              <div className={`text-center`}>
                 <Image src={hiring} alt="no-image" />
               </div>
             </Col>
@@ -34,7 +34,7 @@ const Career = () => {
 
         <Row>
           <Col md={6}>
-            <div className="p-50">
+            <div className={`p-50`}>
               <h3>Why Qbatch?</h3>
               <p>
                 We are a team of diverse masters, encompassing holistic services
@@ -47,24 +47,24 @@ const Career = () => {
             </div>
           </Col>
           <Col md={6}>
-            <div className="p-55">
-              <div className="qbatchList">
-                <ul className="list-unstyled  process__container">
-                  <li className="process__step">
+            <div className={`p-55`}>
+              <div className={`qbatchList`}>
+                <ul className={`list-unstyled  process__container`}>
+                  <li className={`process__step`}>
                     Truly impactful solutions for Amazon Sellers
                   </li>
 
-                  <li className="process__step">
+                  <li className={`process__step`}>
                     {" "}
                     Really fast moving environment
                   </li>
 
-                  <li className="process__step">Human and care centric </li>
+                  <li className={`process__step`}>Human and care centric </li>
 
-                  <li className="process__step">
+                  <li className={`process__step`}>
                     Top notch technologies and practices
                   </li>
-                  <li className="process__step">
+                  <li className={`process__step`}>
                     Team of highly motivated engineer’s and Designers to help
                     you thrive
                   </li>
@@ -74,7 +74,7 @@ const Career = () => {
           </Col>
 
           <Col md={6}>
-            <div className="p-50">
+            <div className={`p-50`}>
               <h1>Be part of our mission</h1>
               <p>
                 If you are passionate about changing world through technology,
@@ -84,28 +84,28 @@ const Career = () => {
             </div>
           </Col>
           <Col md={6}>
-            <div className="text-center p-50">
+            <div className={`text-center p-50`}>
               <Image src={mission} alt="no-image" />
             </div>
           </Col>
         </Row>
       </Container>
       <Helmet>
-        <script src="https://s3.amazonaws.com/files.freshteam.com/production/65182/attachments/6000040247/original/6000003854_widget.js?1614695610"></script>
+        <script src="https://s3.amazonaws.com/files.freshteam.com/production/65182/attachments/6000040247/original/6000003854_widget.js?1614695610`}"></script>
       </Helmet>
-      <div id="freshteam-widget"></div>
+      <div id={`freshteam-widget`}></div>
       <Container>
-        <div className="aboutUs text-center">
-          <div className="textPortion">
-            <h5 className="text-light">What Makes Us</h5>
-            <h1 className="text-light">Qbatch</h1>
-            <p className="text-light py-100">
+        <div className={`aboutUs text-center`}>
+          <div className={`textPortion`}>
+            <h5 className={`text-light`}>What Makes Us</h5>
+            <h1 className={`text-light`}>Qbatch</h1>
+            <p className={`text-light py-100`}>
               For over 5 years, our company has been growing and we’re proud of
               our history and excited about our future.
             </p>
-            <div className="btn-batch d-block">
+            <div className={`btn-batch d-block`}>
               <Link to="/about">
-                <button type="button" className=" btn  aboutUs">
+                <button type="button" className={`btn  aboutUs`}>
                   About Us
                 </button>
               </Link>

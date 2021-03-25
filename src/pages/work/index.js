@@ -33,7 +33,7 @@ const Index = () => {
   ]
   return (
     <Layout>
-      <SEO title="Work" />
+      <SEO title="work" />
       <div className="bg-selago">
         <Image src={shapeUpper} className="shapeUpper" alt="no-image" />
         <Image src={shapeLower} className="shapeLower" alt="no-image" />

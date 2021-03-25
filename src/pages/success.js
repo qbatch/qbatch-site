@@ -6,15 +6,15 @@ function Success() {
   return (
     <Layout>
       <SEO title="Success" />
-      <div className="bg-selego py-75 text-center">
+      <div className={`bg-selego py-75 text-center`}>
         <Container>
-          <h3 className="mb-3">
-            <span className="endeavour">
+          <h3 className={`mb-3`}>
+            <span className={`endeavour`}>
               Thanks! We'll get back to you soon.
             </span>
           </h3>
-          <div className="btn-batch justify-content-center">
-            <Button className="endeavour-button" type="submit">
+          <div className={`btn-batch justify-content-center`}>
+            <Button className={`endeavour-button" type="submit`}>
               View our portfolio
             </Button>
           </div>

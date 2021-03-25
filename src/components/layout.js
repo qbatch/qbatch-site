@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <Header logo={Logo} />
-      <main className="pt-90">{children}</main>
+      <main className={`pt-90`}>{children}</main>
       <Footer logo={Logo} />
     </React.Fragment>
   )

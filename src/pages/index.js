@@ -123,29 +123,29 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="layout bg-selago">
-        <div className="skewed-bg">
-          <div className="content">
-            <Container className="pt-155">
-              <Row className="m-0">
+      <div className={`layout bg-selago`}>
+        <div className={`skewed-bg`}>
+          <div className={`content`}>
+            <Container className={`pt-155`}>
+              <Row className={`m-0`}>
                 <Col md={6}>
-                  <div className="text-left">
+                  <div className={`text-left`}>
                     <h1>Automating Ideas for Optimum ROI</h1>
                     <p>
                       Adapting Emerging Technologies, Modernizing Legacy Systems
                       & Developing User Friendly Solutions that yields maximum
                       productivity in lower down
                     </p>
-                    <div className="btn-batch d-flex">
+                    <div className={`btn-batch d-flex`}>
                       <Button
                         variant="primary"
-                        className="endeavour-button"
+                        className={`endeavour-button`}
                         onClick={() => scrollTo("#scroll")}
                       >
                         Let's Chat
                       </Button>
                       <Link to="/work">
-                        <Button className="outline-button ml-3">
+                        <Button className={`outline-button ml-3`}>
                           Our Work
                         </Button>
                       </Link>
@@ -153,24 +153,24 @@ const IndexPage = () => {
                   </div>
                 </Col>
                 <Col md={6}>
-                  <div className="text-right">
-                    <Image src={IndexImage} className="image-space" />
+                  <div className={`text-right`}>
+                    <Image src={IndexImage} className={`image-space`} />
                   </div>
                 </Col>
               </Row>
             </Container>
           </div>
         </div>
-        <div className="inner-skewed">
+        <div className={`inner-skewed`}>
           <Container>
-            <Row className="row">
+            <Row className={`row`}>
               <Col md={6}>
-                <h6 className="hwr">Who We Are </h6>
+                <h6 className={`hwr`}>Who We Are </h6>
                 <h4>Strategists, Devbots</h4>
                 <h4>Visualizers & Executors</h4>
               </Col>
               <Col md={6}>
-                <p className="pb-3">
+                <p className={`pb-3`}>
                   We are a team of diverse masters, encompassing holistic
                   services required to design seamless experiences and
                   progressive solutions, where we Define the Systems, Refine the
@@ -180,33 +180,33 @@ const IndexPage = () => {
                 </p>
               </Col>
               <Col md={6}>
-                <div className="d-flex justify-content-around">
-                  <div className="d-flex flex-column">
+                <div className={`d-flex justify-content-around`}>
+                  <div className={`d-flex flex-column`}>
                     <h1>2015</h1>
-                    <h6 className="h-title">Established</h6>
+                    <h6 className={`h-title`}>Established</h6>
                   </div>
-                  <div className="d-flex flex-column">
+                  <div className={`d-flex flex-column`}>
                     <h1>
                       <CountUp start={0} end={300} duration={5} />+
                     </h1>
-                    <h6 className="h-title">Clients</h6>
+                    <h6 className={`h-title`}>Clients</h6>
                   </div>
                 </div>
               </Col>
               <Col md={6}>
-                <div className="d-flex justify-content-around">
-                  <div className="d-flex flex-column">
+                <div className={`d-flex justify-content-around`}>
+                  <div className={`d-flex flex-column`}>
                     <h1>
                       {" "}
                       <CountUp start={0} end={500} duration={5} />
                     </h1>
-                    <h6 className="h-title">Projects</h6>
+                    <h6 className={`h-title`}>Projects</h6>
                   </div>
-                  <div className="d-flex flex-column">
+                  <div className={`d-flex flex-column`}>
                     <h1>
                       <CountUp start={0} end={100} duration={5} />
                     </h1>
-                    <h6 className="h-title">Teams</h6>
+                    <h6 className={`h-title`}>Teams</h6>
                   </div>
                 </div>
               </Col>
@@ -216,14 +216,14 @@ const IndexPage = () => {
       </div>
       <section>
         <Container>
-          <div className="services py-50">
-            <Row className="m-0">
+          <div className={`services py-50`}>
+            <Row className={`m-0`}>
               <Col md={4}>
-                <div className="d-flex">
-                  <div className="serviceBox">
-                    <h5 className="popularService">Popular Services</h5>
+                <div className={`d-flex`}>
+                  <div className={`serviceBox`}>
+                    <h5 className={`popularService`}>Popular Services</h5>
                   </div>
-                  <div className="services-Detail">
+                  <div className={`services-Detail`}>
                     <h1>Services</h1>
                     <p>
                       We offer expertise for end-to-end product design and
@@ -231,9 +231,9 @@ const IndexPage = () => {
                       product’s unique requirements.
                     </p>
                   </div>
-                  <div className="btn-batch mb-3">
+                  <div className={`btn-batch mb-3`}>
                     <Link to="/services">
-                      <Button variant="primary" className="endeavour-button">
+                      <Button variant="primary" className={`endeavour-button`}>
                         See all services
                       </Button>
                     </Link>
@@ -241,20 +241,20 @@ const IndexPage = () => {
                 </div>
               </Col>
               <Col md={8}>
-                <Row className="m-0">
+                <Row className={`m-0`}>
                   {services.map((values, i) => {
                     return (
                       <Col md={4} key={i}>
                         <Link to={values.to}>
-                          <div className="services-list">
-                            <div className="linkIcon rounded-circle">
+                          <div className={`services-list`}>
+                            <div className={`linkIcon rounded-circle`}>
                               <FontAwesomeIcon icon={values.icon} />
                             </div>
-                            <h6 className="sh6">{values.title}</h6>
-                            <p className="sPara">{values.paragraph}</p>
+                            <h6 className={`sh6`}>{values.title}</h6>
+                            <p className={`sPara`}>{values.paragraph}</p>
                             <FontAwesomeIcon
                               icon={faLongArrowAltRight}
-                              className="rightArrow"
+                              className={`rightArrow`}
                             />
                           </div>
                         </Link>
@@ -270,55 +270,63 @@ const IndexPage = () => {
       <FeaturedWork />
       <section>
         <Container>
-          <div className="driven-process py-75">
-            <h5 className="text-center">Our Research driven Process</h5>
-            <div className="d-flex">
-              <div className="pt-30 d-flex justify-content-center align-items-center flex-column">
-                <div className="img-bg">
+          <div className={`driven-process py-75`}>
+            <h5 className={`text-center`}>Our Research driven Process</h5>
+            <div className={`d-flex`}>
+              <div
+                className={`pt-30 d-flex justify-content-center align-items-center flex-column`}
+              >
+                <div className={`img-bg`}>
                   <Image src={discover} alt="no-image" />
                 </div>
-                <h6 className="mb-3">Discover</h6>
-                <p className="research-p">
+                <h6 className={`mb-3`}>Discover</h6>
+                <p className={`research-p`}>
                   We facilitate in translation of thoughts and ideal experiences
                 </p>
               </div>
-              <div className="align-items-center pt-30 arrow">
+              <div className={`align-items-center pt-30 arrow`}>
                 <Image src={amazonUp} />
               </div>
-              <div className="pt-30 d-flex justify-content-center align-items-center flex-column">
-                <div className="img-bg">
+              <div
+                className={`pt-30 d-flex justify-content-center align-items-center flex-column`}
+              >
+                <div className={`img-bg`}>
                   <Image src={design} alt="no-image" />
                 </div>
-                <h6 className="mb-3">Design</h6>
-                <p className="research-p">
+                <h6 className={`mb-3`}>Design</h6>
+                <p className={`research-p`}>
                   Design and validate the early ideas through interactive
                   Prototype Design
                 </p>
               </div>
-              <div className="align-items-center pt-30 arrow">
+              <div className={`align-items-center pt-30 arrow`}>
                 <Image src={amazonDown} />
               </div>
-              <div className="pt-30 d-flex justify-content-center align-items-center flex-column">
-                <div className="img-bg">
+              <div
+                className={`pt-30 d-flex justify-content-center align-items-center flex-column`}
+              >
+                <div className={`img-bg`}>
                   <Image src={data} alt="no-image" />
                 </div>
 
-                <h6 className="mb-3">Develop</h6>
-                <p className="research-p">
+                <h6 className={`mb-3`}>Develop</h6>
+                <p className={`research-p`}>
                   Develop using the modern technologies for performance and
                   scalability
                 </p>
               </div>
-              <div className="align-items-center pt-30 arrow">
+              <div className={`align-items-center pt-30 arrow`}>
                 <Image src={amazonUp} />
               </div>
-              <div className="pt-30 d-flex justify-content-center align-items-center flex-column">
-                <div className="img-bg">
+              <div
+                className={`pt-30 d-flex justify-content-center align-items-center flex-column`}
+              >
+                <div className={`img-bg`}>
                   <Image src={outline} alt="no-image" />
                 </div>
 
-                <h6 className="mb-3">Deploy</h6>
-                <p className="research-p">
+                <h6 className={`mb-3`}>Deploy</h6>
+                <p className={`research-p`}>
                   Deploy products for efficacy with better security for on
                   security & operations
                 </p>
@@ -327,11 +335,11 @@ const IndexPage = () => {
           </div>
         </Container>
       </section>
-      <section className="position-relative">
-        <div className="teams">
+      <section className={`position-relative`}>
+        <div className={`teams`}>
           <Container>
-            <div className="teams-detail">
-              <Row className=" m-0">
+            <div className={`teams-detail`}>
+              <Row className={`m-0`}>
                 <Col md={6}>
                   <h1>Dedicated Teams for your Product</h1>
                   <p>
@@ -343,15 +351,15 @@ const IndexPage = () => {
                     and dedication for projects.
                   </p>
                   <Link to="/teams">
-                    <div className="btn-batch">
-                      <Button variant="primary" className="endeavour-button">
+                    <div className={`btn-batch`}>
+                      <Button variant="primary" className={`endeavour-button`}>
                         See outsourcing Plan
                       </Button>
                     </div>
                   </Link>
                 </Col>
                 <Col md={6}>
-                  <div className="text-right">
+                  <div className={`text-right`}>
                     <Image src={teamImg} alt="no-image" />
                   </div>
                 </Col>
@@ -359,55 +367,55 @@ const IndexPage = () => {
             </div>
           </Container>
         </div>
-        <div className="experites">
+        <div className={`experites`}>
           <Container>
-            <div className="inner-content">
-              <Row className="m-0">
+            <div className={`inner-content`}>
+              <Row className={`m-0`}>
                 <Col md={10} sm={12}>
-                  <h1 className="text-light mb-22">
+                  <h1 className={`text-light mb-22`}>
                     Our World Class Expertise to Help Your Business Make Dent on
                     Earth
                   </h1>
-                  <p className="exp-p text-light mb-50">
+                  <p className={`exp-p text-light mb-50`}>
                     We facilitate our clients to unleash the potential of their
                     product
                   </p>
                 </Col>
                 {expertise.map((values, i) => {
                   return (
-                    <div className="col-md-3" key={i}>
+                    <Col md={3} key={i}>
                       <Image
                         src={values.img}
                         alt="no-image"
-                        className="exp-img"
+                        className={`exp-img`}
                       />
-                      <h6 className="text-light border-h5 pl-2">
+                      <h6 className={`text-light border-h5 pl-2`}>
                         {values.title}
                       </h6>
-                      <p className="text-light exp-p">{values.paragraph}</p>
-                    </div>
+                      <p className={`text-light exp-p`}>{values.paragraph}</p>
+                    </Col>
                   )
                 })}
               </Row>
             </div>
           </Container>
-          <div className="bg-cornflower"></div>
+          <div className={`bg-cornflower`}></div>
         </div>
       </section>
       <ClientFeedback />
-      <div className="position-relative testimonial" id="scroll">
-        <div className="bg-cornflower"></div>
-        <div className="contact-us">
-          <div className="inner-contact">
+      <div className={`position-relative testimonial`} id="scroll">
+        <div className={`bg-cornflower`}></div>
+        <div className={`contact-us`}>
+          <div className={`inner-contact`}>
             <Container>
-              <div className="pt-200">
+              <div className={`pt-200`}>
                 <ContactForm />
               </div>
             </Container>
           </div>
         </div>
       </div>
-      <div className="py-75 bg-selago">
+      <div className={`py-75 bg-selago`}>
         <Container>
           <Recognized />
         </Container>
