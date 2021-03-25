@@ -23,7 +23,7 @@
 }
 .px-50 {
   padding: rem(50);
-  @include md{
+  @include md {
     padding: rem(10);
   }
   .aboutImg {
@@ -105,39 +105,56 @@
   }
 }
 .feedback {
-  .midnight-h4 {
-    @include fonts($white, rem(28), $base-font, $light);
-    padding: rem(70) rem(0);
+  .pt-90 {
+    padding-top: rem(90);
   }
-  .left-image {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    padding-bottom: rem(21);
-    margin: 0 rem(10);
-    .dottedImg {
+  .pb-90 {
+    padding-bottom: rem(90);
+    &.right {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  .bg-endeavour {
+    background-color: $endeavour;
+    width: rem(200);
+    height: rem(150);
+  }
+  .bg-danube {
+    background-color: $danube;
+    &.left-side {
+      width: rem(80);
+      height: rem(70);
       position: absolute;
-      right: 0;
-      top: 5%;
+      top: rem(68);
+      left: rem(154);
+    }
+    &.right-side {
+      width: rem(80);
+      height: rem(70);
+      position: absolute;
+      top: rem(104);
+      right: rem(150);
     }
   }
-  .w-420 {
-    // width: rem(420);
-    margin: rem(20) rem(0);
-    @media (max-width: 1565px) {
-      margin: rem(20) rem(10);
+  .f-26 {
+    @include fonts($white, rem(26), $base-font, $light);
+    padding: 0 rem(100);
+    line-height: 1.3;
+    letter-spacing: 1.5px;
+    @include md {
+      padding: 0;
     }
   }
-  .group-images {
-    display: flex;
-    flex-direction: column;
-    @media (max-width: 1565px) {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+  .rightIcon {
+    top: 0;
+    left: 0;
+  }
+  .leftIcon {
+    bottom: 0;
+    right: 0;
   }
 }
-
 .offices {
   .address {
     background-color: $polar;

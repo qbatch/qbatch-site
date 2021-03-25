@@ -20,17 +20,14 @@ import strong from "../images/expertise/strong.svg"
 import execution from "../images/expertise/execution.svg"
 import communication from "../images/expertise/communication.svg"
 import Recognized from "../components/recognized"
-import ceo from "../images/about/team/ceo.png"
-import cto from "../images/about/team/cto.png"
-import hamza from "../images/about/team/hamza.png"
-import waqas from "../images/about/team/waqas.png"
-import Tour from "../images/about/team/tour.png"
-import firstGroup from "../images/about/team/firstGroup.png"
-import scndGroup from "../images/about/team/scndGroup.png"
-import thirdGroup from "../images/about/team/thirdGroup.png"
+import rightIcon from "../images/about/team/rightIcon.svg"
+import group from "../images/about/team/group.png"
+import groupTwo from "../images/about/team/groupTwo.png"
+import groupFour from "../images/about/team/groupFour.png"
+import groupThree from "../images/about/team/groupThree.png"
 import Lahore from "../images/about/team/lahore.png"
 import Fsd from "../images/about/team/Faisalabad.png"
-import Dotted from "../images/about/dotted.png"
+import leftIcon from "../images/about/team/leftIcon.svg"
 const About = () => {
   const expertise = [
     {
@@ -75,48 +72,6 @@ const About = () => {
     },
   ]
 
-  const teams = [
-    {
-      image: ceo,
-      name: "Ibraheem Zahoor",
-      position: "ceo & Founder",
-    },
-    {
-      image: cto,
-      name: "Hassan Akram",
-      position: "cto",
-    },
-    {
-      image: hamza,
-      name: "Hamza Khurshid",
-      position: "Full Stack Engineer",
-    },
-    {
-      image: waqas,
-      name: "Waqas Sarwar",
-      position: "Sales Cunsultant",
-    },
-    {
-      image: ceo,
-      name: "Ibraheem Zahoor",
-      position: "ceo & Founder",
-    },
-    {
-      image: cto,
-      name: "Hassan Akram",
-      position: "cto",
-    },
-    {
-      image: hamza,
-      name: "Hamza Khurshid",
-      position: "Full Stack Engineer",
-    },
-    {
-      image: waqas,
-      name: "Waqas Sarwar",
-      position: "Sales Cunsultant",
-    },
-  ]
   return (
     <Layout>
       <SEO title="About us" />
@@ -307,7 +262,7 @@ const About = () => {
             world, helping them grow their businesses using latest technology
             solutions.
           </p>
-          <Row className="m-0">
+          {/* <Row className="m-0">
             {teams.map((teams, i) => {
               return (
                 <>
@@ -321,11 +276,11 @@ const About = () => {
                 </>
               )
             })}
-          </Row>
+          </Row> */}
         </Container>
       </div>
-      <div className="bg-midnight d-flex justify-content-around flex-wrap feedback">
-        <div className="left-image position-relative">
+      <div className="bg-midnight feedback">
+        {/* <div className="left-image position-relative">
           <h4 className="text-light midnight-h4 w-75 ">
             Our Culture <b>Empowers</b> individuals to learn from experiences,
             interactions & people around them.
@@ -337,7 +292,47 @@ const About = () => {
           <Image src={firstGroup} className="w-420" alt="no-image" />
           <Image src={scndGroup} className="w-420" alt="no-image" />
           <Image src={thirdGroup} className="w-420" alt="no-image" />
-        </div>
+        </div> */}
+        <Row className="m-0">
+          <Col md={3} className="p-0">
+            <div>
+              <Image src={group} alt="no-image" />
+              <Image src={groupTwo} alt="no-img" />
+            </div>
+            <div className="position-relative pt-90">
+              <div className="bg-endeavour"></div>
+              <div className="bg-danube left-side"></div>
+            </div>
+          </Col>
+          <Col md={6} className="p-0">
+            <div className="position-relative h-100 d-flex justify-content-center align-items-center">
+              <Image
+                src={rightIcon}
+                className="position-absolute rightIcon"
+                alt="no-image"
+              />
+              <Image
+                src={leftIcon}
+                alt="no-img"
+                className="position-absolute top-0 leftIcon"
+              />
+              <h5 className="text-light text-center f-26">
+                Our Culture <b>Empowers</b> individuals to learn from
+                experiences, interactions & people around them.
+              </h5>
+            </div>
+          </Col>
+          <Col md={3} className="p-0 text-right">
+            <div className="position-relative pb-90 right">
+              <div className="bg-endeavour"></div>
+              <div className="bg-danube right-side"></div>
+            </div>
+            <div>
+              <Image src={groupFour} alt="no-image" />
+              <Image src={groupThree} alt="no-img" />
+            </div>
+          </Col>
+        </Row>
       </div>
       <div className="py-50 text-center">
         <h1>Our Offices</h1>
