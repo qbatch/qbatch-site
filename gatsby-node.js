@@ -21,10 +21,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: path.resolve(
-              __dirname,
-              "/node_modules/@nhanzel/react-waves/"
-            ),
+            test: /react-waves/,
             use: loaders.null(),
           },
         ],
