@@ -6,20 +6,12 @@
 
 // You can delete this file if you're not using it
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage.startsWith("develop")) {
-    actions.setWebpackConfig({
-      resolve: {
-        alias: {},
-      },
-    })
-  }
-
   if (stage === "build-html") {
     actions.setWebpackConfig({
       module: {
         rules: [
           {
-            test: /react-waves/,
+            test: /react-particle-animation/,
             use: loaders.null(),
           },
         ],
