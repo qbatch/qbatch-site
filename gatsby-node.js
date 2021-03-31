@@ -5,3 +5,30 @@
  */
 
 // You can delete this file if you're not using it
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage.startsWith("develop")) {
+    actions.setWebpackConfig({
+      resolve: {
+        alias: {
+          "react-dom": "@hot-loader/react-dom",
+        },
+      },
+    })
+  }
+
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: path.resolve(
+              __dirname,
+              "/node_modules/@nhanzel/react-waves/"
+            ),
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
