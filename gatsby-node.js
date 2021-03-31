@@ -5,7 +5,6 @@
  */
 
 // You can delete this file if you're not using it
-import "./src/components/header"
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html") {
     actions.setWebpackConfig({
