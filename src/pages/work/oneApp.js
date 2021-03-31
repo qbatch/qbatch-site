@@ -60,7 +60,7 @@ const OneApp = () => {
       />
       <WorkSlider products={products} />
       <ClientFeedback />
-      <div className="py-75 bg-mdnight">
+      <div className={`py-75 bg-mdnight`}>
         <Container>
           <ContactForm />
         </Container>

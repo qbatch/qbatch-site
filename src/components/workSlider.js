@@ -9,7 +9,7 @@ const WorkSlider = props => {
     { width: 768, itemsToShow: 1 },
     { width: 991, itemsToShow: 1 },
     { width: 1200, itemsToShow: 2 },
-    { width: 1400, itemsToShow: 2 },
+    { width: 1400, itemsToShow: 3 },
   ]
   return (
     <div className={`bg-midnight p-75`}>

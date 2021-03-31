@@ -159,8 +159,11 @@
   .address {
     background-color: $polar;
     text-align: left;
-    padding: rem(35) rem(60);
+    padding: rem(35) rem(30);
     margin-top: rem(30);
+    .addressPara {
+      @include fonts($storm-gray, rem(16), $base-font, $light);
+    }
   }
 }
 .b-leftGrey {

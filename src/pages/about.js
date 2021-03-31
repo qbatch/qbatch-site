@@ -27,6 +27,7 @@ import groupFour from "../images/about/team/groupFour.png"
 import groupThree from "../images/about/team/groupThree.png"
 import Lahore from "../images/about/team/lahore.png"
 import Fsd from "../images/about/team/Faisalabad.png"
+import UnitedState from "../images/about/team/unitedState.png"
 import leftIcon from "../images/about/team/leftIcon.svg"
 const About = () => {
   const expertise = [
@@ -340,21 +341,37 @@ const About = () => {
       <div className="offices py-50 p">
         <Container>
           <Row className="m-0">
-            <Col md={6}>
+            <Col md={4}>
               <div className="bg-selego text-center py-50 pb-0 mb-4">
-                <Image src={Lahore} alt="no-image" />
+                <Image src={UnitedState} alt="no-image" />
                 <div className="address">
-                  <h3>Lahore</h3>
-                  <p>106 Sector K, CCA Phase-1 DHA</p>
+                  <h5>Wyoming</h5>
+                  <p className="addressPara">
+                    1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801
+                  </p>
                 </div>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={4}>
+              <div className="bg-selego text-center py-50 pb-0 mb-4">
+                <Image src={Lahore} alt="no-image" />
+                <div className="address">
+                  <h5>Lahore</h5>
+                  <p className="addressPara">
+                    {" "}
+                    4th Floor, 28 CCA، Sector C Phase 5 D.H.A
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={4}>
               <div className="bg-selego text-center py-50 pb-0">
                 <Image src={Fsd} alt="no-image" />
                 <div className="address">
-                  <h3>Faisalabad</h3>
-                  <p>Mezzanine floor, Sitara Tower, Bilal Rd, Civil Lines</p>
+                  <h5>Faisalabad</h5>
+                  <p className="addressPara">
+                    Mezzanine floor, Sitara Tower, Bilal Rd, Civil Lines
+                  </p>
                 </div>
               </div>
             </Col>

@@ -1773,8 +1773,15 @@ p {
 .offices .address {
   background-color: #f9fcfe;
   text-align: left;
-  padding: 2.1875rem 3.75rem;
+  padding: 2.1875rem 1.875rem;
   margin-top: 1.875rem;
+}
+
+.offices .address .addressPara {
+  color: #6d7384;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 .b-leftGrey {
