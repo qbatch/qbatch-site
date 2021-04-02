@@ -37,6 +37,8 @@ const NavLink = [
     title: "estimate",
   },
 ]
+const Header = props => {
+  const url = typeof window !== "undefined" ? window.location.href : ""
 
   return (
     <header className={`header w-100`}>
@@ -60,7 +62,6 @@ const NavLink = [
                 NavLink.map((link, i) => {
                   return (
                     <Nav.Link
-
                       href={
                         link.route === "/contact"
                           ? url.split("/")[3] === "services"
