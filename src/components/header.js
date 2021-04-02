@@ -37,9 +37,7 @@ const NavLink = [
     title: "estimate",
   },
 ]
-const Header = props => {
-  const url = typeof window !== "undefined" ? window.location.href : ""
-  const pathname = window.location.pathname
+
   return (
     <header className={`header w-100`}>
       <Container>
@@ -51,7 +49,7 @@ const Header = props => {
           </Link>
           <Navbar.Toggle aria-controls="collapse-navbar-nav" />
           <Navbar.Collapse id={`collapse-navbar-nav`}>
-            <Nav className={`ml-auto navbar`} activeKey={pathname}>
+            <Nav className={`ml-auto navbar`}>
               {url.split("/")[3] === "estimate" ? (
                 <Nav.Link href="/" className={`goBack`}>
                   {" "}
@@ -62,6 +60,7 @@ const Header = props => {
                 NavLink.map((link, i) => {
                   return (
                     <Nav.Link
+
                       href={
                         link.route === "/contact"
                           ? url.split("/")[3] === "services"
