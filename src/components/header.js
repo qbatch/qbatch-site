@@ -4,6 +4,7 @@ import { Container, Navbar, Nav, Image, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
+import { useLocation } from "react-router-dom"
 import ReactDOM from "react-dom"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 const NavLink = [
@@ -38,6 +39,7 @@ const NavLink = [
 ]
 const Header = props => {
   const url = typeof window !== "undefined" ? window.location.href : ""
+  const pathname = window.location.pathname
   return (
     <header className={`header w-100`}>
       <Container>
@@ -49,10 +51,7 @@ const Header = props => {
           </Link>
           <Navbar.Toggle aria-controls="collapse-navbar-nav" />
           <Navbar.Collapse id={`collapse-navbar-nav`}>
-            <Nav
-              className={`ml-auto navbar`}
-              activeKey={window.location.pathname}
-            >
+            <Nav className={`ml-auto navbar`} activeKey={pathname}>
               {url.split("/")[3] === "estimate" ? (
                 <Nav.Link href="/" className={`goBack`}>
                   {" "}

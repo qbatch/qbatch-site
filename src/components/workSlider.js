@@ -39,7 +39,7 @@ const WorkSlider = props => {
         {props.products.map((carouselImg, carouselKey) => {
           return (
             <div>
-              <img src={carouselImg.img} />
+              <img src={carouselImg.img} className="w-100" />
             </div>
           )
         })}
