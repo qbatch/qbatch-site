@@ -107,6 +107,10 @@ body {
           box-shadow: none;
 }
 
+.header #collapse-navbar-nav .navbar__item .endeavour-button:active {
+  background-color: #0054a6;
+}
+
 @media (max-width: 767px) {
   .header #collapse-navbar-nav .navbar__item .endeavour-button {
     color: #ffffff;
@@ -297,6 +301,10 @@ p {
 
 .py-50 {
   padding: 3.125rem 0;
+}
+
+.px-20 {
+  padding: 0 1.25rem;
 }
 
 .bg-polar {
@@ -838,6 +846,10 @@ p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   padding: 0.1875rem 0rem;
+}
+
+.resize {
+  resize: none;
 }
 
 .view-sliders {
@@ -1997,6 +2009,10 @@ p {
           box-shadow: none;
 }
 
+.btn-batch .endeavour-button:active {
+  background-color: #0054a6;
+}
+
 @media (max-width: 767px) {
   .btn-batch .endeavour-button {
     color: #ffffff;
@@ -2030,6 +2046,14 @@ p {
 }
 
 .btn-batch .outline-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-batch .outline-button:not(:disabled):not(.disabled):active {
+  background-color: #0054a6;
+  color: #ffffff;
+  border-color: #0054a6;
   -webkit-box-shadow: none;
           box-shadow: none;
 }

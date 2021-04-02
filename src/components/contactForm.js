@@ -113,7 +113,7 @@ const ContactForm = () => {
                     rows={4}
                     placeholder="Message"
                     onChange={handleInputChange}
-                    className={`py-2`}
+                    className={`resize py-2`}
                   />
                 </Form.Group>
               </Col>

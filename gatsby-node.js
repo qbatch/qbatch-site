@@ -11,7 +11,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: "./src/components/header",
+            test: "./src/",
             use: loaders.null(),
           },
         ],
