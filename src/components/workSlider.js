@@ -44,7 +44,6 @@ const WorkSlider = props => {
           )
         })}
       </Coverflow>
-      ,
     </div>
   )
 }
