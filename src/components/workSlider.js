@@ -3,10 +3,6 @@ import React from "react"
 import { Image } from "react-bootstrap"
 // import Carousel from "react-elastic-carousel"
 import Coverflow from "react-coverflow"
-import OneApp1 from "../images/OneApp/OneApp1.png"
-import OneApp2 from "../images/OneApp/OneApp2.png"
-import OneApp3 from "../images/OneApp/OneApp3.png"
-import OneApp4 from "../images/OneApp/OneApp4.png"
 const WorkSlider = props => {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -39,7 +35,7 @@ const WorkSlider = props => {
         {props.products.map((carouselImg, carouselKey) => {
           return (
             <div>
-              <img src={carouselImg.img} className="w-100" />
+              <Image src={carouselImg.img} className="w-100" alt="no-image" />
             </div>
           )
         })}

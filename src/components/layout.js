@@ -1,7 +1,7 @@
 import React from "react"
 // import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min"
 import Header from "./header"
 import "./layout.css"
 import Footer from "../components/footer"
