@@ -9,6 +9,7 @@ import {
   Row,
   Col,
 } from "react-bootstrap"
+import { Link } from "gatsby"
 import BWDwebShot from "../images/work/BWDwebShot.png"
 import OneAppShot from "../images/work/OneAppShot.png"
 import oneAppLogo from "../images/work/oneAppLogo.svg"
@@ -32,7 +33,7 @@ const FeaturedWork = () => {
         "Full Stack Development",
       ],
       img: BWDwebShot,
-      link: "/work/oneApp",
+      link: "/work/bwd",
     },
     {
       logo: oneAppLogo,
@@ -59,7 +60,7 @@ const FeaturedWork = () => {
         "Full Stack Development",
       ],
       img: salessupportShot,
-      link: "/work/oneApp",
+      link: "/work/salesSupport",
     },
   ]
   return (
@@ -88,16 +89,19 @@ const FeaturedWork = () => {
                         })}
                       </ul>
                       <div className={`btn-batch d-flex`}>
-                        <Button
-                          variant="primary"
-                          className={`endeavour-button`}
-                          to={values.link}
-                        >
-                          See details
-                        </Button>
-                        <Button className={`outline-button ml-4`}>
-                          Portfolio
-                        </Button>
+                        <Link to={values.link}>
+                          <Button
+                            variant="primary"
+                            className={`endeavour-button`}
+                          >
+                            See details
+                          </Button>
+                        </Link>
+                        <Link to="/work">
+                          <Button className={`outline-button ml-4`}>
+                            Portfolio
+                          </Button>
+                        </Link>
                       </div>
                     </div>
                   </Col>

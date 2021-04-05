@@ -135,21 +135,33 @@ const footer = ({ logo }) => {
         </div>
         <div className={`social d-flex justify-content-between `}>
           <span className={`small-text`}>
-            © 2021 Qbatch. All Rights Reserved.
+            © 2021 &nbsp;
+            <Link to="/" className={`small-text`}>
+              Qbatch
+            </Link>{" "}
+            All Rights Reserved.
           </span>
           <ul className={`list-unstyled socialLink  d-flex`}>
-            <li className={`socialLink__list`}>
-              <Image src={facebook} alt="no-image" />
-            </li>
-            <li className={`socialLink__list`}>
-              <Image src={twitter} alt="no-image" />
-            </li>
-            <li className={`socialLink__list`}>
-              <Image src={instagram} alt="no-image" />
-            </li>
-            <li className={`socialLink__list`}>
-              <Image src={linkdin} alt="no-image" />
-            </li>
+            <Link to="https://www.facebook.com/qbatch">
+              <li className={`socialLink__list`}>
+                <Image src={facebook} alt="no-image" />
+              </li>
+            </Link>
+            <Link to="https://twitter.com/qbatchofficial">
+              <li className={`socialLink__list`}>
+                <Image src={twitter} alt="no-image" />
+              </li>
+            </Link>
+            <Link to="https://www.instagram.com/qbatch/">
+              <li className={`socialLink__list`}>
+                <Image src={instagram} alt="no-image" />
+              </li>
+            </Link>
+            <Link to="https://www.linkedin.com/company/qbatch/mycompany/">
+              <li className={`socialLink__list`}>
+                <Image src={linkdin} alt="no-image" />
+              </li>
+            </Link>
           </ul>
         </div>
       </footer>

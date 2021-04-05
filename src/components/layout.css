@@ -111,6 +111,14 @@ body {
   background-color: #0054a6;
 }
 
+.header #collapse-navbar-nav .navbar__item .endeavour-button:not(:disabled):not(.disabled):active {
+  background-color: #0054a6;
+  color: #ffffff;
+  border-color: #0054a6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 @media (max-width: 767px) {
   .header #collapse-navbar-nav .navbar__item .endeavour-button {
     color: #ffffff;
@@ -2011,6 +2019,14 @@ p {
 
 .btn-batch .endeavour-button:active {
   background-color: #0054a6;
+}
+
+.btn-batch .endeavour-button:not(:disabled):not(.disabled):active {
+  background-color: #0054a6;
+  color: #ffffff;
+  border-color: #0054a6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (max-width: 767px) {

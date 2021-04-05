@@ -93,6 +93,12 @@ $base-size: $base-font-size;
   &:active {
     background-color: $endeavour;
   }
+  &:not(:disabled):not(.disabled):active {
+    background-color: $endeavour;
+    color: $white;
+    border-color: $endeavour;
+    box-shadow: none;
+  }
   @include md {
     @include fonts($white, rem(12), $base-font, $regular);
     padding: rem(7) rem(10);

@@ -58,7 +58,7 @@ const OneApp = () => {
         firstList={firstList}
         secondList={secondList}
       />
-      <WorkSlider />
+      <WorkSlider products={products} />
       <ClientFeedback />
       <div className={`py-75 bg-mdnight`}>
         <Container>

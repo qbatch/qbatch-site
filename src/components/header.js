@@ -52,10 +52,12 @@ const Header = props => {
           </Link>
           <Navbar.Toggle aria-controls="collapse-navbar-nav" />
           <Navbar.Collapse id={`collapse-navbar-nav`}>
-            <Nav className={`ml-auto navbar`}>
+            <Nav
+              className={`ml-auto navbar`}
+              activeKey={window.location.pathname}
+            >
               {url.split("/")[3] === "estimate" ? (
                 <Nav.Link href="/" className={`goBack`}>
-                  {" "}
                   <FontAwesomeIcon icon={faArrowLeft} className={`backIcon`} />
                   Back to home
                 </Nav.Link>

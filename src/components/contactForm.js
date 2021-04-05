@@ -104,9 +104,6 @@ const ContactForm = () => {
               <Col md={12}>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                   <Form.Control
-                    onKeyPress={e => {
-                      if (e.key === "Enter") handleInputChange()
-                    }}
                     name="textarea"
                     as="textarea"
                     value={state.textarea}
