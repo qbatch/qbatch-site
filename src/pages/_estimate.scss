@@ -50,13 +50,22 @@
 }
 .estimate_form {
   padding: rem(75) 0;
-  @include md{
+  @include md {
     padding: 0;
   }
+
   .form-group {
+    &.contactUs-dropdown {
+      .form-control {
+        padding: rem(10) rem(10);
+        height: rem(48);
+        @include fonts($regentStBlue, rem(16), $base-font, $regular);
+      }
+    }
     .form-control {
       background-color: transparent;
       padding: rem(20) rem(10);
+
       &::placeholder {
         @include fonts($regentStBlue, rem(16), $base-font, $regular);
       }
@@ -81,9 +90,9 @@
     color: $storm-gray;
   }
 }
-.pt-50{
+.pt-50 {
   padding-top: rem(50);
-  @include sm{
+  @include sm {
     padding-top: rem(0);
   }
 }

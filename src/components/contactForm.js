@@ -116,7 +116,7 @@ const ContactForm = () => {
               </Col>
               <Col md={12}>
                 <span className={`text-spam mt-4`}>
-                  Don't worry we do not span your information.
+                  Don't worry we do not spam your information.
                 </span>
               </Col>
               <div className={`btn-batch mt-4`}>

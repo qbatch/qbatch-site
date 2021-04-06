@@ -6,7 +6,6 @@ import Header from "./header"
 import "./layout.css"
 import Footer from "../components/footer"
 import Logo from "../images/index/logo.svg"
-
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
@@ -17,7 +16,6 @@ const Layout = ({ children }) => {
   //     }
   //   }
   // `)
-
   return (
     <React.Fragment>
       <Header logo={Logo} />

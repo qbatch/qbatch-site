@@ -1,12 +1,18 @@
-import { Carousel } from "bootstrap"
+// import { Carousel } from "bootstrap"
 import React from "react"
 import { Image } from "react-bootstrap"
-// import Carousel from "react-elastic-carousel"
-import Coverflow from "react-coverflow"
+import Carousel from "react-elastic-carousel"
+// import Coverflow from "react-coverflow"
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+  { width: 768, itemsToShow: 2 },
+  { width: 1200, itemsToShow: 3 },
+]
 const WorkSlider = props => {
   return (
     <div className={`bg-midnight px-20`}>
-      {/* <Carousel breakPoints={breakPoints} dots>
+      <Carousel breakPoints={breakPoints} pagination={false}>
         {props.products.map((carouselImg, carouselKey) => {
           return (
             <div key={carouselKey} className={`img-card`}>
@@ -14,24 +20,7 @@ const WorkSlider = props => {
             </div>
           )
         })}
-      </Carousel> */}
-      <Coverflow
-        height="500"
-        className=""
-        displayQuantityOfSide={2}
-        navigation={false}
-        enableScroll={false}
-        clickable={true}
-        active="middle"
-      >
-        {props.products.map((carouselImg, carouselKey) => {
-          return (
-            <div key={carouselKey}>
-              <Image src={carouselImg.img} className="w-100" alt="no-image" />
-            </div>
-          )
-        })}
-      </Coverflow>
+      </Carousel>
     </div>
   )
 }

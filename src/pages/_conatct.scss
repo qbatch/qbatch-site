@@ -1,0 +1,58 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+.bg-corn {
+  background-color: $cornflower;
+}
+
+.alignText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  $this: &;
+  &__iconBox {
+    width: rem(62);
+    height: rem(62);
+    border-radius: rem(50);
+    background-color: $endeavour;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    @include fonts($white, rem(18), $base-font, $regular);
+    text-align: center;
+    padding-top: rem(20);
+  }
+}
+.contactUs-form {
+  .form-group {
+    &.contactUs-dropdown {
+      .form-control {
+        padding: rem(10) rem(10);
+        height: rem(48);
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        @include fonts($regentStBlue, rem(16), $base-font, $regular);
+      }
+      .color-regent {
+        top: rem(16);
+        right: rem(14);
+        color: inherit;
+        color: $regentStBlue;
+      }
+    }
+    .form-control {
+      background-color: transparent;
+      padding: rem(20) rem(10);
+
+      &::placeholder {
+        @include fonts($regentStBlue, rem(16), $base-font, $regular);
+      }
+    }
+  }
+  .text-spam {
+    @include fonts($endeavour, rem(18), $base-font, $regular);
+  }
+}
