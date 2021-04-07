@@ -3,7 +3,7 @@ import React from "react"
 // import { useStaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Header from "./header"
-import "./layout.scss"
+import "./layout.css"
 import Footer from "../components/footer"
 import Logo from "../images/index/logo.svg"
 const Layout = ({ children }) => {
