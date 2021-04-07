@@ -1,7 +1,14 @@
 import React, { useState } from "react"
-import { Image, Button, Figure, CarouselItem, Row, Col } from "react-bootstrap"
-import Carousel from "react-bootstrap/Carousel"
-import Container from "react-bootstrap/Container"
+import {
+  Container,
+  Image,
+  Button,
+  Carousel,
+  Figure,
+  CarouselItem,
+  Row,
+  Col,
+} from "react-bootstrap"
 import { Link } from "gatsby"
 import BWDwebShot from "../images/work/BWDwebShot.png"
 import OneAppShot from "../images/work/OneAppShot.png"
