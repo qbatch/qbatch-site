@@ -41,7 +41,7 @@ const Header = props => {
   const url = typeof window !== "undefined" ? window.location.href : ""
 
   return (
-    <header className={`header w-100`}>
+    <header className="header w-100">
       <Container>
         <Navbar expand="lg">
           <Link to="/">
