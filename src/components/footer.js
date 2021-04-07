@@ -71,7 +71,7 @@ const footer = ({ logo }) => {
               <div className={`d-flex flex-column location`}>
                 <small className={`light-text`}>Contact</small>
                 <a href="https://www.qbatch.com/" className={`mail-link`}>
-                  hello@qbatch.com
+                  hello@qb
                 </a>
               </div>
               <div className={`d-flex flex-column location`}>
