@@ -42,7 +42,7 @@ const Header = props => {
 
   return (
     <header className="header w-100">
-      <Container>
+      <Container className="container">
         <Navbar expand="lg">
           <Link to="/">
             <Navbar.Brand className={`py-0`}>
