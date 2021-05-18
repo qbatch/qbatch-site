@@ -42,7 +42,7 @@ const clientFeedback = () => {
           <Col md={12}>
             <div className={`text-center`}>
               <h5 className={`mb-4`}>What Clients Say About Us</h5>
-              <Carousel>
+              <Carousel indicators={false}>
                 {clientReview.map((values, i) => {
                   return (
                     <Carousel.Item key={i}>

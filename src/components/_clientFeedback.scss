@@ -1,6 +1,6 @@
 .view-sliders {
   width: 100%;
-  padding: 8% 0;
+  padding: 8% 0 5% 0;
   .slider-p {
     @include fonts($abbey, rem(28), $base-font, $light);
     min-height: rem(130);
@@ -20,16 +20,18 @@
       @include fonts($portGore, rem(20), $base-font, $semi-bold);
     }
   }
-  .carousel-indicators {
-    bottom: rem(-69);
-    @include sm {
-      bottom: rem(-50);
-      display: none;
-    }
-    li {
-      background-color: $midnight;
-      &.active {
-        width: rem(84);
+  .carousel {
+    .carousel-indicators {
+      bottom: rem(-69);
+      @include sm {
+        bottom: rem(-50);
+        display: none;
+      }
+      li {
+        background-color: $midnight;
+        &.active {
+          width: rem(84);
+        }
       }
     }
   }

@@ -145,14 +145,14 @@ footer .upper .location {
   padding: 0.625rem 0rem;
 }
 
-footer .upper .location .light-text {
+footer .upper .location .footer-text {
   color: #828282;
   font-size: 0.875rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
 }
 
-footer .upper .location .address {
+footer .upper .location .office-address {
   color: #828282;
   font-size: 0.875rem;
   font-family: "Lato", sans-serif;
@@ -198,7 +198,7 @@ footer .social .socialLink__list {
   cursor: pointer;
 }
 
-footer .social .small-text {
+footer .social .link-text {
   color: #828282;
   font-size: 0.875rem;
   font-family: "Lato", sans-serif;
@@ -737,16 +737,10 @@ p {
   }
 }
 
-.slider .slide .carousel-indicators {
-  bottom: -4.3125rem;
-}
-
-.slider .slide .carousel-indicators li {
-  background-color: #012140;
-}
-
-.slider .slide .carousel-indicators li.active {
-  width: 5.25rem;
+@media (max-width: 991px) {
+  .slider .slide .lg-hide {
+    display: none;
+  }
 }
 
 .slider .carousel-control-prev-icon,
@@ -760,10 +754,12 @@ p {
   display: none;
 }
 
-@media (max-width: 991px) {
-  .slider .lg-hide {
-    display: none;
-  }
+.carousel-indicators {
+  bottom: -4.3125rem !important;
+}
+
+.carousel-indicators li {
+  background-color: #012140 !important;
 }
 
 .testimonial-form .contact-heading .contact-h5 {
@@ -864,7 +860,7 @@ p {
 
 .view-sliders {
   width: 100%;
-  padding: 8% 0;
+  padding: 8% 0 5% 0;
 }
 
 .view-sliders .slider-p {
@@ -901,22 +897,22 @@ p {
   font-weight: 600;
 }
 
-.view-sliders .carousel-indicators {
+.view-sliders .carousel .carousel-indicators {
   bottom: -4.3125rem;
 }
 
 @media (max-width: 576px) {
-  .view-sliders .carousel-indicators {
+  .view-sliders .carousel .carousel-indicators {
     bottom: -3.125rem;
     display: none;
   }
 }
 
-.view-sliders .carousel-indicators li {
+.view-sliders .carousel .carousel-indicators li {
   background-color: #012140;
 }
 
-.view-sliders .carousel-indicators li.active {
+.view-sliders .carousel .carousel-indicators li.active {
   width: 5.25rem;
 }
 
@@ -1693,8 +1689,6 @@ p {
 }
 
 .bg-roseWhite .exp-img {
-  max-width: 2.5rem;
-  max-height: 2.5rem;
   margin-bottom: 0.625rem;
 }
 
@@ -2199,7 +2193,7 @@ p {
           justify-content: space-between;
 }
 
-.services .d-flex .popularService {
+.services .d-flex .popular-service {
   color: #012140;
   font-size: 1.125rem;
   font-family: "Lato", sans-serif;

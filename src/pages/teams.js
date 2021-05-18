@@ -245,7 +245,7 @@ const Teams = () => {
           </Row>
         </Container>
       </div>
-      <MarketPresence />
+      {/* <MarketPresence /> */}
       <ClientFeedback />
       <FeaturedWork />
       <div className={`py-75 bg-midnight`}>

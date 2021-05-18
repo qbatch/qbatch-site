@@ -154,7 +154,11 @@ const IndexPage = () => {
                 </Col>
                 <Col md={6}>
                   <div className={`text-right`}>
-                    <Image src={IndexImage} className={`image-space`} />
+                    <Image
+                      src={IndexImage}
+                      className={`image-space`}
+                      alt="no-image"
+                    />
                   </div>
                 </Col>
               </Row>
@@ -221,7 +225,7 @@ const IndexPage = () => {
               <Col md={4}>
                 <div className={`d-flex`}>
                   <div className={`serviceBox`}>
-                    <h5 className={`popularService`}>Popular Services</h5>
+                    <h5 className={`popular-service`}>Popular Services</h5>
                   </div>
                   <div className={`services-Detail`}>
                     <h1>Services</h1>

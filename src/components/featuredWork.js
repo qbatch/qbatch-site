@@ -69,54 +69,64 @@ const FeaturedWork = () => {
         <div className={`text-center text-xs-left`}>
           <h5 className={`slider-h3`}>Our Featured Work</h5>
         </div>
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-          {work.map((values, i) => {
-            return (
-              <CarouselItem key={i}>
-                <Row>
-                  <Col md={6}>
-                    <div>
-                      <Image src={values.logo} className={`pb-2`} />
-                      <p>{values.paragraph}</p>
-                      <h5 className={`mb-3 lg-hide`}>Areas of focus</h5>
-                      <ul className={`listItem`}>
-                        {values.list.map((lists, i) => {
-                          return (
-                            <li className={`listItem__item`} key={i}>
-                              {lists}
-                            </li>
-                          )
-                        })}
-                      </ul>
-                      <div className={`btn-batch d-flex`}>
-                        <Link to={values.link}>
-                          <Button
-                            variant="primary"
-                            className={`endeavour-button`}
-                          >
-                            See details
-                          </Button>
-                        </Link>
-                        <Link to="/work">
-                          <Button className={`outline-button ml-4`}>
-                            Portfolio
-                          </Button>
-                        </Link>
+        <div className="my-carousel">
+          <Carousel
+            activeIndex={index}
+            onSelect={handleSelect}
+            indicators={false}
+          >
+            {work.map((values, i) => {
+              return (
+                <CarouselItem key={i}>
+                  <Row>
+                    <Col md={6}>
+                      <div>
+                        <Image
+                          src={values.logo}
+                          className={`pb-2`}
+                          alt="no-image"
+                        />
+                        <p>{values.paragraph}</p>
+                        <h5 className={`mb-3 lg-hide`}>Areas of focus</h5>
+                        <ul className={`listItem`}>
+                          {values.list.map((lists, i) => {
+                            return (
+                              <li className={`listItem__item`} key={i}>
+                                {lists}
+                              </li>
+                            )
+                          })}
+                        </ul>
+                        <div className={`btn-batch d-flex`}>
+                          <Link to={values.link}>
+                            <Button
+                              variant="primary"
+                              className={`endeavour-button`}
+                            >
+                              See details
+                            </Button>
+                          </Link>
+                          <Link to="/work">
+                            <Button className={`outline-button ml-4`}>
+                              Portfolio
+                            </Button>
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                  </Col>
-                  <Col md={6}>
-                    <div className={`text-left`}>
-                      <Figure className={`imgBox`}>
-                        <Figure.Image alt="First slide" src={values.img} />
-                      </Figure>
-                    </div>
-                  </Col>
-                </Row>
-              </CarouselItem>
-            )
-          })}
-        </Carousel>
+                    </Col>
+                    <Col md={6}>
+                      <div className={`text-left`}>
+                        <Figure className={`imgBox`}>
+                          <Figure.Image alt="First slide" src={values.img} />
+                        </Figure>
+                      </div>
+                    </Col>
+                  </Row>
+                </CarouselItem>
+              )
+            })}
+          </Carousel>
+        </div>
       </Container>
     </div>
   )

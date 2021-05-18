@@ -254,7 +254,7 @@ const About = () => {
           <Recognized />
         </Container>
       </div>
-      <MarketPresence />
+      {/* <MarketPresence /> */}
       <div className="text-center py-75 employees ">
         <Container>
           <h1>Our Amazing Team</h1>

@@ -69,24 +69,26 @@ const footer = ({ logo }) => {
                 <Image src={logo} alt="no-image" />
               </div>
               <div className={`d-flex flex-column location`}>
-                <small className={`light-text`}>Contact</small>
-                <a href="https://www.qbatch.com/" className={`mail-link`}>
-                  hello@qb
+                <small className={`footer-text`}>Contact</small>
+                <a href="contact@qbatch.com" className={`mail-link`}>
+                  contact@qbatch.com
                 </a>
               </div>
               <div className={`d-flex flex-column location`}>
-                <small className={`light-text`}>Headquarters</small>
-                <span className={`address`}>
+                <small className={`footer-text`}>Headquarters</small>
+                <span className={`office-address`}>
                   1309 Coffeen Avenue STE 1200 Sheridan, Wyoming 82801
                 </span>
               </div>
               <div className={`d-flex flex-column location`}>
-                <small className={`light-text`}>Lahore</small>
-                <span className={`address`}>106 Sector K, CCA Phase-1 DHA</span>
+                <small className={`footer-text`}>Lahore</small>
+                <span className={`office-address`}>
+                  106 Sector K, CCA Phase-1 DHA
+                </span>
               </div>
               <div className={`d-flex flex-column location`}>
-                <small className={`light-text`}>Faisalabad</small>
-                <span className={`address`}>
+                <small className={`footer-text`}>Faisalabad</small>
+                <span className={`office-address`}>
                   Mezzanine floor, Sitara Tower, Bilal Rd, Civil Lines
                 </span>
               </div>
@@ -134,9 +136,9 @@ const footer = ({ logo }) => {
           </Row>
         </div>
         <div className={`social d-flex justify-content-between `}>
-          <span className={`small-text`}>
+          <span className={`link-text`}>
             © 2021 &nbsp;
-            <Link to="/" className={`small-text`}>
+            <Link to="/" className={`link-text`}>
               Qbatch
             </Link>{" "}
             All Rights Reserved.

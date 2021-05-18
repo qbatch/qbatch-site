@@ -76,12 +76,12 @@
     margin: rem(10) rem(12);
     text-transform: uppercase;
   }
-  .aboutUs{
-    background-color:$white ;
+  .aboutUs {
+    background-color: $white;
     color: $endeavour;
     border: none;
-    &:active{
-       background-color:$white ;
+    &:active {
+      background-color: $white;
     }
   }
 }
@@ -129,7 +129,7 @@
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
-    .popularService {
+    .popular-service {
       @include fonts($midnight, rem(18), $base-font, $bold);
       opacity: 0.5;
     }
@@ -296,11 +296,10 @@
   .clutch {
     width: rem(150);
     text-align: center;
-
   }
-     .marginLeft-3{
-      margin-left: rem(14);
-    }
+  .marginLeft-3 {
+    margin-left: rem(14);
+  }
 }
 @media (min-width: 1200px) {
   .container,

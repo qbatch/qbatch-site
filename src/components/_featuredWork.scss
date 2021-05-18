@@ -16,13 +16,28 @@
     }
   }
   .slide {
-    .carousel-indicators {
-      bottom: rem(-69);
-      li {
-        background-color: $midnight;
-        &.active {
-          width: rem(84);
-        }
+    //   .carousel-indicators {
+    //     bottom: rem(-69);
+    //     li {
+    //       background-color: $midnight;
+    //       &.active {
+    //         width: rem(84);
+    //       }
+    //     }
+    //   }
+    // }
+    // .carousel-control-prev-icon,
+    // .carousel-control-next-icon {
+    //   display: none;
+    //   z-index: -1;
+    // }
+    // .carousel-control-next,
+    // .carousel-control-prev {
+    //   display: none;
+    // }
+    .lg-hide {
+      @include lg {
+        display: none;
       }
     }
   }
@@ -35,9 +50,10 @@
   .carousel-control-prev {
     display: none;
   }
-  .lg-hide {
-    @include lg {
-      display: none;
-    }
+}
+.carousel-indicators {
+  bottom: -4.3125rem !important;
+  li {
+    background-color: $midnight !important;
   }
 }
