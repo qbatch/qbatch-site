@@ -39,7 +39,7 @@
 }
 
 .process__container {
-  @include md{
+  @include md {
     display: none;
   }
   display: flex;
@@ -193,9 +193,9 @@
   max-width: rem(680);
   margin: 0 auto;
 }
-.py-30{
+.py-30 {
   padding: 0 rem(100);
-  @include md{
+  @include md {
     padding: 0 rem(0);
   }
 }

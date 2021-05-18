@@ -30,7 +30,14 @@
     padding: rem(15) rem(0);
   }
   .text-center {
-    @include fonts($storm-gray, rem(16), $base-font, $light);
+    @include fonts($storm-gray, rem(15), $base-font, $light);
+    @include lg {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }
 .border-left-bottom {
@@ -47,11 +54,14 @@
     border-bottom: none;
   }
   .text-center {
-    @include fonts($storm-gray, rem(16), $base-font, $light);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    @include fonts($storm-gray, rem(15), $base-font, $light);
+    @include lg {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }
 .b-left {
@@ -77,6 +87,9 @@
     @include lg {
       @include fonts($midnight, rem(14), $base-font, $bold);
     }
+  }
+  .fs-18 {
+    font-size: rem(18);
   }
   .exp-p {
     margin-bottom: rem(10);

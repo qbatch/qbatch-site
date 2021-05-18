@@ -240,7 +240,7 @@ const About = () => {
                       alt="no-image"
                       className="exp-img"
                     />
-                    <h6 className="title-b pl-2">{values.title}</h6>
+                    <h6 className="title-b pl-1 fs-18">{values.title}</h6>
                     <p className="exp-p">{values.paragraph}</p>
                   </div>
                 </Col>

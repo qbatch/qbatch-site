@@ -1,42 +1,44 @@
 @import "./mixins";
 @import "./variables";
-h1 {
-  @include fonts($midnight, rem(42), $base-font, $extra-bold);
-  letter-spacing: rem(0.5);
-}
+.pt-90 {
+  h1 {
+    @include fonts($midnight, rem(42), $base-font, $extra-bold);
+    letter-spacing: rem(0.5);
+  }
 
-h2 {
-  @include fonts($midnight, rem(38), $base-font, $extra-bold);
-  .endeavour {
-    color: $endeavour;
+  h2 {
+    @include fonts($midnight, rem(38), $base-font, $extra-bold);
+    .endeavour {
+      color: $endeavour;
+    }
+    @include lg {
+      @include fonts($midnight, rem(32), $base-font, $extra-bold);
+    }
+    @include sm {
+      @include fonts($midnight, rem(24), $base-font, $extra-bold);
+    }
   }
-  @include lg {
-    @include fonts($midnight, rem(32), $base-font, $extra-bold);
+  h3 {
+    @include fonts($midnight, rem(36), $base-font, $extra-bold);
+    .endeavour {
+      color: $endeavour;
+    }
+    @include lg {
+      @include fonts($midnight, rem(20), $base-font, $extra-bold);
+    }
   }
-  @include sm {
-    @include fonts($midnight, rem(24), $base-font, $extra-bold);
+  h4 {
+    @include fonts($midnight, rem(30), $base-font, $bold);
+    .endeavour {
+      color: $endeavour;
+    }
   }
-}
-h3 {
-  @include fonts($midnight, rem(36), $base-font, $extra-bold);
-  .endeavour {
-    color: $endeavour;
+  h5 {
+    @include fonts($midnight, rem(24), $base-font, $bold);
   }
-  @include lg {
-    @include fonts($midnight, rem(20), $base-font, $extra-bold);
+  h6 {
+    @include fonts($midnight, rem(20), $base-font, $bold);
   }
-}
-h4 {
-  @include fonts($midnight, rem(30), $base-font, $bold);
-  .endeavour {
-    color: $endeavour;
-  }
-}
-h5 {
-  @include fonts($midnight, rem(24), $base-font, $bold);
-}
-h6 {
-  @include fonts($midnight, rem(20), $base-font, $bold);
 }
 img {
   max-width: 100%;

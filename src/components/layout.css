@@ -205,7 +205,7 @@ footer .social .small-text {
   font-weight: 400;
 }
 
-h1 {
+.pt-90 h1 {
   color: #012140;
   font-size: 2.625rem;
   font-family: "Lato", sans-serif;
@@ -213,19 +213,19 @@ h1 {
   letter-spacing: 0.03125rem;
 }
 
-h2 {
+.pt-90 h2 {
   color: #012140;
   font-size: 2.375rem;
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
-h2 .endeavour {
+.pt-90 h2 .endeavour {
   color: #0054a6;
 }
 
 @media (max-width: 991px) {
-  h2 {
+  .pt-90 h2 {
     color: #012140;
     font-size: 2rem;
     font-family: "Lato", sans-serif;
@@ -234,7 +234,7 @@ h2 .endeavour {
 }
 
 @media (max-width: 576px) {
-  h2 {
+  .pt-90 h2 {
     color: #012140;
     font-size: 1.5rem;
     font-family: "Lato", sans-serif;
@@ -242,19 +242,19 @@ h2 .endeavour {
   }
 }
 
-h3 {
+.pt-90 h3 {
   color: #012140;
   font-size: 2.25rem;
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
-h3 .endeavour {
+.pt-90 h3 .endeavour {
   color: #0054a6;
 }
 
 @media (max-width: 991px) {
-  h3 {
+  .pt-90 h3 {
     color: #012140;
     font-size: 1.25rem;
     font-family: "Lato", sans-serif;
@@ -262,25 +262,25 @@ h3 .endeavour {
   }
 }
 
-h4 {
+.pt-90 h4 {
   color: #012140;
   font-size: 1.875rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
 }
 
-h4 .endeavour {
+.pt-90 h4 .endeavour {
   color: #0054a6;
 }
 
-h5 {
+.pt-90 h5 {
   color: #012140;
   font-size: 1.5rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
 }
 
-h6 {
+.pt-90 h6 {
   color: #012140;
   font-size: 1.25rem;
   font-family: "Lato", sans-serif;
@@ -1619,9 +1619,19 @@ p {
 
 .px-50 .text-center {
   color: #6d7384;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .px-50 .text-center {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .border-left-bottom {
@@ -1648,13 +1658,19 @@ p {
 
 .border-right-bottom .text-center {
   color: #6d7384;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 991px) {
+  .border-right-bottom .text-center {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .b-left {
@@ -1693,6 +1709,10 @@ p {
     font-family: "Lato", sans-serif;
     font-weight: 700;
   }
+}
+
+.bg-roseWhite .fs-18 {
+  font-size: 1.125rem;
 }
 
 .bg-roseWhite .exp-p {
