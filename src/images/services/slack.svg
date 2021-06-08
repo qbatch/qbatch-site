@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61">
+  <g id="slack" transform="translate(-31 -2674)">
+    <rect id="Rectangle_2262" data-name="Rectangle 2262" width="61" height="61" transform="translate(31 2674)" fill="rgba(255,255,255,0)"/>
+    <g id="Slack_Technologies_Logo" transform="translate(34.55 2677.67)">
+      <path id="Path_8301" data-name="Path 8301" d="M11.826,72.313A5.513,5.513,0,1,1,6.313,66.8h5.513Zm2.757,0a5.513,5.513,0,0,1,11.026,0V86.1a5.513,5.513,0,1,1-11.026,0Z" transform="translate(-0.058 -38.55)" fill="#e01e5a"/>
+      <path id="Path_8302" data-name="Path 8302" d="M20.038,11.626a5.513,5.513,0,1,1,5.513-5.513v5.513Zm0,2.8a5.513,5.513,0,1,1,0,11.026H6.213a5.513,5.513,0,1,1,0-11.026Z" fill="#36c5f0"/>
+      <path id="Path_8303" data-name="Path 8303" d="M80.683,19.938A5.513,5.513,0,1,1,86.2,25.451H80.683Zm-2.757,0a5.513,5.513,0,1,1-11.026,0V6.113a5.513,5.513,0,1,1,11.026,0V19.938Z" transform="translate(-38.55)" fill="#2eb67d"/>
+      <path id="Path_8304" data-name="Path 8304" d="M72.413,80.583A5.513,5.513,0,1,1,66.9,86.1V80.583Zm0-2.757a5.513,5.513,0,0,1,0-11.026H86.238a5.513,5.513,0,0,1,0,11.026Z" transform="translate(-38.55 -38.55)" fill="#ecb22e"/>
+    </g>
+  </g>
+</svg>

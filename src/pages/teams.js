@@ -9,9 +9,9 @@ import ContactForm from "../components/contactForm"
 import shapeLower from "../images/services/shapeLower.png"
 import shapeUpper from "../images/services/shapeUpper.png"
 import TeamsImg from "../images/services/teams.png"
-import clickUp from "../images/services/clickUp.svg"
-import channel from "../images/services/channel.png"
-import scrum from "../images/services/scrum.png"
+import clickUp from "../images/services/clickup.svg"
+import channel from "../images/services/slack.svg"
+import scrum from "../images/services/scrum.svg"
 
 const Teams = () => {
   const Augmentation = [

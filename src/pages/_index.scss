@@ -38,7 +38,7 @@
     @include md {
       padding-top: rem(500);
     }
-    .hwr {
+    .how-we-are {
       @include fonts($endeavour, rem(18), $base-font, $bold);
       padding-bottom: rem(8);
     }
@@ -46,7 +46,7 @@
       @include fonts($midnight, rem(28), $base-font, $bold);
       padding-bottom: rem(102);
     }
-    .h-title {
+    .heading-title {
       @include fonts($storm-gray, rem(20), $base-font, $regular);
       letter-spacing: 1px;
       text-align: center;

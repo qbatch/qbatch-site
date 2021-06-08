@@ -15,7 +15,7 @@ import BWDwebShot from "../../images/work/BWDwebShot.png"
 import BWDmobileShot from "../../images/work/BWDmobileShot.png"
 import oneAppLogo from "../../images/work/oneAppLogo.svg"
 import EcomCirclesLogo from "../../images/work/EcomCirclesLogo.svg"
-import BWDLogo from "../../images/work/BWDLogo.svg"
+import BWDLogo from "../../images/work/BWDLogoUpdated.jpg"
 import UrtaskerLogo from "../../images/work/UrtaskerLogo.svg"
 import salesSupportLogo from "../../images/work/salesSupportLogo.svg"
 const Index = () => {

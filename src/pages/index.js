@@ -169,7 +169,7 @@ const IndexPage = () => {
           <Container>
             <Row className={`row`}>
               <Col md={6}>
-                <h6 className={`hwr`}>Who We Are </h6>
+                <h6 className={`how-we-are`}>Who We Are </h6>
                 <h4>Strategists, Devbots</h4>
                 <h4>Visualizers & Executors</h4>
               </Col>
@@ -187,13 +187,13 @@ const IndexPage = () => {
                 <div className={`d-flex justify-content-around`}>
                   <div className={`d-flex flex-column`}>
                     <h1>2015</h1>
-                    <h6 className={`h-title`}>Established</h6>
+                    <h6 className={`heading-title`}>Established</h6>
                   </div>
                   <div className={`d-flex flex-column`}>
                     <h1>
                       <CountUp start={0} end={300} duration={5} />+
                     </h1>
-                    <h6 className={`h-title`}>Clients</h6>
+                    <h6 className={`heading-title`}>Clients</h6>
                   </div>
                 </div>
               </Col>
@@ -204,13 +204,13 @@ const IndexPage = () => {
                       {" "}
                       <CountUp start={0} end={500} duration={5} />
                     </h1>
-                    <h6 className={`h-title`}>Projects</h6>
+                    <h6 className={`heading-title`}>Projects</h6>
                   </div>
                   <div className={`d-flex flex-column`}>
                     <h1>
                       <CountUp start={0} end={100} duration={5} />
                     </h1>
-                    <h6 className={`h-title`}>Teams</h6>
+                    <h6 className={`heading-title`}>Teams</h6>
                   </div>
                 </div>
               </Col>

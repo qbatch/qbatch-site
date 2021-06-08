@@ -43,7 +43,7 @@ footer {
       margin: 0 rem(10);
       cursor: pointer;
     }
-    .link-text {
+    .text-small {
       @include fonts($grey, rem(14), $base-font, $regular);
     }
   }

@@ -171,7 +171,7 @@ footer .upper .footerList__link:hover {
   text-decoration: none;
 }
 
-footer .upper .footerList__item {
+footer .upper .footerList .list-group-item {
   border: none;
   border-radius: 0;
   padding: 0.0625rem 0rem;
@@ -184,7 +184,7 @@ footer .upper .footerList__item {
   font-weight: 300;
 }
 
-footer .upper .footerList__item:hover {
+footer .upper .footerList .list-group-item:hover {
   color: #0054a6;
 }
 
@@ -193,7 +193,7 @@ footer .social {
   padding: 1.875rem 0rem;
 }
 
-footer .social .socialLink__list {
+footer .social .socialLink__icon {
   margin: 0 0.625rem;
   cursor: pointer;
 }
@@ -1912,7 +1912,7 @@ p {
   border: 1px solid #8ebdea;
   border-radius: 0.25rem;
   padding: 0.625rem 1.25rem;
-  min-height: 15.25rem;
+  min-height: 17.0625rem;
   margin-bottom: 1.5625rem;
 }
 
@@ -1987,7 +1987,7 @@ p {
   }
 }
 
-.layout .inner-skewed .hwr {
+.layout .inner-skewed .how-we-are {
   color: #0054a6;
   font-size: 1.125rem;
   font-family: "Lato", sans-serif;
@@ -2003,7 +2003,7 @@ p {
   padding-bottom: 6.375rem;
 }
 
-.layout .inner-skewed .h-title {
+.layout .inner-skewed .heading-title {
   color: #6d7384;
   font-size: 1.25rem;
   font-family: "Lato", sans-serif;
@@ -2494,7 +2494,7 @@ p {
   padding-top: 1.25rem;
 }
 
-.contactUs-form .form-group.contactUs-dropdown .form-control {
+.contact-us-form .form-group.contactUs-dropdown .form-control {
   padding: 0.625rem 0.625rem;
   height: 3rem;
   -moz-appearance: none;
@@ -2506,47 +2506,47 @@ p {
   font-weight: 400;
 }
 
-.contactUs-form .form-group.contactUs-dropdown .color-regent {
+.contact-us-form .form-group.contactUs-dropdown .color-regent {
   top: 1rem;
   right: 0.875rem;
   color: inherit;
   color: #aac6e3;
 }
 
-.contactUs-form .form-group .form-control {
+.contact-us-form .form-group .form-control {
   background-color: transparent;
   padding: 1.25rem 0.625rem;
 }
 
-.contactUs-form .form-group .form-control::-webkit-input-placeholder {
+.contact-us-form .form-group .form-control::-webkit-input-placeholder {
   color: #aac6e3;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
-.contactUs-form .form-group .form-control:-ms-input-placeholder {
+.contact-us-form .form-group .form-control:-ms-input-placeholder {
   color: #aac6e3;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
-.contactUs-form .form-group .form-control::-ms-input-placeholder {
+.contact-us-form .form-group .form-control::-ms-input-placeholder {
   color: #aac6e3;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
-.contactUs-form .form-group .form-control::placeholder {
+.contact-us-form .form-group .form-control::placeholder {
   color: #aac6e3;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
-.contactUs-form .text-spam {
+.contact-us-form .text-spam {
   color: #0054a6;
   font-size: 1.125rem;
   font-family: "Lato", sans-serif;

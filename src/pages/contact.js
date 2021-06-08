@@ -27,17 +27,17 @@ const contact = () => {
           </Container>
         </div>
         <Container>
-          <Form className={`contactUs-form py-75`}>
+          <Form className={`contact-us-form py-75`}>
             <Row className={`m-0 justify-content-md-center`}>
               <Col md={10}>
                 <Form.Group
                   controlId="exampleForm.ControlSelect1"
                   className={`contactUs-dropdown position-relative`}
                 >
-                  <FontAwesomeIcon
+                  {/* <FontAwesomeIcon
                     icon={faChevronDown}
                     className={`position-absolute color-regent`}
-                  />
+                  /> */}
                   <Form.Control as="select">
                     <option>How we can help you?</option>
                   </Form.Control>

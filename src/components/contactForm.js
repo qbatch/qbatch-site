@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Form, Button, Image, Row, Col } from "react-bootstrap"
-import Avatar from "../images/MaxWilson.svg"
+import Avatar from "../images/avatar.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 const ContactForm = () => {
@@ -134,7 +134,7 @@ const ContactForm = () => {
           </div>
           <div className={`d-flex text-center-md`}>
             <div className={`mr-3`}>
-              <Image src={Avatar} alt="Avatar" className={`avatar`} />
+              <Image src={Avatar} alt="Avatar" className={`avatar rounded-circle`} />
             </div>
             <div className={`d-flex flex-column  text-light`}>
               <strong className={`text-light`}>Max Wilson</strong>
