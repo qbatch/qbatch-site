@@ -169,6 +169,7 @@ const footer = ({ logo }) => {
         </div>
       </footer>
     </Container>
+
   )
 }
 
