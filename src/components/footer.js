@@ -89,7 +89,7 @@ const footer = ({ logo }) => {
               <div className={`d-flex flex-column location`}>
                 <small className={`footer-text`}>Faisalabad</small>
                 <span className={`office-address`}>
-                2nd Floor Sitara Techno Park, Main E-Canal Expy Block-B Peoples colony #1
+                2nd Floor Sitara Techno Park, Main E-Canal Expy Block-B Peoples Colony #1
                 </span>
               </div>
             </Col>
