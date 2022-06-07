@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Qbatch`,
     author: `@gatsbyjs`,
+    description:`Where Innovation Meets Technology`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
