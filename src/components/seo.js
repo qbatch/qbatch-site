@@ -9,7 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -27,7 +26,9 @@ function SEO({ description, lang, meta, title }) {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-
+  const logo= "../images/index/logo.svg"
+  const type="website"
+  const url= "https://qbatch.com/"
   return (
     <Helmet
       htmlAttributes={{
@@ -37,37 +38,27 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
+          name: `og:image`,
+          content: logo,
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: type,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          property: `og:url`,
+          content: url,
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
+          property: `og:title`,
+          content: defaultTitle,
         },
         {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
+          name: `description`,
           content: metaDescription,
         },
+      
+       
       ].concat(meta)}
     />
   )
@@ -77,6 +68,7 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
+  title:""
 }
 
 SEO.propTypes = {

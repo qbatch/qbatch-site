@@ -83,13 +83,13 @@ const footer = ({ logo }) => {
               <div className={`d-flex flex-column location`}>
                 <small className={`footer-text`}>Lahore</small>
                 <span className={`office-address`}>
-                  106 Sector K, CCA Phase-1 DHA
+                4th Floor, 28 CCA, Sector C, Phase 5 DHA
                 </span>
               </div>
               <div className={`d-flex flex-column location`}>
                 <small className={`footer-text`}>Faisalabad</small>
                 <span className={`office-address`}>
-                  Mezzanine floor, Sitara Tower, Bilal Rd, Civil Lines
+                2nd Floor Sitara Techno Park, Main E-Canal Expy Block-B Peoples colony #1
                 </span>
               </div>
             </Col>
