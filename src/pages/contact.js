@@ -101,7 +101,7 @@ const contact = () => {
                   <div className={`alignText__iconBox`}>
                     <Image src={Phone} alt="no-image" />
                   </div>
-                  <span className={`alignText__title`}>+92-300-9610309</span>
+                  <span className={`alignText__title`}>+1 737-377-2428</span>
                 </div>
               </Col>
               <Col md={3}>
