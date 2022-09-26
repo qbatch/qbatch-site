@@ -56,13 +56,13 @@ const Urtasker = () => {
       <SEO title="Bwd App" />
       <WorkDetail
         heading="Urtasker"
-        paragraph="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        paragraph="To Sell on the marketplace, we automated these followings with the tools. Product Listing, Listing Optimization, Keyword Implementation, PPC Management, Brand Management. Listing Optimization Services, Product Research, Competitor Analysis, Keyword Tracking, Infographics and Lifestyle, Backend Optimization. "
         Image={urtasker}
         paraHeading="The Problem"
-        problem="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        problem="The Client aimed to help small business owners to maximize their potential as well as expand their reach within marketplaces such as Amazon, eBay, and Walmart.  "
         listHeading="Tech Stack"
         solHeading="The solution"
-        solPara="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        solPara="To Sell on the marketplace, we automated these followings with the tools. Product Listing, Listing Optimization, Keyword Implementation, PPC Management, Brand Management. Listing Optimization Services, Product Research, Competitor Analysis, Keyword Tracking, Infographics and Lifestyle, Backend Optimization."
         firstList={firstList}
         secondList={secondList}
       />

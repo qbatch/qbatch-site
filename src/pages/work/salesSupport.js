@@ -48,13 +48,13 @@ const SalesSupport = () => {
       <SEO title="Bwd App" />
       <WorkDetail
         heading="Sales Support"
-        paragraph="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        paragraph="We developed a tool to automate their wholesale vendor list in real-time which analyzes any catalog to determine the profitability of a wide range of products without having to do any retail arbitrage and ongroud research. "
         Image={salesSupport}
         paraHeading="The Problem"
-        problem="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        problem="Client wanted a SAAS based product for their 500+ sub sellers to subscribe and be able to access tools like, Supplier Management, Amazon wholesale business & 3PL solutions, Wholesale Listing, Inventory Management, Reimbursements, Restocker, Repricer, Complete Warehouse management, Sales & Profit Analysis and FBA Shipments into Amazon."
         listHeading="Tech Stack"
         solHeading="The solution"
-        solPara="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        solPara="We developed a tool to automate their wholesale vendor list in real-time which analyzes any catalog to determine the profitability of a wide range of products without having to do any retail arbitrage and ongroud research. "
         firstList={firstList}
         secondList={secondList}
       />

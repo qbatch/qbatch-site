@@ -82,22 +82,22 @@ const IndexPage = () => {
     {
       img: expert,
       title: "Specialized Experts",
-      paragraph: "We help our clients unleash innovation through.",
+      paragraph: "we help our clients in making innovative softwares through our veterans in the field",
     },
     {
       img: domain,
       title: "Domain Expertise",
-      paragraph: "We help our clients unleash innovation through.",
+      paragraph: "we aid our customers with advanced domain expertise",
     },
     {
       img: growth,
       title: "Growth Hacking",
-      paragraph: "We help our clients unleash innovation through.",
+      paragraph: "We have Digital Marketing Experts for Growth Hacking of Business",
     },
     {
       img: start,
       title: "Immediate Start",
-      paragraph: "We help our clients unleash innovation through.",
+      paragraph: "We initiate the Immediate Start for every opportunity we see or seek",
     },
     {
       img: quality,
@@ -107,17 +107,17 @@ const IndexPage = () => {
     {
       img: strong,
       title: "Strong IP Protection",
-      paragraph: "We help our clients unleash innovation through.",
+      paragraph: "Quality is always guaranteed by our Quality Assurance Team",
     },
     {
       img: execution,
       title: "Transparent Execution",
-      paragraph: "We help our clients unleash innovation through.",
+      paragraph: "Our every Project has Transparent Execution",
     },
     {
       img: communication,
       title: "Excep. Communication",
-      paragraph: "We help our clients unleash innovation through.",
+      paragraph: "Excep. Communication is the key to organize the team",
     },
   ]
   return (
@@ -377,8 +377,7 @@ const IndexPage = () => {
               <Row className={`m-0`}>
                 <Col md={10} sm={12}>
                   <h1 className={`text-light mb-22`}>
-                    Our World Class Expertise to Help Your Business Make Dent on
-                    Earth
+                  Here to unleash glory to your business with our world class expertise
                   </h1>
                   <p className={`exp-p text-light mb-50`}>
                     We facilitate our clients to unleash the potential of their
