@@ -48,13 +48,15 @@ const OneApp = () => {
       <SEO title="Bwd App" />
       <WorkDetail
         heading="One App"
-        paragraph="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        paragraph="
+        We developed a custom ecommerce marketplace by  automation tools which includes Prep, Pack & Ship to FBA (Manage/Create shipments, print labels), Automated Rule-based and Algorithmic Repriser (Algorithmic calculation of min/max and rule-based repricing strategies), Profit & Loss/Sales Analysis Reports, FBA Forecasting (Reordering Management including PPC spent),Orders Management (outbound & inbound fulfillment)."
         Image={oneApp}
         paraHeading="The Problem"
-        problem="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        problem="The client had more than 50 stores and needed to manage the daily inventory and stocks to be maintained in accordance.They wanted to automate their process flows in productivity,performance or to have better control. They also require a centralized dashboard & an automation tool to manage profit & loss analysis and logistics respectively."
         listHeading="Tech Stack"
         solHeading="The solution"
-        solPara="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        solPara="
+        We developed a custom ecommerce marketplace by  automation tools which includes Prep, Pack & Ship to FBA (Manage/Create shipments, print labels), Automated Rule-based and Algorithmic Repriser (Algorithmic calculation of min/max and rule-based repricing strategies), Profit & Loss/Sales Analysis Reports, FBA Forecasting (Reordering Management including PPC spent),Orders Management (outbound & inbound fulfillment)."
         firstList={firstList}
         secondList={secondList}
       />

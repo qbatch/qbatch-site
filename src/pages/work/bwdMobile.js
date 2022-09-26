@@ -55,14 +55,14 @@ const BwdMobile = () => {
     <Layout>
       <SEO title="Bwd App" />
       <WorkDetail
-        heading="Blue Warehouse Discounts - Mobile"
-        paragraph="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        heading="Blue Warehouse Discounts - Web"
+        paragraph="We developed a marketplace that offers worldwide sellers to sell their products at a discounted price  the platform offers exchange & returns on closeouts, box damage, discontinued items, and anything else."
         Image={BwdImg}
         paraHeading="The Problem"
-        problem="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        problem="The client wanted to create a marketplace where he can allow the sellers from all around the world to sell their any kind of products on discounts and aimed to only offer the best deals and allow more attraction. "
         listHeading="Tech Stack"
         solHeading="The solution"
-        solPara="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        solPara="We developed a marketplace that offers worldwide sellers to sell their products at a discounted price  the platform offers exchange & returns on closeouts, box damage, discontinued items, and anything else."
         firstList={firstList}
         secondList={secondList}
       />

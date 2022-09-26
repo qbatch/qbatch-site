@@ -47,8 +47,8 @@ const Index = () => {
                 </h2>
                 <h2>Impact through Technology</h2>
                 <p>
-                  Reference site about Lorem Ipsum, giving information on its
-                  origins, well as a random Lipsum generator.
+                Our end-to-end services turn your key business requirements into dynamic software solutions, resulting in great customer experience, quantitative business decisions, and seamless back-end technologies.
+
                 </p>
               </div>
             </Col>

@@ -48,13 +48,13 @@ const EcomCircle = () => {
       <SEO title="Bwd App" />
       <WorkDetail
         heading="Ecom Circles"
-        paragraph="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        paragraph="We created a software to list all items one at a time or in bulk & to frequent update the stock and prices across platforms to prevent stock-outs and losses. The software helped in automatically repricing the items against competitors.The software also allows to keep track of the orders."
         Image={ecomCircle}
         paraHeading="The Problem"
-        problem="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        problem="The client was in need of an automation tool to manage the bulk product listings on multiple e-commerce platforms. He further wanted to completely track his orders and  wanted to automate the order placement procedure without any human interaction."
         listHeading="Tech Stack"
         solHeading="The solution"
-        solPara="Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, giving information on its origins, well as a random Lipsum generator. Reference site about Lorem Ipsum, information on its origins, well as a random Lipsum generator."
+        solPara="We created a software to list all items one at a time or in bulk & to frequent update the stock and prices across platforms to prevent stock-outs and losses. The software helped in automatically repricing the items against competitors.The software also allows to keep track of the orders."
         firstList={firstList}
         secondList={secondList}
       />
